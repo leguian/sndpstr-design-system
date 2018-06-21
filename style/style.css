@@ -941,47 +941,12 @@ h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-hea
   display: inline-block;
 }
 
-.card {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
-  border-radius: 2px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-  margin-bottom: 1rem;
-}
-.card .card-content {
-  padding: 1rem;
-}
-.card .card-title {
-  display: block;
-  font-size: 1.25rem;
-}
-.card p {
-  margin: 0;
-  font-size: 0.875rem;
-  color: rgba(49, 36, 43, 0.65);
-}
-.card .card-image img {
-  display: block;
-  object-fit: cover;
-}
-.card .card-actions {
-  padding: 0.75rem 1rem;
-  border-top: solid 1px rgba(49, 36, 43, 0.15);
-}
-.card:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25), 0 4px 20px rgba(0, 0, 0, 0.18);
+.hero {
+  background: grey;
 }
 
-.rounded {
-  border-radius: 6px;
-}
-
-.round {
-  border-radius: 4000px;
-}
-
-.solid-shadow {
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+.footer {
+  background: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
