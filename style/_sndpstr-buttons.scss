@@ -1,0 +1,147 @@
+.button, input[type="submit"], button {
+  @mixin ghost-button($ghost-button-color) {
+    color: $ghost-button-color;
+
+    &:hover {
+      background: $ghost-button-color;
+
+      @if $ghost-button-color == #FFFFFF {
+        color: #000000;
+      } @else {
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  vertical-align: middle;
+  overflow: visible;
+  border: solid 2px $primary-color;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  transition: $normal-speed;
+  background-color: $primary-color;
+  color: #fff;
+  border-radius: $radius;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  font-size: .875rem;
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+    color: #fff;
+  }
+  &:active, &:focus, &:visited {
+    color: #fff;
+  }
+  &.ghost {
+    background: transparent;
+    @include ghost-button($primary-color);
+  }
+  &.full-width {
+    width: 100%;
+  }
+  &.blue {
+    background-color: $blue;
+    border-color: $blue;
+    &.ghost {
+      background: transparent;
+      @include ghost-button($blue);
+    }
+    &:hover {
+      background-color: darken($blue, 10%);
+      border-color: darken($blue, 10%);
+    }
+  }
+  &.green {
+    background-color: $green;
+    border-color: $green;
+    &.ghost {
+      background: transparent;
+      @include ghost-button($green);
+    }
+    &:hover {
+      background-color: darken($green, 10%);
+      border-color: darken($green, 10%);
+    }
+  }
+  &.red {
+    background-color: $red;
+    border-color: $red;
+    &.ghost {
+      background: transparent;
+      @include ghost-button($red);
+    }
+    &:hover {
+      background-color: darken($red, 10%);
+      border-color: darken($red, 10%);
+    }
+  }
+  &.yellow {
+    background-color: $yellow;
+    border-color: $yellow;
+    &.ghost {
+      background: transparent;
+      @include ghost-button($yellow);
+    }
+    &:hover {
+      background-color: adjust-hue($yellow, -6%);
+      border-color: adjust-hue($yellow, -6%);
+    }
+  }
+  &.disabled {
+    background-color: rgba($font-color, .2);
+    border-color: transparent;
+    color: rgba($font-color, .5);
+    cursor: not-allowed;
+    &:hover {
+      background-color: rgba($font-color, .2);
+      border-color: transparent;
+    }
+  }
+
+  &.raised {
+    box-shadow: $base-shadow;
+    border-color: transparent;
+    &:hover {
+      box-shadow: $hover-shadow;
+      border-color: transparent;
+    }
+    &:active {
+      border-color: transparent;
+      box-shadow: $selected-shadow;
+    }
+  }
+  &.flat {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba($font-color, .75);
+    &:hover {
+      color: $font-color;
+      background-color: rgba($font-color, .1);
+    }
+    &:active {
+      background-color: rgba($font-color, .2);
+    }
+  }
+  &.round {
+    border-radius: 99rem;
+  }
+  &.small {
+
+  }
+  &.big {
+
+  }
+  &.huge {
+
+  }
+}
