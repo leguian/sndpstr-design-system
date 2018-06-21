@@ -1,8 +1,13 @@
 .header {
-
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10980392156862745);
 }
-.hero {
-  background: grey;
+
+.body.head {
+  background: linear-gradient(8deg, lighten($secondary-color, 20), #f9f9f9);
+
+  .hero {
+    padding: 4rem 0;
+  }
 }
 
 .footer {

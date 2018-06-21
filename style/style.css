@@ -109,20 +109,14 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-.text-left {
+.aligned.left {
   text-align: left;
 }
-
-.text-right {
+.aligned.right {
   text-align: right;
 }
-
-.text-center {
+.aligned.center {
   text-align: center;
-}
-
-.text-block {
-  text-align: justify;
 }
 
 em, i, .em {
@@ -937,12 +931,27 @@ h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-hea
 }
 
 .menu.main .item {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   display: inline-block;
+  margin: 0.5rem;
+}
+.menu.main .item.active {
+  font-weight: bold;
+}
+.menu.main .item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
 }
 
-.hero {
-  background: grey;
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1098039216);
+}
+
+.body.head {
+  background: linear-gradient(8deg, #dacff8, #f9f9f9);
+}
+.body.head .hero {
+  padding: 4rem 0;
 }
 
 .footer {
