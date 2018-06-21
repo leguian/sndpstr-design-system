@@ -166,103 +166,6 @@ sub, .sub {
   overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Cabin", Geneva, sans-serif;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  font-size: inherit;
-}
-h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-header, .h1.super-header, .h2.super-header, .h3.super-header, .h4.super-header, .h5.super-header {
-  font-size: 4rem;
-  line-height: 1.18;
-}
-
-.super-header {
-  font-size: 4rem;
-  line-height: 1.18;
-}
-
-.h1 {
-  font-size: 3rem;
-  line-height: 1.22;
-}
-
-.h2 {
-  font-size: 2.5rem;
-  line-height: 1.4;
-}
-
-.h3 {
-  font-size: 2rem;
-  line-height: 1.55;
-}
-
-.h4 {
-  font-size: 1.5rem;
-  line-height: 1.7;
-}
-
-.h5 {
-  font-size: 1rem;
-  line-height: 1.85;
-}
-
-.sub-header {
-  color: rgba(49, 36, 43, 0.6);
-}
-
-.super-header.vw {
-  font-size: 7vw;
-}
-
-h1.vw {
-  font-size: 6vw;
-}
-
-h2.vw {
-  font-size: 5vw;
-}
-
-h3.vw {
-  font-size: 4.5vw;
-}
-
-h4.vw {
-  font-size: 4vw;
-}
-
-h5.vw {
-  font-size: 3.5vw;
-}
-
-ul, ol, dl {
-  list-style-position: outside;
-  margin-bottom: 1.15rem;
-}
-ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
-  margin-bottom: 0;
-}
-
-ul {
-  margin-left: 1.2rem;
-  list-style-type: disc;
-}
-ul ul {
-  list-style-type: circle;
-}
-ul.lined, ul.none {
-  list-style-type: none;
-  margin-left: 0;
-}
-ul.lined li {
-  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
-}
-
-ol {
-  margin-left: 1.55rem;
-  list-style-type: decimal;
-}
-
 .img, img {
   max-width: 100%;
   height: auto;
@@ -1596,6 +1499,102 @@ svg:not(:root) {
 }
 .button.round, input[type=submit].round, button.round {
   border-radius: 99rem;
+}
+ul, ol, dl {
+  list-style-position: outside;
+  margin-bottom: 1.15rem;
+}
+ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-left: 1.2rem;
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul.lined, ul.none {
+  list-style-type: none;
+  margin-left: 0;
+}
+ul.lined li {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+ol {
+  margin-left: 1.55rem;
+  list-style-type: decimal;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  font-family: "Cabin", Geneva, sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-size: inherit;
+}
+h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-header, .h1.super-header, .h2.super-header, .h3.super-header, .h4.super-header, .h5.super-header {
+  font-size: 4rem;
+  line-height: 1.18;
+}
+
+.super-header {
+  font-size: 4rem;
+  line-height: 1.18;
+}
+
+.h1 {
+  font-size: 3rem;
+  line-height: 1.22;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+.h3 {
+  font-size: 2rem;
+  line-height: 1.55;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.h5 {
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.sub-header {
+  color: rgba(49, 36, 43, 0.6);
+}
+
+.super-header.vw {
+  font-size: 7vw;
+}
+
+h1.vw {
+  font-size: 6vw;
+}
+
+h2.vw {
+  font-size: 5vw;
+}
+
+h3.vw {
+  font-size: 4.5vw;
+}
+
+h4.vw {
+  font-size: 4vw;
+}
+
+h5.vw {
+  font-size: 3.5vw;
 }
 
 /*# sourceMappingURL=style.css.map */

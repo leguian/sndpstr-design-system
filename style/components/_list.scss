@@ -1,0 +1,26 @@
+// Lists
+ul, ol, dl {
+  list-style-position:outside;
+  margin-bottom:1.15rem;
+  ul, ol, dl {
+    margin-bottom:0;
+  }
+}
+ul {
+  margin-left:1.2rem;
+  list-style-type:disc;
+  ul {
+    list-style-type:circle;
+  }
+  &.lined, &.none {
+    list-style-type:none;
+    margin-left:0;
+  }
+  &.lined li {
+    border-bottom:solid 1px rgba(0,0,0,0.2);
+  }
+}
+ol {
+  margin-left:1.55rem;
+  list-style-type:decimal;
+}

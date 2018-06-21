@@ -22,6 +22,7 @@ brew install --devel sass/sass/sass
 Compile to your style sheet
 
 ```
+cd style/
 sass --watch sndpstr.scss:style.css
 ```
 

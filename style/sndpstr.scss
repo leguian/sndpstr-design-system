@@ -1,6 +1,10 @@
-// ThimbleCSS v2.0
-
+// Import base
 @import 'sndpstr-overrides';
-@import 'mixins';
-@import 'sndpstr-core';
-@import 'sndpstr-buttons';
+// Import components
+@import 'components/mixins';
+@import 'components/core';
+@import 'components/grid';
+@import 'components/buttons';
+@import 'components/list';
+@import 'components/headers';
+// add here more components if needed
