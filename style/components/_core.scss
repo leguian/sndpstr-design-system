@@ -64,30 +64,31 @@ a {
 // typography
 p {
   margin-bottom:1.1rem;
-  text-rendering:optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
-
+.text-left {text-align:left;}
+.text-right {text-align:right;}
+.text-center {text-align:center;}
+.text-block {text-align:justify;}
 em, i, .em {
   font-style:italic;
   line-height:inherit;
 }
 .uppercase {text-transform:uppercase;}
-.capitalize {text-transform:capitalize;}
-.lowercase {text-transform:lowercase;}
 strong, b, .strong {
-  font-weight:bolder;
+  font-weight:bold;
   line-height:inherit;
 }
 small, .small {font-size:80%;}
 .large {font-size:140%;}
 sup, .sup, sub, .sub {
-  position:relative;
-  font-size:75%;
-  line-height:0;
-  vertical-align:baseline;
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
 }
 sup, .sup {top:-.5em;}
-sub, .sub {bottom:-.25em;}
+sub, .sub {bottom:-.5em;}
 .ellipsis, .ellipsis li {
   text-overflow:ellipsis;
   white-space:nowrap;
