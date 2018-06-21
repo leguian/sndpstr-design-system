@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cabin:700|Roboto:400,400i,700,700i");
 h1, h2, h3, h4, h5, p, blockquote, figure, ol, ul {
   margin: 0;
@@ -191,6 +192,207 @@ svg:not(:root) {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("assets/fonts/icons.eot");
+  src: url("assets/fonts/icons.eot#iefix") format("embedded-opentype"), url("assets/fonts/icons.woff") format("woff"), url("assets/fonts/icons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  font-family: "icons";
+  display: inline-block;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon.big {
+  font-size: 2rem;
+}
+.icon.huge {
+  font-size: 4rem;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("assets/fonts/icons.eot");
+  src: url("assets/fonts/icons.eot#iefix") format("embedded-opentype"), url("assets/fonts/icons.woff") format("woff"), url("assets/fonts/icons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  font-family: "icons";
+  display: inline-block;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icons */
+.icon.carret.down.circle:before {
+  content: "";
+}
+
+.icon.carret.down:before {
+  content: "";
+}
+
+.icon.carret.left.circle:before {
+  content: "";
+}
+
+.icon.carret.left:before {
+  content: "";
+}
+
+.icon.carret.right.circle:before {
+  content: "";
+}
+
+.icon.carret.right:before {
+  content: "";
+}
+
+.icon.carret.up.circle:before {
+  content: "";
+}
+
+.icon.carret.up:before {
+  content: "";
+}
+
+.icon.cart:before {
+  content: "";
+}
+
+.icon.check:before {
+  content: "";
+}
+
+.icon.chevron.double.down:before {
+  content: "";
+}
+
+.icon.chevron.double.up:before {
+  content: "";
+}
+
+.icon.chevron.down:before {
+  content: "";
+}
+
+.icon.chevron.left:before {
+  content: "";
+}
+
+.icon.chevron.right:before {
+  content: "";
+}
+
+.icon.chevron.up:before {
+  content: "";
+}
+
+.icon.close:before {
+  content: "";
+}
+
+.icon.closing:before {
+  content: "";
+}
+
+.icon.color.edit:before {
+  content: "";
+}
+
+.icon.dots.horizontal:before {
+  content: "";
+}
+
+.icon.dots.vertical:before {
+  content: "";
+}
+
+.icon.download:before {
+  content: "";
+}
+
+.icon.edit:before {
+  content: "";
+}
+
+.icon.error.circle:before {
+  content: "";
+}
+
+.icon.error:before {
+  content: "";
+}
+
+.icon.facebook:before {
+  content: "";
+}
+
+.icon.failed:before {
+  content: "";
+}
+
+.icon.help.circle:before {
+  content: "";
+}
+
+.icon.hide:before {
+  content: "";
+}
+
+.icon.home:before {
+  content: "";
+}
+
+.icon.info:before {
+  content: "";
+}
+
+.icon.mail:before {
+  content: "";
+}
+
+.icon.minus.circle:before {
+  content: "";
+}
+
+.icon.successed:before {
+  content: "";
+}
+
+.icon.upload:before {
+  content: "";
+}
+
+.icon.user:before {
+  content: "";
+}
+
+.icon.warning.circle:before {
+  content: "";
+}
+
+.icon.warning.sign:before {
+  content: "";
 }
 
 .row {
@@ -707,7 +909,7 @@ svg:not(:root) {
   border-radius: 4px;
   padding: 0.5rem 1.5rem;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: normal;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -832,6 +1034,18 @@ svg:not(:root) {
 .button.round, input[type=submit].round, button.round {
   border-radius: 99rem;
 }
+.button.small, input[type=submit].small, button.small {
+  font-size: 0.675em;
+}
+.button.big, input[type=submit].big, button.big {
+  font-size: 1.5em;
+  padding: 0.7em 0.9em;
+}
+.button.huge, input[type=submit].huge, button.huge {
+  font-size: 2em;
+  padding: 0.7em 1.9em;
+}
+
 ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1.15rem;
