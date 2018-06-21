@@ -1,9 +1,10 @@
 .menu {
 
-  &.front {
+  &.main {
 
     .item {
       padding: 1rem;
+      display: inline-block;
     }
   }
 }

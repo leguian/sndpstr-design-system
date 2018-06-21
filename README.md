@@ -27,6 +27,8 @@ sass --watch sndpstr.scss:style.css
 ```
 
 ###Doc
-http://thimblecss.com/docs
+Composants : http://thimblecss.com/docs
+
+Grilles : https://vitrineed.github.io/akali-grid/docs.html
 
 ...enjoy !

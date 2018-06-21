@@ -205,6 +205,10 @@ svg:not(:root) {
   flex-wrap: wrap;
   box-sizing: border-box;
 }
+.row.content {
+  max-width: 1024px;
+  margin: auto;
+}
 .row .column {
   box-sizing: border-box;
   max-width: 100%;
@@ -932,8 +936,9 @@ h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-hea
   font-size: 1.5vw;
 }
 
-.menu.front .item {
+.menu.main .item {
   padding: 1rem;
+  display: inline-block;
 }
 
 .card {

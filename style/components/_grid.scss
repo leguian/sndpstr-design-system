@@ -69,6 +69,11 @@
   flex-wrap: wrap;
   box-sizing: border-box;
 
+  &.content {
+    max-width: $site-width;
+    margin: auto;
+  }
+
   .column {
     box-sizing: border-box;
     max-width: 100%;
