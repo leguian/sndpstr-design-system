@@ -1,13 +1,23 @@
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.10980392156862745);
+
+  .logo {
+    padding: 0;
+  }
 }
 
 .body.head {
-  background: linear-gradient(8deg, lighten($secondary-color, 20), #f9f9f9);
+  background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
 
   .hero {
     padding: 4rem 0;
+
   }
+}
+
+.main.content {
+  background-image: linear-gradient(-122deg, $primary-color, $secondary-color);
+  color: $white;
 }
 
 .footer {

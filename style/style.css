@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cabin:700|Roboto:400,400i,700,700i");
 h1, h2, h3, h4, h5, p, blockquote, figure, ol, ul {
   margin: 0;
@@ -14,12 +13,12 @@ main {
 }
 
 ::-moz-selection {
-  background-color: #fb056f;
+  background-color: #58367A;
   color: #fff;
 }
 
 ::selection {
-  background-color: #fb056f;
+  background-color: #58367A;
   color: #fff;
 }
 
@@ -94,12 +93,12 @@ hr {
 a {
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  color: #fb056f;
+  color: #58367A;
   cursor: pointer;
   -webkit-text-decoration-skip: objects;
 }
 a:active, a:hover {
-  color: #980243;
+  color: #251733;
 }
 a img {
   border: 0;
@@ -194,207 +193,6 @@ svg:not(:root) {
   height: 100%;
 }
 
-@font-face {
-  font-family: "icons";
-  src: url("assets/fonts/icons.eot");
-  src: url("assets/fonts/icons.eot#iefix") format("embedded-opentype"), url("assets/fonts/icons.woff") format("woff"), url("assets/fonts/icons.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-.icon {
-  font-family: "icons";
-  display: inline-block;
-  line-height: 1;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon.big {
-  font-size: 2rem;
-}
-.icon.huge {
-  font-size: 4rem;
-}
-
-@font-face {
-  font-family: "icons";
-  src: url("assets/fonts/icons.eot");
-  src: url("assets/fonts/icons.eot#iefix") format("embedded-opentype"), url("assets/fonts/icons.woff") format("woff"), url("assets/fonts/icons.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-.icon {
-  font-family: "icons";
-  display: inline-block;
-  line-height: 1;
-  font-weight: normal;
-  font-style: normal;
-  speak: none;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Icons */
-.icon.carret.down.circle:before {
-  content: "";
-}
-
-.icon.carret.down:before {
-  content: "";
-}
-
-.icon.carret.left.circle:before {
-  content: "";
-}
-
-.icon.carret.left:before {
-  content: "";
-}
-
-.icon.carret.right.circle:before {
-  content: "";
-}
-
-.icon.carret.right:before {
-  content: "";
-}
-
-.icon.carret.up.circle:before {
-  content: "";
-}
-
-.icon.carret.up:before {
-  content: "";
-}
-
-.icon.cart:before {
-  content: "";
-}
-
-.icon.check:before {
-  content: "";
-}
-
-.icon.chevron.double.down:before {
-  content: "";
-}
-
-.icon.chevron.double.up:before {
-  content: "";
-}
-
-.icon.chevron.down:before {
-  content: "";
-}
-
-.icon.chevron.left:before {
-  content: "";
-}
-
-.icon.chevron.right:before {
-  content: "";
-}
-
-.icon.chevron.up:before {
-  content: "";
-}
-
-.icon.close:before {
-  content: "";
-}
-
-.icon.closing:before {
-  content: "";
-}
-
-.icon.color.edit:before {
-  content: "";
-}
-
-.icon.dots.horizontal:before {
-  content: "";
-}
-
-.icon.dots.vertical:before {
-  content: "";
-}
-
-.icon.download:before {
-  content: "";
-}
-
-.icon.edit:before {
-  content: "";
-}
-
-.icon.error.circle:before {
-  content: "";
-}
-
-.icon.error:before {
-  content: "";
-}
-
-.icon.facebook:before {
-  content: "";
-}
-
-.icon.failed:before {
-  content: "";
-}
-
-.icon.help.circle:before {
-  content: "";
-}
-
-.icon.hide:before {
-  content: "";
-}
-
-.icon.home:before {
-  content: "";
-}
-
-.icon.info:before {
-  content: "";
-}
-
-.icon.mail:before {
-  content: "";
-}
-
-.icon.minus.circle:before {
-  content: "";
-}
-
-.icon.successed:before {
-  content: "";
-}
-
-.icon.upload:before {
-  content: "";
-}
-
-.icon.user:before {
-  content: "";
-}
-
-.icon.warning.circle:before {
-  content: "";
-}
-
-.icon.warning.sign:before {
-  content: "";
-}
-
 .row {
   display: flex;
   flex-direction: row;
@@ -408,6 +206,7 @@ svg:not(:root) {
 .row .column {
   box-sizing: border-box;
   max-width: 100%;
+  padding: 2em;
 }
 .row.centered {
   text-align: center;
@@ -897,15 +696,15 @@ svg:not(:root) {
   z-index: 2;
   vertical-align: middle;
   overflow: visible;
-  border: solid 2px #fb056f;
+  border: solid 2px #58367A;
   font: inherit;
   -webkit-font-smoothing: inherit;
   letter-spacing: inherit;
   background: none;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #fb056f;
-  color: #fff;
+  background-color: #58367A;
+  color: #FBFBFB;
   border-radius: 4px;
   padding: 0.5rem 1.5rem;
   text-align: center;
@@ -915,19 +714,20 @@ svg:not(:root) {
   -moz-appearance: none;
 }
 .button:hover, input[type=submit]:hover, button:hover {
-  background-color: #ca0359;
-  border-color: #ca0359;
-  color: #fff;
+  background-color: #3f2657;
+  border-color: #3f2657;
+  color: #FBFBFB;
+  transform: scale(1.05);
 }
 .button:active, .button:focus, .button:visited, input[type=submit]:active, input[type=submit]:focus, input[type=submit]:visited, button:active, button:focus, button:visited {
-  color: #fff;
+  color: #FBFBFB;
 }
 .button.ghost, input[type=submit].ghost, button.ghost {
   background: transparent;
-  color: #fb056f;
+  color: #58367A;
 }
 .button.ghost:hover, input[type=submit].ghost:hover, button.ghost:hover {
-  background: #fb056f;
+  background: #58367A;
   color: #FFFFFF;
 }
 .button.full-width, input[type=submit].full-width, button.full-width {
@@ -1008,16 +808,16 @@ svg:not(:root) {
   border-color: transparent;
 }
 .button.raised, input[type=submit].raised, button.raised {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
   border-color: transparent;
 }
 .button.raised:hover, input[type=submit].raised:hover, button.raised:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25), 0 4px 20px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 12px 35px 1px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
   border-color: transparent;
 }
 .button.raised:active, input[type=submit].raised:active, button.raised:active {
   border-color: transparent;
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.25), 0 18px 40px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 46px rgba(0, 0, 0, 0.25), 0 18px 40px rgba(0, 0, 0, 0.19);
 }
 .button.flat, input[type=submit].flat, button.flat {
   background-color: transparent;
@@ -1039,7 +839,7 @@ svg:not(:root) {
 }
 .button.big, input[type=submit].big, button.big {
   font-size: 1.5em;
-  padding: 0.7em 0.9em;
+  padding: 0.7em 1.9em;
 }
 .button.huge, input[type=submit].huge, button.huge {
   font-size: 2em;
@@ -1160,12 +960,20 @@ h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-hea
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1098039216);
 }
+.header .logo {
+  padding: 0;
+}
 
 .body.head {
-  background: linear-gradient(8deg, #dacff8, #f9f9f9);
+  background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
 }
 .body.head .hero {
   padding: 4rem 0;
+}
+
+.main.content {
+  background-image: linear-gradient(-122deg, #58367A, #eb0066);
+  color: #FBFBFB;
 }
 
 .footer {
