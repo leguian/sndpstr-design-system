@@ -108,6 +108,9 @@ p {
   margin-bottom: 1.1rem;
   text-rendering: optimizeLegibility;
 }
+p:last-child {
+  margin-bottom: 0;
+}
 
 .aligned.left {
   text-align: left;
@@ -191,6 +194,209 @@ svg:not(:root) {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.button, input[type=submit], button {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  vertical-align: middle;
+  overflow: visible;
+  border: solid 2px #58367A;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #58367A;
+  color: #FBFBFB;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.button:hover, input[type=submit]:hover, button:hover {
+  background-color: #3f2657;
+  border-color: #3f2657;
+  color: #FBFBFB;
+  transform: scale(1.05);
+}
+.button:active, .button:focus, .button:visited, input[type=submit]:active, input[type=submit]:focus, input[type=submit]:visited, button:active, button:focus, button:visited {
+  color: #FBFBFB;
+}
+.button.ghost, input[type=submit].ghost, button.ghost {
+  background: transparent;
+  color: #58367A;
+}
+.button.ghost:hover, input[type=submit].ghost:hover, button.ghost:hover {
+  background: #58367A;
+  color: #FFFFFF;
+}
+.button.full-width, input[type=submit].full-width, button.full-width {
+  width: 100%;
+}
+.button.blue, input[type=submit].blue, button.blue {
+  background-color: #1340A4;
+  border-color: #1340A4;
+}
+.button.blue.ghost, input[type=submit].blue.ghost, button.blue.ghost {
+  background: transparent;
+  color: #1340A4;
+}
+.button.blue.ghost:hover, input[type=submit].blue.ghost:hover, button.blue.ghost:hover {
+  background: #1340A4;
+  color: #FFFFFF;
+}
+.button.blue:hover, input[type=submit].blue:hover, button.blue:hover {
+  background-color: #0e2e76;
+  border-color: #0e2e76;
+}
+.button.green, input[type=submit].green, button.green {
+  background-color: #5e8c0c;
+  border-color: #5e8c0c;
+}
+.button.green.ghost, input[type=submit].green.ghost, button.green.ghost {
+  background: transparent;
+  color: #5e8c0c;
+}
+.button.green.ghost:hover, input[type=submit].green.ghost:hover, button.green.ghost:hover {
+  background: #5e8c0c;
+  color: #FFFFFF;
+}
+.button.green:hover, input[type=submit].green:hover, button.green:hover {
+  background-color: #3e5d08;
+  border-color: #3e5d08;
+}
+.button.red, input[type=submit].red, button.red {
+  background-color: #f15a3b;
+  border-color: #f15a3b;
+}
+.button.red.ghost, input[type=submit].red.ghost, button.red.ghost {
+  background: transparent;
+  color: #f15a3b;
+}
+.button.red.ghost:hover, input[type=submit].red.ghost:hover, button.red.ghost:hover {
+  background: #f15a3b;
+  color: #FFFFFF;
+}
+.button.red:hover, input[type=submit].red:hover, button.red:hover {
+  background-color: #e83511;
+  border-color: #e83511;
+}
+.button.yellow, input[type=submit].yellow, button.yellow {
+  background-color: #FDC84A;
+  border-color: #FDC84A;
+}
+.button.yellow.ghost, input[type=submit].yellow.ghost, button.yellow.ghost {
+  background: transparent;
+  color: #FDC84A;
+}
+.button.yellow.ghost:hover, input[type=submit].yellow.ghost:hover, button.yellow.ghost:hover {
+  background: #FDC84A;
+  color: #FFFFFF;
+}
+.button.yellow:hover, input[type=submit].yellow:hover, button.yellow:hover {
+  background-color: #fdb64a;
+  border-color: #fdb64a;
+}
+.button.disabled, input[type=submit].disabled, button.disabled {
+  background-color: rgba(49, 36, 43, 0.2);
+  border-color: transparent;
+  color: rgba(49, 36, 43, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled:hover, input[type=submit].disabled:hover, button.disabled:hover {
+  background-color: rgba(49, 36, 43, 0.2);
+  border-color: transparent;
+}
+.button.raised, input[type=submit].raised, button.raised {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  border-color: transparent;
+}
+.button.raised:hover, input[type=submit].raised:hover, button.raised:hover {
+  box-shadow: 0 12px 35px 1px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  border-color: transparent;
+}
+.button.raised:active, input[type=submit].raised:active, button.raised:active {
+  border-color: transparent;
+  box-shadow: 0 12px 46px rgba(0, 0, 0, 0.25), 0 18px 40px rgba(0, 0, 0, 0.19);
+}
+.button.flat, input[type=submit].flat, button.flat {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(49, 36, 43, 0.75);
+}
+.button.flat:hover, input[type=submit].flat:hover, button.flat:hover {
+  color: #31242b;
+  background-color: rgba(49, 36, 43, 0.1);
+}
+.button.flat:active, input[type=submit].flat:active, button.flat:active {
+  background-color: rgba(49, 36, 43, 0.2);
+}
+.button.round, input[type=submit].round, button.round {
+  border-radius: 99rem;
+}
+.button.small, input[type=submit].small, button.small {
+  font-size: 0.675em;
+  padding: 0.5em 1.4em;
+}
+.button.big, input[type=submit].big, button.big {
+  font-size: 1.5em;
+  padding: 0.7em 1.9em;
+}
+.button.huge, input[type=submit].huge, button.huge {
+  font-size: 2em;
+  padding: 0.7em 1.9em;
+}
+
+.card {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #FBFBFB;
+  color: #31242b;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.card .content {
+  padding: 1em;
+}
+.card .title {
+  display: block;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+.card .image img {
+  display: block;
+  object-fit: cover;
+}
+.card .actions {
+  padding: 0.6666666667em 1em;
+  border-top: solid 1px rgba(49, 36, 43, 0.15);
+}
+.card .actions.right {
+  text-align: right;
+}
+.card:hover {
+  box-shadow: 0 12px 35px 1px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+}
+.card.padded .content {
+  padding: 2em;
+}
+.card.padded .actions {
+  padding: 1em 2em;
+}
+
+.footer {
+  min-height: 150px;
 }
 
 .row {
@@ -690,190 +896,6 @@ svg:not(:root) {
   }
 }
 
-.button, input[type=submit], button {
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-  vertical-align: middle;
-  overflow: visible;
-  border: solid 2px #58367A;
-  font: inherit;
-  -webkit-font-smoothing: inherit;
-  letter-spacing: inherit;
-  background: none;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #58367A;
-  color: #FBFBFB;
-  border-radius: 4px;
-  padding: 0.5rem 1.5rem;
-  text-align: center;
-  font-size: 1rem;
-  line-height: normal;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-.button:hover, input[type=submit]:hover, button:hover {
-  background-color: #3f2657;
-  border-color: #3f2657;
-  color: #FBFBFB;
-  transform: scale(1.05);
-}
-.button:active, .button:focus, .button:visited, input[type=submit]:active, input[type=submit]:focus, input[type=submit]:visited, button:active, button:focus, button:visited {
-  color: #FBFBFB;
-}
-.button.ghost, input[type=submit].ghost, button.ghost {
-  background: transparent;
-  color: #58367A;
-}
-.button.ghost:hover, input[type=submit].ghost:hover, button.ghost:hover {
-  background: #58367A;
-  color: #FFFFFF;
-}
-.button.full-width, input[type=submit].full-width, button.full-width {
-  width: 100%;
-}
-.button.blue, input[type=submit].blue, button.blue {
-  background-color: #1340A4;
-  border-color: #1340A4;
-}
-.button.blue.ghost, input[type=submit].blue.ghost, button.blue.ghost {
-  background: transparent;
-  color: #1340A4;
-}
-.button.blue.ghost:hover, input[type=submit].blue.ghost:hover, button.blue.ghost:hover {
-  background: #1340A4;
-  color: #FFFFFF;
-}
-.button.blue:hover, input[type=submit].blue:hover, button.blue:hover {
-  background-color: #0e2e76;
-  border-color: #0e2e76;
-}
-.button.green, input[type=submit].green, button.green {
-  background-color: #5e8c0c;
-  border-color: #5e8c0c;
-}
-.button.green.ghost, input[type=submit].green.ghost, button.green.ghost {
-  background: transparent;
-  color: #5e8c0c;
-}
-.button.green.ghost:hover, input[type=submit].green.ghost:hover, button.green.ghost:hover {
-  background: #5e8c0c;
-  color: #FFFFFF;
-}
-.button.green:hover, input[type=submit].green:hover, button.green:hover {
-  background-color: #3e5d08;
-  border-color: #3e5d08;
-}
-.button.red, input[type=submit].red, button.red {
-  background-color: #f15a3b;
-  border-color: #f15a3b;
-}
-.button.red.ghost, input[type=submit].red.ghost, button.red.ghost {
-  background: transparent;
-  color: #f15a3b;
-}
-.button.red.ghost:hover, input[type=submit].red.ghost:hover, button.red.ghost:hover {
-  background: #f15a3b;
-  color: #FFFFFF;
-}
-.button.red:hover, input[type=submit].red:hover, button.red:hover {
-  background-color: #e83511;
-  border-color: #e83511;
-}
-.button.yellow, input[type=submit].yellow, button.yellow {
-  background-color: #FDC84A;
-  border-color: #FDC84A;
-}
-.button.yellow.ghost, input[type=submit].yellow.ghost, button.yellow.ghost {
-  background: transparent;
-  color: #FDC84A;
-}
-.button.yellow.ghost:hover, input[type=submit].yellow.ghost:hover, button.yellow.ghost:hover {
-  background: #FDC84A;
-  color: #FFFFFF;
-}
-.button.yellow:hover, input[type=submit].yellow:hover, button.yellow:hover {
-  background-color: #fdb64a;
-  border-color: #fdb64a;
-}
-.button.disabled, input[type=submit].disabled, button.disabled {
-  background-color: rgba(49, 36, 43, 0.2);
-  border-color: transparent;
-  color: rgba(49, 36, 43, 0.5);
-  cursor: not-allowed;
-}
-.button.disabled:hover, input[type=submit].disabled:hover, button.disabled:hover {
-  background-color: rgba(49, 36, 43, 0.2);
-  border-color: transparent;
-}
-.button.raised, input[type=submit].raised, button.raised {
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
-  border-color: transparent;
-}
-.button.raised:hover, input[type=submit].raised:hover, button.raised:hover {
-  box-shadow: 0 12px 35px 1px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
-  border-color: transparent;
-}
-.button.raised:active, input[type=submit].raised:active, button.raised:active {
-  border-color: transparent;
-  box-shadow: 0 12px 46px rgba(0, 0, 0, 0.25), 0 18px 40px rgba(0, 0, 0, 0.19);
-}
-.button.flat, input[type=submit].flat, button.flat {
-  background-color: transparent;
-  border-color: transparent;
-  color: rgba(49, 36, 43, 0.75);
-}
-.button.flat:hover, input[type=submit].flat:hover, button.flat:hover {
-  color: #31242b;
-  background-color: rgba(49, 36, 43, 0.1);
-}
-.button.flat:active, input[type=submit].flat:active, button.flat:active {
-  background-color: rgba(49, 36, 43, 0.2);
-}
-.button.round, input[type=submit].round, button.round {
-  border-radius: 99rem;
-}
-.button.small, input[type=submit].small, button.small {
-  font-size: 0.675em;
-}
-.button.big, input[type=submit].big, button.big {
-  font-size: 1.5em;
-  padding: 0.7em 1.9em;
-}
-.button.huge, input[type=submit].huge, button.huge {
-  font-size: 2em;
-  padding: 0.7em 1.9em;
-}
-
-ul, ol, dl {
-  list-style-position: outside;
-  margin-bottom: 1.15rem;
-}
-ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
-  margin-bottom: 0;
-}
-
-ul {
-  margin-left: 1.2rem;
-  list-style-type: disc;
-}
-ul ul {
-  list-style-type: circle;
-}
-ul.lined, ul.none {
-  list-style-type: none;
-  margin-left: 0;
-}
-ul.lined li {
-  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
-}
-
-ol {
-  margin-left: 1.55rem;
-  list-style-type: decimal;
-}
-
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   font-family: "Cabin", Geneva, sans-serif;
   font-weight: normal;
@@ -942,6 +964,34 @@ h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-hea
 
 .h5.vw {
   font-size: 1.5vw;
+}
+
+ul, ol, dl {
+  list-style-position: outside;
+  margin-bottom: 1.15rem;
+}
+ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-left: 1.2rem;
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul.lined, ul.none {
+  list-style-type: none;
+  margin-left: 0;
+}
+ul.lined li {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+ol {
+  margin-left: 1.55rem;
+  list-style-type: decimal;
 }
 
 .menu.main .item {

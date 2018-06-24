@@ -52,7 +52,7 @@ body {
   margin: 0;
   line-height: 1.4;
   font-family: $body-font;
-  color: $font-color;
+  color: $text-color;
 }
 
 hr {
@@ -111,6 +111,10 @@ a {
 p {
   margin-bottom: 1.1rem;
   text-rendering: optimizeLegibility;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .aligned {
   &.left {

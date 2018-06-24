@@ -100,12 +100,12 @@
     }
   }
   &.disabled {
-    background-color: rgba($font-color, .2);
+    background-color: rgba($text-color, .2);
     border-color: transparent;
-    color: rgba($font-color, .5);
+    color: rgba($text-color, .5);
     cursor: not-allowed;
     &:hover {
-      background-color: rgba($font-color, .2);
+      background-color: rgba($text-color, .2);
       border-color: transparent;
     }
   }
@@ -125,13 +125,13 @@
   &.flat {
     background-color: transparent;
     border-color: transparent;
-    color: rgba($font-color, .75);
+    color: rgba($text-color, .75);
     &:hover {
-      color: $font-color;
-      background-color: rgba($font-color, .1);
+      color: $text-color;
+      background-color: rgba($text-color, .1);
     }
     &:active {
-      background-color: rgba($font-color, .2);
+      background-color: rgba($text-color, .2);
     }
   }
   &.round {
@@ -139,6 +139,7 @@
   }
   &.small {
     font-size: .675em;
+    padding: .5em 1.4em;
   }
   &.big {
     font-size: 1.5em;

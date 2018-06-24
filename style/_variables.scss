@@ -16,8 +16,8 @@ $black: #31242b;
 $body-font: 'Roboto', Geneva, sans-serif;
 $header-font: 'Cabin', Geneva, sans-serif;
 
-$font-color: $black;
-$subfont-color: rgba($font-color, .6);
+$text-color: $black;
+$subfont-color: rgba($text-color, .6);
 
 $link-color: $primary-color;
 $link-hover: darken($primary-color, 20%);
