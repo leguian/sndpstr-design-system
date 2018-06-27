@@ -1,7 +1,7 @@
 SNDPSTR DS
 ==============
 
-###Install SASS
+### Install SASS
 
 NPM
 ```
@@ -17,7 +17,7 @@ Homebrew (Mac OS X alternative)
 ```
 brew install --devel sass/sass/sass
 ```
-###Set up
+### Set up
 
 Compile to your style sheet
 
@@ -26,7 +26,7 @@ cd style/
 sass --watch sndpstr.scss:style.css
 ```
 
-###Doc
+### Doc
 Composants : http://thimblecss.com/docs
 
 Grilles : https://vitrineed.github.io/akali-grid/docs.html
