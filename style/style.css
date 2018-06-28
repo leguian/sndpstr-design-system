@@ -2159,7 +2159,6 @@ ol {
 
 .menu .item {
   padding: 0.5rem 1rem;
-  margin: 0.5rem;
   float: right;
 }
 .menu .item.active {
@@ -2170,7 +2169,7 @@ ol {
   border-radius: 6px;
 }
 
-.header {
+.header .menu {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1098039216);
 }
 .header .logo {
