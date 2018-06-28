@@ -1,19 +1,15 @@
 .menu {
+  .item {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    float: right;
 
-  &.main {
-
-    .item {
-      padding: 0.5rem 1rem;
-      display: inline-block;
-      margin: 0.5rem;
-
-      &.active {
-        font-weight: bold;
-      }
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.05);
-        border-radius: $large-radius;
-      }
+    &.active {
+      font-weight: bold;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: $large-radius;
     }
   }
 }
