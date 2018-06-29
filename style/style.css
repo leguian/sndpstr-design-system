@@ -2132,6 +2132,18 @@ h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-hea
   font-size: 1.5vw;
 }
 
+.field input {
+  border: 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0.5em 1em;
+}
+.field.huge input {
+  border-radius: 6px;
+  font-size: 1.5rem;
+  padding: 0.6666666667em 1em;
+}
+
 ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1.15rem;

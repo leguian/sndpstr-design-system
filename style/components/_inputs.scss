@@ -1,0 +1,16 @@
+.field {
+  input {
+    border: 0;
+    box-shadow: $border;
+    border-radius: $radius;
+    padding: $padding/4 $padding/2;
+  }
+
+  &.huge {
+    input {
+      border-radius: $large-radius;
+      font-size: $base-font-size*1.5;
+      padding: $padding/3 $padding/2;
+    }
+  }
+}

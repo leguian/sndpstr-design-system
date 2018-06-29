@@ -22,6 +22,8 @@ $subfont-color: rgba($text-color, .6);
 $link-color: $primary-color;
 $link-hover: darken($primary-color, 20%);
 
+$base-font-size: 1rem;
+
 // Transitions
 $fast-speed: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 $normal-speed: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -38,6 +40,9 @@ $solid-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
 $small-radius: 2px;
 $radius: 4px;
 $large-radius: 6px;
+
+// Borders
+$border: 0 0 0 1px rgba(0,0,0,.2);
 
 // Grid
 $padding: 2em;
