@@ -318,7 +318,7 @@ svg:not(:root) {
   border-color: transparent;
 }
 .button.raised:hover, input[type=submit].raised:hover, button.raised:hover {
-  box-shadow: 0 12px 35px 1px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 12px 35px 0px rgba(0, 0, 0, 0.31), 0 2px 4px 0px rgba(0, 0, 0, 0.14);
   border-color: transparent;
 }
 .button.raised:active, input[type=submit].raised:active, button.raised:active {
@@ -362,6 +362,9 @@ svg:not(:root) {
   overflow: hidden;
   margin-bottom: 1rem;
 }
+.card:last-child {
+  margin-bottom: 0;
+}
 .card .content {
   padding: 1em;
 }
@@ -386,7 +389,7 @@ svg:not(:root) {
   text-align: right;
 }
 .card:hover {
-  box-shadow: 0 12px 35px 1px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 12px 35px 0px rgba(0, 0, 0, 0.31), 0 2px 4px 0px rgba(0, 0, 0, 0.14);
 }
 .card.padded .content {
   padding: 2em;
@@ -407,13 +410,13 @@ svg:not(:root) {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .container .grid,
 .container-full .grid {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -1rem;
+  margin-left: -1rem;
 }
 
 @media (min-width: 576px) {
@@ -480,7 +483,7 @@ svg:not(:root) {
   position: relative;
   width: 100%;
   vertical-align: top;
-  padding: 15px;
+  padding: 1rem;
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -497,7 +500,7 @@ svg:not(:root) {
   -ms-flex: 1 1 auto;
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
-  margin: -15px;
+  margin: -1rem;
 }
 
 .col-12 {
@@ -1996,11 +1999,11 @@ svg:not(:root) {
 }
 
 .col-bleed-x {
-  padding: 15px 0;
+  padding: 1rem 0;
 }
 
 .col-bleed-y {
-  padding: 0 15px;
+  padding: 0 1rem;
 }
 
 .flex-img {
@@ -2167,13 +2170,6 @@ ol {
 .menu .item:hover {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 6px;
-}
-
-.header .menu {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1098039216);
-}
-.header .logo {
-  padding: 0;
 }
 
 .body.head {

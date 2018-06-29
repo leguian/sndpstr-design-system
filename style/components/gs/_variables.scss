@@ -27,14 +27,8 @@ $visibility-helpers: true !default;
 // -------------------------
 $reflex-columns: 12 !default; // number of columns
 
-
-
 $reflex-xxs-max:    ($reflex-xs - 1);
 $reflex-xs-max:     ($reflex-sm - 1);
 $reflex-sm-max:     ($reflex-md - 1);
 $reflex-md-max:     ($reflex-lg - 1);
 $reflex-lg-max:     ($reflex-xlg - 1);
-
-// Spacing
-// -------------------------
-$reflex-grid-spacing:       15px !default;

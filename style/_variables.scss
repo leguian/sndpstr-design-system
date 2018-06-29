@@ -30,7 +30,7 @@ $slowest-speed: all 0.75s cubic-bezier(0.4, 0, 0.2, 1);
 
 // Shadows
 $base-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
-$hover-shadow: 0 12px 35px 1px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+$hover-shadow: 0 12px 35px 0px rgba(0, 0, 0, 0.31), 0 2px 4px 0px rgba(0, 0, 0, 0.14);
 $selected-shadow: 0 12px 46px rgba(0, 0, 0, 0.25), 0 18px 40px rgba(0, 0, 0, 0.19);
 $solid-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
 
@@ -41,8 +41,9 @@ $large-radius: 6px;
 
 // Grid
 $padding: 2em;
+$reflex-grid-spacing: 1rem !default; //padding grid
+
 // Breakpoints
-// -------------------------
 $reflex-xs: 576px !default;
 $reflex-sm: 768px !default;
 $reflex-md: 992px !default;
