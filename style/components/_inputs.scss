@@ -1,16 +1,32 @@
-.field {
-  input {
-    border: 0;
-    box-shadow: $border;
-    border-radius: $radius;
-    padding: $padding/4 $padding/2;
+// https://github.com/negomi/sassy-inputs/blob/master/sass/main.scss
+/////////////////////
+
+input[type=text],
+input[type=url],
+input[type=email],
+input[type=password],
+input[type=number] {
+  box-sizing: border-box;
+
+  width: 100%;
+  padding: $padding/3;
+  margin-bottom: $padding;
+  font-family: inherit;
+  font-size: 1em;
+  vertical-align: middle;
+
+  border: 1px solid $border-color;
+  border-radius: $radius;
+  outline: none;
+
+  background-color: white;
+
+  &:focus {
+    border-color: $primary-color;
   }
 
-  &.huge {
-    input {
-      border-radius: $large-radius;
-      font-size: $base-font-size*1.5;
-      padding: $padding/3 $padding/2;
-    }
+  &:disabled {
+    background-color: $gray;
+    cursor: not-allowed;
   }
 }
