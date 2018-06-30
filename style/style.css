@@ -2144,6 +2144,7 @@ input[type=number] {
   border-radius: 4px;
   outline: none;
   background-color: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 input[type=text]:focus,
 input[type=url]:focus,
@@ -2151,6 +2152,7 @@ input[type=email]:focus,
 input[type=password]:focus,
 input[type=number]:focus {
   border-color: #58367A;
+  box-shadow: 0 0 0 5px rgba(88, 54, 122, 0.2);
 }
 input[type=text]:disabled,
 input[type=url]:disabled,
@@ -2159,6 +2161,13 @@ input[type=password]:disabled,
 input[type=number]:disabled {
   background-color: #6e7e85;
   cursor: not-allowed;
+}
+input[type=text].huge,
+input[type=url].huge,
+input[type=email].huge,
+input[type=password].huge,
+input[type=number].huge {
+  font-size: 1.7em;
 }
 
 ul, ol, dl {
