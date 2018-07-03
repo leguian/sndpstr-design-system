@@ -1,14 +1,19 @@
 // Import base
 @import 'variables';
+@import 'components/mixins';
 @import 'components/core';
 // Import components
 @import 'components/buttons';
 @import 'components/cards';
+@import 'components/checkboxes';
 @import 'components/footer';
 @import 'components/grid';
 @import 'components/headers';
 @import 'components/inputs';
 @import 'components/list';
 @import 'components/menu';
+@import 'components/segments';
+@import 'components/tables';
 // add here more components if needed
 @import 'contents/front';
+@import 'contents/lab';

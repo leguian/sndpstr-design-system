@@ -1,0 +1,46 @@
+table {
+  border: 1px solid $border-color;
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: $small-radius;
+
+  .aligned {
+    &.right {
+      text-align-last: end;
+    }
+    &.left {
+      text-align-last: start;
+    }
+    &.center {
+      text-align-last: center;
+    }
+  }
+
+  td, th {
+    border: 1px solid $border-color;
+    padding: $padding/3;
+
+    &.collapsing {
+      width: 1px;
+      white-space: nowrap;
+    }
+  }
+
+  &.basic {
+    border: 0;
+    tr {
+      border-bottom: 1px solid $border-color;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    td, th {
+      border: 0;
+    }
+    tfoot {
+      border-top: 2px solid $border-color;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  @extend .visuallyhidden;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 25px;
+  &:before {
+    transition: $fast-speed;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    content: " ";
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid $border-color;
+    border-radius: $small-radius;
+    background: white;
+  }
+  &:hover:before {
+    border: 1px solid $primary-color;
+    background: lighten($primary-color, 60);
+  }
+}
+
+input[type="radio"] + label {
+  &:before {
+  }
+}
+
+input[type="checkbox"] + label {
+  &:before {
+  }
+}
+
+input[type="radio"]:focus + label,
+input[type="checkbox"]:focus + label {
+
+}
+
+input[type="radio"]:checked + label {
+  font-weight: 700;
+  &:before {
+    background: $primary-color;
+  }
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: 700;
+  &:before {
+    background: $primary-color;
+  }
+}

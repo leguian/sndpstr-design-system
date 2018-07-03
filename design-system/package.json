@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "kss": "kss --config kss-config.json"
+  }
+}

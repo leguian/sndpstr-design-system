@@ -31,4 +31,12 @@ Components : http://thimblecss.com/docs
 
 Grids : http://reflexgrid.com/docs/index.html
 
-...enjoy !
+### Design system generator
+
+Compile design system
+
+```
+cd design-system/
+npm run kss
+```
+More information : https://css-tricks.com/build-style-guide-straight-sass/

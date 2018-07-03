@@ -78,18 +78,10 @@ hr {
   display: none;
 }
 
-// clears
-.clear:before, .clear:after {
-  content: '';
-  display: table
-}
-
-.clear:after {
-  clear: both
-}
-
-.clear {
-  zoom: 1
+// clear
+.clearing {
+  @include clearfix();
+  zoom: 1;
 }
 
 // Links
