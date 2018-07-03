@@ -62,11 +62,11 @@ hr {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.float-left {
+.floated.left {
   float: left;
 }
 
-.float-right {
+.floated.right {
   float: right;
 }
 
@@ -116,6 +116,7 @@ p {
     margin-bottom: 0;
   }
 }
+
 .aligned {
   &.left {
     text-align: left;
@@ -190,7 +191,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-.video-container {
+.video.container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -201,5 +202,32 @@ svg:not(:root) {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+.text {
+  &.primary {
+    color: $primary-color;
+  }
+  &.secondary {
+    color: $secondary-color;
+  }
+  &.blue {
+    color: $blue;
+  }
+  &.yellow {
+    color: $yellow;
+  }
+  &.red {
+    color: $red;
+  }
+  &.green {
+    color: $green;
+  }
+  &.gray {
+    color: $gray;
+  }
+  &.white {
+    color: $white;
   }
 }

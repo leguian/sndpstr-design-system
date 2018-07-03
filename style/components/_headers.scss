@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .super-header {
   font-size: 4rem;
   line-height: 1.18;
+
+  &.vw {
+    font-size: 5vw;
+  }
 }
 
 h1, .h1 {
@@ -59,13 +63,4 @@ h5, .h5 {
   &.vw {
     font-size: 1.5vw;
   }
-}
-
-.sub-header {
-  font-weight: 200;
-  color: $subfont-color;
-}
-
-.super-header.vw {
-  font-size: 5vw;
 }
