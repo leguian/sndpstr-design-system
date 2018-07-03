@@ -1,12 +1,12 @@
 .customize {
-  padding: $padding*2;
+  padding: $padding*2 0;
 
   .frame {
     border:1px solid #000;
   }
 }
 .checkout {
-  padding: $padding*2;
+  padding: $padding*2 0;
   background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
 
   .promo.code {

@@ -1,0 +1,107 @@
+<form class="ui checkout form error">
+    <div class="required field error"><label for="Email">Email</label><input type="email" name="email" value="" placeholder="Ex : georges.abitbol@flim.com"><span><div class="ui basic red pointing prompt label animating transition scale">Veuillez entrer un email valide (Ex : nicolas@gmail.com)</div></span></div>
+    <p class="sp-hint">Ce sera notre moyen de communiquer avec vous. Cet email restera strictement confientiel... vous n'aimez pas les spams et nous non plus !</p>
+    <div class="two fields">
+        <div class="required field "><label for="Prénom">Prénom</label><input type="text" name="firstName" value="" placeholder="Ex : Georges" spellcheck="false" autocorrect="off"><span></span></div>
+        <div class="required field "><label for="Nom">Nom</label><input type="text" name="lastName" value="" placeholder="Ex : Abitbol" spellcheck="false" autocorrect="off"><span></span></div>
+    </div>
+    <div class="two fields">
+        <div class="required field "><label for="Téléphone (Portable de préférence)">Téléphone (Portable de préférence)</label><input type="tel" name="phone" value="" placeholder="Ex : 0679461346"><span></span></div>
+        <div class="field"><label for="not a field"></label></div>
+    </div>
+    <p class="sp-hint">Ce téléphone permet au livreur de vous contacter en cas de problème. En aucun cas il sera utilisé à des fins commerciales (on tient trop à votre vie privée :) )</p>
+    <div class="required field "><label for="Adresse">Adresse</label><input type="text" name="address" value="" placeholder="Ex : 10 rue des jolis posters" spellcheck="false" autocorrect="off"><span></span></div>
+    <div class=" field "><label for="Complément d'adresse (Bâtiment, escalier, digicode...)">Complément d'adresse (Bâtiment, escalier, digicode...)</label><textarea name="address2" placeholder="Ex : Bat C - 4ème étage droite, code 7777" rows="3" spellcheck="false" autocorrect="off"></textarea><span></span></div>
+    <div class="two fields">
+        <div class="required field "><label for="Code postal">Code postal</label><input type="tel" name="postalCode" value="" placeholder="Ex : 30000"><span></span></div>
+        <div class="required field "><label for="Ville">Ville</label><input type="text" name="city" value="" placeholder="Ex : Nîmes" spellcheck="false" autocorrect="off"><span></span></div>
+    </div>
+    <div class="two fields">
+        <div class="required field "><label for="Pays">Pays</label>
+            <div role="combobox" aria-disabled="true" aria-expanded="false" class="ui disabled fluid search selection dropdown"><input type="text" aria-autocomplete="list" autocomplete="off" class="search" tabindex="-1" value="">
+                <div class="text" role="alert" aria-live="polite">France</div>
+                <i aria-hidden="true" class="dropdown icon"></i>
+                <div role="listbox" class="menu transition">
+                    <div role="option" aria-checked="true" aria-selected="true" class="active selected item" style="pointer-events: all;"><i class="fr flag"></i><span class="text">France</span></div>
+                </div>
+            </div>
+            <span></span></div>
+        <div class="field"><label for="not a field" class="hidden">&nbsp;</label>
+            <div class="ui left pointing hint label">Bientôt disponible dans le monde entier !</div>
+        </div>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui top attached yellow message"><i class="lock icon"></i><!-- react-text: 124 -->Paiement sécurisé<!-- /react-text -->
+        <div class="sp-payment-icons"><i class="visa icon"></i><i class="mastercard icon"></i><i class="american express icon"></i></div>
+    </div>
+    <div class="ui yellow bottom attached message payment">
+        <div class="inline fields "><label class="required">Paiement par</label>
+            <div class="field">
+                <div class="ui radio checkbox"><input type="checkbox" class="hidden" name="cardType[0]" readonly="" tabindex="0" value="visa"><label>Visa</label></div>
+                <span></span></div>
+            <div class="field">
+                <div class="ui radio checkbox"><input type="checkbox" class="hidden" name="cardType[1]" readonly="" tabindex="0" value="mastercard"><label>Mastercard</label></div>
+                <span></span></div>
+            <div class="field">
+                <div class="ui radio checkbox"><input type="checkbox" class="hidden" name="cardType[2]" readonly="" tabindex="0" value="american-express"><label>American Express</label></div>
+                <span></span></div>
+        </div>
+        <div class="two fields">
+            <div class="twelve wide required field "><label for="Numéro de carte">Numéro de carte</label><input type="tel" name="cardNumber" value="" placeholder="Ex : 5435 4354 2345 7656"><span></span></div>
+            <div class="four wide required field "><label for="CVV">CVV</label><input type="tel" name="cardCVV" value="" placeholder="Ex : 123"><span></span></div>
+        </div>
+        <div class="fields">
+            <div class="twelve wide required field"><label for="Expire on">Expire le</label>
+                <div class="fields">
+                    <div class="eight wide field "><label></label>
+                        <div role="combobox" aria-expanded="false" class="ui fluid search selection dropdown"><input type="text" aria-autocomplete="list" autocomplete="off" class="search" tabindex="0" value="">
+                            <div class="default text" role="alert" aria-live="polite">Mois</div>
+                            <i aria-hidden="true" class="dropdown icon"></i>
+                            <div role="listbox" class="menu transition">
+                                <div role="option" aria-checked="false" aria-selected="true" class="selected item" style="pointer-events: all;"><span class="text">01 - Janvier</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">02 - Février</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">03 - Mars</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">04 - Avril</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">05 - Mai</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">06 - Juin</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">07 - Juillet</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">08 - Aout</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">09 - Septembre</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">10 - Octobre</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">11 - Novembre</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">12 - Décembre</span></div>
+                            </div>
+                        </div>
+                        <span></span></div>
+                    <div class="eight wide field "><label></label>
+                        <div role="combobox" aria-expanded="false" class="ui fluid search selection dropdown"><input type="text" aria-autocomplete="list" autocomplete="off" class="search" tabindex="0" value="">
+                            <div class="default text" role="alert" aria-live="polite">Année</div>
+                            <i aria-hidden="true" class="dropdown icon"></i>
+                            <div role="listbox" class="menu transition">
+                                <div role="option" aria-checked="false" aria-selected="true" class="selected item" style="pointer-events: all;"><span class="text">2018</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">2019</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">2020</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">2021</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">2022</span></div>
+                                <div role="option" aria-checked="false" aria-selected="false" class="item" style="pointer-events: all;"><span class="text">2023</span></div>
+                            </div>
+                        </div>
+                        <span></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui secondary segment">
+        <div class="required field ">
+            <div class="ui checkbox"><input type="checkbox" name="cgv" value="" id="cgv"><label for="cgv"><!-- react-text: 217 --> <!-- /react-text --><!-- react-text: 218 -->En cochant cette case, vous acceptez les<!-- /react-text --><!-- react-text: 219 --> <!-- /react-text --><a href="http://www.sndpstr.com/cgv.html" target="_blank">CGV / CGU</a><!-- react-text: 221 -->.<!-- /react-text --></label></div>
+            <span></span></div>
+        <div class="field">
+            <div class="ui checkbox"><input type="checkbox" name="optIn" value="" id="optIn"><label for="optIn">J'accepte de recevoir des offres de la funky team de SoundPoster</label>
+                <p class="optin comment">(Vous recevrez des codes promos, des cadeaux et plein d'autres trucs cool)</p></div>
+        </div>
+    </div>
+    <div class="ui error message"></div>
+    <div class="ui basic center aligned segment">
+        <button class="ui primary big submit button disabled "><!-- react-text: 231 -->Commander<!-- /react-text --><br><span class="sp-enjoy"><!-- react-text: 234 -->Nous sommes certains que vous aimerez votre poster <!-- /react-text --><i class="smile icon"></i><!-- react-text: 236 --> <!-- /react-text --></span></button>
+    </div>
+</form>

@@ -4,7 +4,8 @@ input[type=text],
 input[type=url],
 input[type=email],
 input[type=password],
-input[type=number] {
+input[type=number],
+input[type=tel] {
   box-sizing: border-box;
   width: 100%;
   padding: $padding/3;
@@ -17,6 +18,10 @@ input[type=number] {
   outline: none;
   background-color: white;
   transition: $normal-speed;
+
+  &::placeholder {
+    color: rgba($text-color, .4);
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -48,12 +53,35 @@ input[type=number] {
     display: inline-block;
   }
 
+  input[type=text],
+  input[type=url],
+  input[type=email],
+  input[type=password],
+  input[type=number],
+  input[type=tel] {
+    margin: 0;
+  }
+
+  &.required {
+    label {
+      &:after {
+        content: '*';
+        color: $red;
+        margin-left: 3px;
+      }
+    }
+  }
+
   &.inline.action {
     display: inline-flex;
 
-    input {
+    input[type=text],
+    input[type=url],
+    input[type=email],
+    input[type=password],
+    input[type=number],
+    input[type=tel] {
       max-width: 100%;
-      margin-bottom: 0;
       border-radius: $radius 0 0 $radius;
 
       &:focus {

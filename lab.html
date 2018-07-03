@@ -56,11 +56,11 @@
         </div>
         <form action="">
             <div class="grid">
-                <div class="col-auto field">
+                <div class="col-6 field">
                     <label>Textes</label>
                     <input type="text" placeholder="Daft Punk - Get Lucky" autocorrect="off" value="" tabindex="0" autocomplete="off" spellcheck="false">
                 </div>
-                <div class="col-auto field">
+                <div class="col-6 field">
                     <label>&nbsp;</label>
                     <input type="text" placeholder="4:35" autocorrect="off" value="" tabindex="0" autocomplete="off" spellcheck="false">
                 </div>
@@ -70,77 +70,110 @@
 </div>
 
 <div class="checkout">
-    <form action="">
-        <div class="container">
-            <h2 class="center aligned">Résumé de votre commande</h2>
-            <div class="grid justify-center">
-                <div class="col-8">
-                    <table class="basic">
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th class="right aligned">Prix</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><strong>Poster</strong> : <em>(60 x 20 cm)</em></td>
-                            <td class="right aligned collapsing">25 €</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <form action="">
-                                    <div class="toggles"><input type="checkbox" name="frameLabel" id="frameLabel" value="on"><label for="frameLabel">Encadrement</label></div>
-                                </form>
-                            </td>
-                            <td class="right aligned collapsing">24&nbsp;€</td>
-                        </tr>
-                        <tr>
-                            <td><i class="send icon"></i>Frais de port</td>
-                            <td class="right aligned"><span class="ui orange label">Offert</span></td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <th class="right aligned">
-                                <strong>Total</strong></th>
-                            <th class="right aligned"><strong>49&nbsp;€</strong></th>
-                        </tr>
-                        </tfoot>
-                    </table>
 
-                    <div class="promo code"><a href="#">Code promo ?</a></div>
+    <div class="container">
+        <h2 class="center aligned">Résumé de votre commande</h2>
+        <div class="grid justify-center">
+            <div class="col-lg-8">
+                <table class="basic">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th class="right aligned">Prix</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>Poster</strong> : <em>(60 x 20 cm)</em></td>
+                        <td class="right aligned collapsing">25 €</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form action="">
+                                <div class="toggles"><input type="checkbox" name="frameLabel" id="frameLabel" value="on"><label for="frameLabel">Encadrement</label></div>
+                            </form>
+                        </td>
+                        <td class="right aligned collapsing">24&nbsp;€</td>
+                    </tr>
+                    <tr>
+                        <td><i class="send icon"></i>Frais de port</td>
+                        <td class="right aligned"><span class="ui orange label">Offert</span></td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th class="right aligned">
+                            <strong>Total</strong></th>
+                        <th class="right aligned"><strong>49&nbsp;€</strong></th>
+                    </tr>
+                    </tfoot>
+                </table>
 
-                    <div class="segments">
-                        <div class="segment secondary">
-                            <p>Veuillez entrer les informations demandées ci-dessous et choisissez un moyen de paiement. Le poster sera imprimé sous 7 jours puis expédié à votre adresse après un contrôle qualité.</p>
+                <div class="promo code"><a href="#">Code promo ?</a></div>
+
+                <div class="segments">
+                    <div class="segment secondary">
+                        <p>Veuillez entrer les informations demandées ci-dessous et choisissez un moyen de paiement. Le poster sera imprimé sous 7 jours puis expédié à votre adresse après un contrôle qualité.</p>
+                    </div>
+                    <div class="segment">
+                        <div class="grid">
+                            <div class="col-lg-6 required field">
+                                <label>Prénom</label>
+                                <input type="text" name="firstName" value="" placeholder="Ex : Georges" spellcheck="false" autocorrect="off">
+                            </div>
+                            <div class="col-lg-6 required field">
+                                <label>Nom</label>
+                                <input type="text" name="lastName" value="" placeholder="Ex : Abitbol" spellcheck="false" autocorrect="off"><span></span>
+                            </div>
+                            <div class="col-12 required field">
+                                <label>Email</label>
+                                <input type="email" name="email" value="" placeholder="Ex : georges.abitbol@flim.com">
+                                <p class="hint">
+                                    Ce sera notre moyen de communiquer avec vous. Cet email restera strictement confientiel... vous n'aimez pas les spams et nous non plus !
+                                </p>
+                            </div>
+                            <div class="col-lg-6 required field">
+                                <label>Téléphone (Portable de préférence)</label>
+                                <input type="tel" name="phone" value="" placeholder="Ex : 0679461346">
+                                <p class="hint">Ce téléphone permet au livreur de vous contacter en cas de problème. En aucun cas il sera utilisé à des fins commerciales (on tient trop à votre vie privée :) )</p>
+                            </div>
                         </div>
-                        <div class="segment">
-                            <div class="grid">
-                                <div class="col-auto field">
-                                    <label class="required">Textes</label>
-                                    <input type="text" placeholder="Daft Punk - Get Lucky" autocorrect="off" value="" tabindex="0" autocomplete="off" spellcheck="false">
-                                </div>
-                                <div class="col-auto field">
-                                    <label>&nbsp;</label>
-                                    <input type="text" placeholder="4:35" autocorrect="off" value="" tabindex="0" autocomplete="off" spellcheck="false">
-                                </div>
+                    </div>
+                    <div class="segment yellow header">
+                        <h4>Paiement sécurisé</h4>
+                    </div>
+                    <div class="segment yellow">
+                        <div class="grid">
+                            <div class="col-lg-8 field">
+                                <div class="icon ghost button"><i class="icon visa">Visa</i></div>
+                                <div class="icon ghost button"><i class="icon mastercard">mastercard</i></div>
+                                <div class="icon ghost button"><i class="icon amex">Amex</i></div>
+                            </div>
+                            <div class="col-lg-8 field">
+                                <label>Numéro de carte</label><input type="tel" name="cardNumber" value="" placeholder="Ex : 5435 4354 2345 7656">
+                            </div>
+                            <div class="col-lg-4 field">
+                                <label>CVV</label> <a href="javascript:void(0)" class="tooltip" title="Les 3 derniers chiffres derrière votre CB :)">(Kezako ?)</a><input type="tel" name="cardCVV" value="" placeholder="Ex : 123">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </form>
+    </div>
+
 </div>
 
 <footer class="footer">
     <div class="content row">
-        <div class="fluid container">
+        <div class="fluid container tooltip">
             Footer !
         </div>
     </div>
 </footer>
-
+<script src="https://unpkg.com/tippy.js@2.5.3/dist/tippy.all.min.js"></script>
+<script>
+    tippy('.tooltip')
+</script>
 </body>
 </html>
