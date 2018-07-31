@@ -13,7 +13,7 @@ input[type=tel] {
   font-family: inherit;
   font-size: 1em;
   vertical-align: middle;
-  border: 1px solid $border-color;
+  border: $form-elements-border;
   border-radius: $radius;
   outline: none;
   background-color: white;

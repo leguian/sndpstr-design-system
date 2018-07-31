@@ -47,7 +47,7 @@ input[type=radio] {
       height: $inputRadioSize;
       border-radius: 99rem;
       background: $white;
-      box-shadow: $inputRadioBorder;
+      border: $form-elements-border;
       transition: $fast-speed;
     }
   }
@@ -101,9 +101,9 @@ input[type=checkbox] {
       left: 0;
       width: $inputRadioSize;
       height: $inputRadioSize;
-      border-radius: 3px;
+      border: $form-elements-border;
+      border-radius: $radius;
       background: $white;
-      box-shadow: $inputRadioBorder;
       transition: $fast-speed;
     }
   }
