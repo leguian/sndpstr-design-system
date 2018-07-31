@@ -34,7 +34,8 @@
     }
   }
 
-  &.blue {
+  &.blue,
+  &.info {
     background-color: lighten($blue, 60);
     &.header {
       background-color: lighten($blue, 50);
@@ -43,7 +44,8 @@
       background-color: $blue;
     }
   }
-  &.yellow {
+  &.yellow,
+  &.warning {
     background-color: lighten($yellow, 25);
     &.header {
       background-color: lighten($yellow, 15);
@@ -53,7 +55,8 @@
       color: $black;
     }
   }
-  &.red {
+  &.red,
+  &.error {
     background-color: lighten($red, 35);
     &.header {
       background-color: lighten($red, 25);
@@ -62,7 +65,8 @@
       background-color: $red;
     }
   }
-  &.green {
+  &.green,
+  &.valid {
     background-color: desaturate(lighten($green, 60), 50);
     &.header {
       background-color: desaturate(lighten($green, 50), 50);

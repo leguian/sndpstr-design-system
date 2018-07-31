@@ -40,32 +40,55 @@
                         <option>Quantum of Solace</option>
                     </select>
                 </div>
+                <input type="email" name="email" value="" placeholder="Ex : georges.abitbol@flim.com">
                 <button class="button" id="showModal">Try it</button>
             </div>
         </div>
     </div>
-    <div class="segment">
-        <div class="grid">
-            <div class="col-lg-6 required field">
-                <label>Prénom</label>
-                <input type="text" name="firstName" value="" placeholder="Ex : Georges" spellcheck="false" autocorrect="off">
+
+    <div class="segments">
+
+        <div class="segment">
+            <div class="grid">
+                <div class="col-lg-6 required field">
+                    <label>Prénom</label>
+                    <input type="text" name="firstName" value="" placeholder="Ex : Georges" spellcheck="false" autocorrect="off">
+                </div>
+                <div class="col-lg-6 required field">
+                    <label>Nom</label>
+                    <input type="text" name="lastName" value="" placeholder="Ex : Abitbol" spellcheck="false" autocorrect="off"><span></span>
+                </div>
+                <div class="col-12 required error field">
+                    <label>Email</label>
+                    <input type="email" name="email" value="" placeholder="Ex : georges.abitbol@flim.com">
+                    <div class="error">L'adresse email est invalide</div>
+                    <p class="hint">
+                        Ce sera notre moyen de communiquer avec vous. Cet email restera strictement confientiel... vous n'aimez pas les spams et nous non plus !
+                    </p>
+                </div>
+                <div class="col-lg-6 required field">
+                    <label>Téléphone (Portable de préférence)</label>
+                    <input type="tel" name="phone" value="" placeholder="Ex : 0679461346">
+                    <p class="hint">Ce téléphone permet au livreur de vous contacter en cas de problème. En aucun cas il sera utilisé à des fins commerciales (on tient trop à votre vie privée :) )</p>
+                </div>
             </div>
-            <div class="col-lg-6 required field">
-                <label>Nom</label>
-                <input type="text" name="lastName" value="" placeholder="Ex : Abitbol" spellcheck="false" autocorrect="off"><span></span>
-            </div>
-            <div class="col-12 required error field">
-                <label>Email</label>
-                <input type="email" name="email" value="" placeholder="Ex : georges.abitbol@flim.com">
-                <div class="error">L'adresse email est invalide</div>
-                <p class="hint">
-                    Ce sera notre moyen de communiquer avec vous. Cet email restera strictement confientiel... vous n'aimez pas les spams et nous non plus !
-                </p>
-            </div>
-            <div class="col-lg-6 required field">
-                <label>Téléphone (Portable de préférence)</label>
-                <input type="tel" name="phone" value="" placeholder="Ex : 0679461346">
-                <p class="hint">Ce téléphone permet au livreur de vous contacter en cas de problème. En aucun cas il sera utilisé à des fins commerciales (on tient trop à votre vie privée :) )</p>
+        </div>
+        <div class="segment yellow header">
+            <h4>Paiement sécurisé</h4>
+        </div>
+        <div class="segment yellow">
+            <div class="grid">
+                <div class="col-lg-8 field">
+                    <div class="icon ghost button"><i class="icon visa">Visa</i></div>
+                    <div class="icon ghost button"><i class="icon mastercard">mastercard</i></div>
+                    <div class="icon ghost button"><i class="icon amex">Amex</i></div>
+                </div>
+                <div class="col-lg-8 field">
+                    <label>Numéro de carte</label><input type="tel" name="cardNumber" value="" placeholder="Ex : 5435 4354 2345 7656">
+                </div>
+                <div class="col-lg-4 field">
+                    <label>CVV</label> <a href="javascript:void(0)" class="tooltip" title="Les 3 derniers chiffres derrière votre CB :)">(Kezako ?)</a><input type="tel" name="cardCVV" value="" placeholder="Ex : 123">
+                </div>
             </div>
         </div>
     </div>

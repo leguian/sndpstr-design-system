@@ -244,7 +244,7 @@ svg:not(:root) {
   background-color: #7c3eb9;
   color: #FBFBFB;
   border-radius: 4px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   margin: 0 0.5rem 0 0;
   text-align: center;
   font-size: 1rem;
@@ -700,7 +700,7 @@ input[type=checkbox] + label:before {
   background-color: #FBFBFB;
   color: #31242b;
   font-size: inherit;
-  padding: 0.5em;
+  padding: 0.7em 0.9em;
   padding-right: 2.5em;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0;
@@ -2546,41 +2546,41 @@ ol {
 .segment.secondary.inverted {
   background-color: #493c42;
 }
-.segment.blue {
+.segment.blue, .segment.info {
   background-color: #ecf1fd;
 }
-.segment.blue.header {
+.segment.blue.header, .segment.info.header {
   background-color: #bed0f8;
 }
-.segment.blue.inverted {
+.segment.blue.inverted, .segment.info.inverted {
   background-color: #1340A4;
 }
-.segment.yellow {
+.segment.yellow, .segment.warning {
   background-color: #feeec8;
 }
-.segment.yellow.header {
+.segment.yellow.header, .segment.warning.header {
   background-color: #fedf96;
 }
-.segment.yellow.inverted {
+.segment.yellow.inverted, .segment.warning.inverted {
   background-color: #FDC84A;
   color: #31242b;
 }
-.segment.red {
+.segment.red, .segment.error {
   background-color: #fde6e2;
 }
-.segment.red.header {
+.segment.red.header, .segment.error.header {
   background-color: #fabeb2;
 }
-.segment.red.inverted {
+.segment.red.inverted, .segment.error.inverted {
   background-color: #f15a3b;
 }
-.segment.green {
+.segment.green, .segment.valid {
   background-color: #e8eedc;
 }
-.segment.green.header {
+.segment.green.header, .segment.valid.header {
   background-color: #d0ddba;
 }
-.segment.green.inverted {
+.segment.green.inverted, .segment.valid.inverted {
   background-color: #5e8c0c;
 }
 
