@@ -11,7 +11,7 @@ $gray: #6e7e85;
 $white: #FBFBFB;
 $black: #31242b;
 
-// Typography
+// Typo
 @import url('https://fonts.googleapis.com/css?family=Cabin:700|Roboto:400,400i,700,700i');
 $body-font: 'Roboto', Geneva, sans-serif;
 $header-font: 'Cabin', Geneva, sans-serif;
@@ -46,7 +46,7 @@ $border-color: rgba(0,0,0,.2);
 
 // Grid
 $padding: 2em;
-$reflex-grid-spacing: 1rem !default; //padding grid
+$reflex-grid-spacing: 1rem !default;
 
 // Breakpoints
 $reflex-xs: 576px !default;

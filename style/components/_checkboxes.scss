@@ -1,67 +1,110 @@
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
+$inputRadioSize: 1em;
+$inputRadioBorder: 0 1px 4px 0 rgba(0, 0, 0, 0.3) inset, 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
 
-input[type="radio"],
-input[type="checkbox"] {
-  @extend .visuallyhidden;
-}
-
-input[type="radio"] + label,
-input[type="checkbox"] + label {
-  position: relative;
-  padding-left: 25px;
-  &:before {
-    transition: $fast-speed;
-    position: absolute;
-    left: 0;
-    top: 1px;
-    content: " ";
-    display: block;
-    width: 1em;
-    height: 1em;
-    border: 1px solid $border-color;
-    border-radius: $small-radius;
-    background: white;
+input[type=radio] {
+  display: none;
+  &:checked + label {
+    &:after {
+      opacity: 1;
+    }
+    &:before {
+      background: $primary-color;
+    }
   }
-  &:hover:before {
-    border: 1px solid $primary-color;
-    background: lighten($primary-color, 60);
+  &:active {
+    & + label:before {
+      background: darken($white, 10);
+    }
   }
-}
+  & + label {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-left: 1.3em;
+    vertical-align: middle;
 
-input[type="radio"] + label {
-  &:before {
-  }
-}
-
-input[type="checkbox"] + label {
-  &:before {
-  }
-}
-
-input[type="radio"]:focus + label,
-input[type="checkbox"]:focus + label {
-
-}
-
-input[type="radio"]:checked + label {
-  font-weight: 700;
-  &:before {
-    background: $primary-color;
+    &:after {
+      transform: scale(0.5);
+      content: '';
+      display: block;
+      opacity: 0;
+      position: absolute;
+      top: 0.1em;
+      left: 0;
+      width: $inputRadioSize;
+      height: $inputRadioSize;
+      border-radius: 50%;
+      background: $white;
+      transition: opacity ease-in 0.2s;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0.1em;
+      left: 0;
+      width: $inputRadioSize;
+      height: $inputRadioSize;
+      border-radius: 99rem;
+      background: $white;
+      box-shadow: $inputRadioBorder;
+      transition: $fast-speed;
+    }
   }
 }
 
-input[type="checkbox"]:checked + label {
-  font-weight: 700;
-  &:before {
-    background: $primary-color;
+input[type=checkbox] {
+  display: none;
+  &:checked + label {
+    &:after {
+      width: $inputRadioSize/2;
+      height: $inputRadioSize;
+      left: .25em;
+      top: .1em;
+      border: solid $white;
+      border-width: 0 0.2em .2em 0;
+      transform: rotate(45deg) scale(0.7);
+      border-radius: 0;
+    }
+    &:before {
+      background: $primary-color;
+    }
+  }
+  &:active {
+    & + label:before {
+      background: darken($white, 10);
+    }
+    & + label:after {
+      border-color: $gray;
+    }
+  }
+  & + label {
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    position: relative;
+    padding-left: 1.3em;
+    vertical-align: middle;
+
+    &:after {
+      transform: scale(0);
+      content: '';
+      display: block;
+      position: absolute;
+      transition: $fast-speed;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0.2em;
+      left: 0;
+      width: $inputRadioSize;
+      height: $inputRadioSize;
+      border-radius: 3px;
+      background: $white;
+      box-shadow: $inputRadioBorder;
+      transition: $fast-speed;
+    }
   }
 }
