@@ -441,6 +441,158 @@ svg:not(:root) {
   padding: 1em 2em;
 }
 
+input[type=text],
+input[type=url],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=tel] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.6666666667em;
+  margin-bottom: 2em;
+  font-family: inherit;
+  font-size: 1em;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  outline: none;
+  background-color: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+input[type=text]::placeholder,
+input[type=url]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=number]::placeholder,
+input[type=tel]::placeholder {
+  color: rgba(49, 36, 43, 0.4);
+}
+input[type=text]:last-child,
+input[type=url]:last-child,
+input[type=email]:last-child,
+input[type=password]:last-child,
+input[type=number]:last-child,
+input[type=tel]:last-child {
+  margin-bottom: 0;
+}
+input[type=text]:focus,
+input[type=url]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus,
+input[type=tel]:focus {
+  border-color: #7c3eb9;
+  box-shadow: 0 0 0 5px rgba(124, 62, 185, 0.2);
+}
+input[type=text]:focus::placeholder,
+input[type=url]:focus::placeholder,
+input[type=email]:focus::placeholder,
+input[type=password]:focus::placeholder,
+input[type=number]:focus::placeholder,
+input[type=tel]:focus::placeholder {
+  color: rgba(49, 36, 43, 0.2);
+}
+input[type=text]:disabled,
+input[type=url]:disabled,
+input[type=email]:disabled,
+input[type=password]:disabled,
+input[type=number]:disabled,
+input[type=tel]:disabled {
+  background-color: #6e7e85;
+  cursor: not-allowed;
+}
+input[type=text].huge,
+input[type=url].huge,
+input[type=email].huge,
+input[type=password].huge,
+input[type=number].huge,
+input[type=tel].huge {
+  font-size: 1.7em;
+}
+
+.field label {
+  margin-bottom: 0.4rem;
+  display: inline-block;
+}
+.field input[type=text],
+.field input[type=url],
+.field input[type=email],
+.field input[type=password],
+.field input[type=number],
+.field input[type=tel] {
+  margin: 0;
+}
+.field.required label:after {
+  content: "*";
+  color: #f15a3b;
+  margin-left: 3px;
+}
+.field.inline.action {
+  display: inline-flex;
+}
+.field.inline.action input[type=text],
+.field.inline.action input[type=url],
+.field.inline.action input[type=email],
+.field.inline.action input[type=password],
+.field.inline.action input[type=number],
+.field.inline.action input[type=tel] {
+  max-width: 100%;
+  border-radius: 4px 0 0 4px;
+}
+.field.inline.action input[type=text]:focus + .button,
+.field.inline.action input[type=url]:focus + .button,
+.field.inline.action input[type=email]:focus + .button,
+.field.inline.action input[type=password]:focus + .button,
+.field.inline.action input[type=number]:focus + .button,
+.field.inline.action input[type=tel]:focus + .button {
+  box-shadow: 0 0 0 5px rgba(124, 62, 185, 0.2);
+  margin-left: 10px;
+}
+.field.inline.action .button {
+  border-radius: 0 4px 4px 0;
+}
+.field.inline.action .button:hover {
+  transform: none;
+}
+.field.inline.action.fluid {
+  width: 100%;
+}
+.field.error input[type=text],
+.field.error input[type=url],
+.field.error input[type=email],
+.field.error input[type=password],
+.field.error input[type=number],
+.field.error input[type=tel] {
+  border-color: #f15a3b;
+}
+.field.error input[type=text] + .error,
+.field.error input[type=url] + .error,
+.field.error input[type=email] + .error,
+.field.error input[type=password] + .error,
+.field.error input[type=number] + .error,
+.field.error input[type=tel] + .error {
+  color: #f15a3b;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.field.error input[type=text] + .error:before,
+.field.error input[type=url] + .error:before,
+.field.error input[type=email] + .error:before,
+.field.error input[type=password] + .error:before,
+.field.error input[type=number] + .error:before,
+.field.error input[type=tel] + .error:before {
+  content: "!";
+  margin-right: 0.4rem;
+  background: #f15a3b;
+  padding: 0.1rem 0.7em;
+  font-size: 0.8em;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+}
+
 input[type=radio] {
   display: none;
 }
@@ -537,6 +689,55 @@ input[type=checkbox] + label:before {
   border-radius: 4px;
   background: #FBFBFB;
   transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.dropdown select {
+  background-color: #FBFBFB;
+  color: #31242b;
+  font-size: inherit;
+  padding: 0.5em;
+  padding-right: 2.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
+  border-radius: 4px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  -webkit-appearance: button;
+  /* hide default arrow in chrome OSX */
+}
+.dropdown:before, .dropdown:after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+.dropdown:after {
+  content: "▼";
+  height: 1em;
+  font-size: 0.625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -0.5em;
+  color: rgba(0, 0, 0, 0.4);
+}
+.dropdown:before {
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 4px 4px 0;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.dropdown select[disabled] {
+  color: rgba(0, 0, 0, 0.3);
+}
+.dropdown select[disabled]:after {
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .footer {
@@ -2266,173 +2467,6 @@ h5.vw, .h5.vw {
   font-size: 1.5vw;
 }
 
-input[type=text],
-input[type=url],
-input[type=email],
-input[type=password],
-input[type=number],
-input[type=tel] {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0.6666666667em;
-  margin-bottom: 2em;
-  font-family: inherit;
-  font-size: 1em;
-  vertical-align: middle;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  outline: none;
-  background-color: white;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-input[type=text]::placeholder,
-input[type=url]::placeholder,
-input[type=email]::placeholder,
-input[type=password]::placeholder,
-input[type=number]::placeholder,
-input[type=tel]::placeholder {
-  color: rgba(49, 36, 43, 0.4);
-}
-input[type=text]:last-child,
-input[type=url]:last-child,
-input[type=email]:last-child,
-input[type=password]:last-child,
-input[type=number]:last-child,
-input[type=tel]:last-child {
-  margin-bottom: 0;
-}
-input[type=text]:focus,
-input[type=url]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=number]:focus,
-input[type=tel]:focus {
-  border-color: #7c3eb9;
-  box-shadow: 0 0 0 5px rgba(124, 62, 185, 0.2);
-}
-input[type=text]:focus::placeholder,
-input[type=url]:focus::placeholder,
-input[type=email]:focus::placeholder,
-input[type=password]:focus::placeholder,
-input[type=number]:focus::placeholder,
-input[type=tel]:focus::placeholder {
-  color: rgba(49, 36, 43, 0.2);
-}
-input[type=text]:disabled,
-input[type=url]:disabled,
-input[type=email]:disabled,
-input[type=password]:disabled,
-input[type=number]:disabled,
-input[type=tel]:disabled {
-  background-color: #6e7e85;
-  cursor: not-allowed;
-}
-input[type=text].huge,
-input[type=url].huge,
-input[type=email].huge,
-input[type=password].huge,
-input[type=number].huge,
-input[type=tel].huge {
-  font-size: 1.7em;
-}
-
-.field label {
-  margin-bottom: 0.4rem;
-  display: inline-block;
-}
-.field input[type=text],
-.field input[type=url],
-.field input[type=email],
-.field input[type=password],
-.field input[type=number],
-.field input[type=tel] {
-  margin: 0;
-}
-.field.required label:after {
-  content: "*";
-  color: #f15a3b;
-  margin-left: 3px;
-}
-.field.inline.action {
-  display: inline-flex;
-}
-.field.inline.action input[type=text],
-.field.inline.action input[type=url],
-.field.inline.action input[type=email],
-.field.inline.action input[type=password],
-.field.inline.action input[type=number],
-.field.inline.action input[type=tel] {
-  max-width: 100%;
-  border-radius: 4px 0 0 4px;
-}
-.field.inline.action input[type=text]:focus + .button,
-.field.inline.action input[type=url]:focus + .button,
-.field.inline.action input[type=email]:focus + .button,
-.field.inline.action input[type=password]:focus + .button,
-.field.inline.action input[type=number]:focus + .button,
-.field.inline.action input[type=tel]:focus + .button {
-  box-shadow: 0 0 0 5px rgba(124, 62, 185, 0.2);
-  margin-left: 10px;
-}
-.field.inline.action .button {
-  border-radius: 0 4px 4px 0;
-}
-.field.inline.action .button:hover {
-  transform: none;
-}
-.field.inline.action.fluid {
-  width: 100%;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-}
-.dropdown select {
-  background-color: #FBFBFB;
-  color: #31242b;
-  font-size: inherit;
-  padding: 0.5em;
-  padding-right: 2.5em;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  margin: 0;
-  border-radius: 4px;
-  text-indent: 0.01px;
-  text-overflow: "";
-  -webkit-appearance: button;
-  /* hide default arrow in chrome OSX */
-}
-.dropdown:before, .dropdown:after {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-}
-.dropdown:after {
-  content: "▼";
-  height: 1em;
-  font-size: 0.625em;
-  line-height: 1;
-  right: 1.2em;
-  top: 50%;
-  margin-top: -0.5em;
-  color: rgba(0, 0, 0, 0.4);
-}
-.dropdown:before {
-  width: 2em;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 0 4px 4px 0;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-.dropdown select[disabled] {
-  color: rgba(0, 0, 0, 0.3);
-}
-.dropdown select[disabled]:after {
-  color: rgba(0, 0, 0, 0.1);
-}
-
 ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1.15rem;
@@ -2461,9 +2495,13 @@ ol {
   list-style-type: decimal;
 }
 
+.menu {
+  display: flex;
+}
 .menu .item {
   padding: 0.5rem 1rem;
-  float: right;
+  cursor: pointer;
+  display: inline-block;
 }
 .menu .item.active {
   font-weight: bold;
@@ -2471,6 +2509,9 @@ ol {
 .menu .item:hover {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 6px;
+}
+.menu.right .item {
+  float: right;
 }
 
 .segment {

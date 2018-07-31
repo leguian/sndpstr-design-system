@@ -1,8 +1,9 @@
 .menu {
+    display: flex;
   .item {
     padding: 0.5rem 1rem;
-    float: right;
-
+    cursor: pointer;
+    display: inline-block;
     &.active {
       font-weight: bold;
     }
@@ -10,5 +11,9 @@
       background-color: rgba(0, 0, 0, 0.05);
       border-radius: $large-radius;
     }
+  }
+
+  &.right .item{
+    float: right;
   }
 }

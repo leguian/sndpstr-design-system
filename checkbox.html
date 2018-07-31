@@ -23,6 +23,11 @@
 <div class="container">
     <div class="grid">
         <div class="col-auto">
+            <div class="menu">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+            </div>
             <div class="yellow segment">
                 <p><input type="checkbox" name="frameLabel" id="frameLabel" value="on"><label for="frameLabel">Encadrement</label></p>
                 <p><input type="radio" name="frameLabel2" id="frameLabel2"><label for="frameLabel2">Encadrement</label></p>
@@ -35,10 +40,35 @@
                         <option>Quantum of Solace</option>
                     </select>
                 </div>
+                <button class="button" id="showModal">Try it</button>
+            </div>
+        </div>
+    </div>
+    <div class="segment">
+        <div class="grid">
+            <div class="col-lg-6 required field">
+                <label>Prénom</label>
+                <input type="text" name="firstName" value="" placeholder="Ex : Georges" spellcheck="false" autocorrect="off">
+            </div>
+            <div class="col-lg-6 required field">
+                <label>Nom</label>
+                <input type="text" name="lastName" value="" placeholder="Ex : Abitbol" spellcheck="false" autocorrect="off"><span></span>
+            </div>
+            <div class="col-12 required error field">
+                <label>Email</label>
+                <input type="email" name="email" value="" placeholder="Ex : georges.abitbol@flim.com">
+                <div class="error">L'adresse email est invalide</div>
+                <p class="hint">
+                    Ce sera notre moyen de communiquer avec vous. Cet email restera strictement confientiel... vous n'aimez pas les spams et nous non plus !
+                </p>
+            </div>
+            <div class="col-lg-6 required field">
+                <label>Téléphone (Portable de préférence)</label>
+                <input type="tel" name="phone" value="" placeholder="Ex : 0679461346">
+                <p class="hint">Ce téléphone permet au livreur de vous contacter en cas de problème. En aucun cas il sera utilisé à des fins commerciales (on tient trop à votre vie privée :) )</p>
             </div>
         </div>
     </div>
 </div>
-
 </body>
 </html>
