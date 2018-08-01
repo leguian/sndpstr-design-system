@@ -15,24 +15,26 @@
   &.error {
     input {
       border-color: $red;
+    }
+    label {
+      color:  $red;
+    }
+    .explanation {
+      color: $red;
+      font-weight: 600;
+      margin-top: .5rem;
 
-      + .explanation {
-        color: $red;
-        font-weight: 600;
-        margin-top: .5rem;
-
-        &:before {
-          content: "!";
-          margin-right: 0.4rem;
-          background: $red;
-          padding: 0.1rem 0.7em;
-          font-size: 0.8em;
-          color: #fff;
-          border-radius: 3px;
-          display: inline-block;
-          text-align: center;
-          vertical-align: text-bottom;
-        }
+      &:before {
+        content: "!";
+        margin-right: 0.4rem;
+        background: $red;
+        padding: 0.1rem 0.7em;
+        font-size: 0.8em;
+        color: #fff;
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: text-bottom;
       }
     }
   }

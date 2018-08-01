@@ -710,12 +710,15 @@ input[type=checkbox] + label:before {
 .field.error input {
   border-color: #f15a3b;
 }
-.field.error input + .explanation {
+.field.error label {
+  color: #f15a3b;
+}
+.field.error .explanation {
   color: #f15a3b;
   font-weight: 600;
   margin-top: 0.5rem;
 }
-.field.error input + .explanation:before {
+.field.error .explanation:before {
   content: "!";
   margin-right: 0.4rem;
   background: #f15a3b;
