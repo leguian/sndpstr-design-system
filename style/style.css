@@ -523,11 +523,6 @@ input[type=tel].huge {
 .field input[type=tel] {
   margin: 0;
 }
-.field.required label:after {
-  content: "*";
-  color: #f15a3b;
-  margin-left: 3px;
-}
 .field.inline.action {
   display: inline-flex;
 }
@@ -558,40 +553,6 @@ input[type=tel].huge {
 .field.inline.action.fluid {
   width: 100%;
 }
-.field.error input[type=text],
-.field.error input[type=url],
-.field.error input[type=email],
-.field.error input[type=password],
-.field.error input[type=number],
-.field.error input[type=tel] {
-  border-color: #f15a3b;
-}
-.field.error input[type=text] + .error,
-.field.error input[type=url] + .error,
-.field.error input[type=email] + .error,
-.field.error input[type=password] + .error,
-.field.error input[type=number] + .error,
-.field.error input[type=tel] + .error {
-  color: #f15a3b;
-  font-weight: 600;
-  margin-top: 0.5rem;
-}
-.field.error input[type=text] + .error:before,
-.field.error input[type=url] + .error:before,
-.field.error input[type=email] + .error:before,
-.field.error input[type=password] + .error:before,
-.field.error input[type=number] + .error:before,
-.field.error input[type=tel] + .error:before {
-  content: "!";
-  margin-right: 0.4rem;
-  background: #f15a3b;
-  padding: 0.1rem 0.7em;
-  font-size: 0.8em;
-  color: #fff;
-  border-radius: 3px;
-  display: inline-block;
-  text-align: center;
-}
 
 input[type=radio] {
   display: none;
@@ -611,6 +572,7 @@ input[type=radio] + label {
   position: relative;
   padding-left: 1.3em;
   vertical-align: middle;
+  display: block;
 }
 input[type=radio] + label:after {
   transform: scale(0.5);
@@ -618,7 +580,7 @@ input[type=radio] + label:after {
   display: block;
   opacity: 0;
   position: absolute;
-  top: 0.1em;
+  top: 0.15em;
   left: 0;
   width: 1em;
   height: 1em;
@@ -630,7 +592,7 @@ input[type=radio] + label:before {
   content: "";
   display: block;
   position: absolute;
-  top: 0.1em;
+  top: 0.15em;
   left: 0;
   width: 1em;
   height: 1em;
@@ -647,7 +609,7 @@ input[type=checkbox]:checked + label:after {
   width: 0.5em;
   height: 1em;
   left: 0.25em;
-  top: 0.1em;
+  top: 0.05em;
   border: solid #FBFBFB;
   border-width: 0 0.2em 0.2em 0;
   transform: rotate(45deg) scale(0.7);
@@ -665,7 +627,7 @@ input[type=checkbox]:active + label:after {
 input[type=checkbox] + label {
   cursor: pointer;
   user-select: none;
-  display: inline-block;
+  display: block;
   position: relative;
   padding-left: 1.3em;
   vertical-align: middle;
@@ -681,7 +643,7 @@ input[type=checkbox] + label:before {
   content: "";
   display: block;
   position: absolute;
-  top: 0.2em;
+  top: 0.1em;
   left: 0;
   width: 1em;
   height: 1em;
@@ -738,6 +700,32 @@ input[type=checkbox] + label:before {
 }
 .dropdown select[disabled]:after {
   color: rgba(0, 0, 0, 0.1);
+}
+
+.field.required > label:first-child:after {
+  content: "*";
+  color: #f15a3b;
+  margin-left: 3px;
+}
+.field.error input {
+  border-color: #f15a3b;
+}
+.field.error input + .explanation {
+  color: #f15a3b;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.field.error input + .explanation:before {
+  content: "!";
+  margin-right: 0.4rem;
+  background: #f15a3b;
+  padding: 0.1rem 0.7em;
+  font-size: 0.8em;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-bottom;
 }
 
 .footer {

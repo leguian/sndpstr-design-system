@@ -60,16 +60,6 @@ input[type=tel] {
     margin: 0;
   }
 
-  &.required {
-    label {
-      &:after {
-        content: '*';
-        color: $red;
-        margin-left: 3px;
-      }
-    }
-  }
-
   &.inline.action {
     display: inline-flex;
 
@@ -98,35 +88,6 @@ input[type=tel] {
 
     &.fluid {
       width: 100%;
-    }
-  }
-
-  &.error {
-    input[type=text],
-    input[type=url],
-    input[type=email],
-    input[type=password],
-    input[type=number],
-    input[type=tel] {
-      border-color: $red;
-      
-      +.error {
-        color: $red;
-        font-weight: 600;
-        margin-top: .5rem;
-
-        &:before {
-          content: "!";
-          margin-right: 0.4rem;
-          background: $red;
-          padding: 0.1rem 0.7em;
-          font-size: 0.8em;
-          color: #fff;
-          border-radius: 3px;
-          display: inline-block;
-          text-align: center;
-        }
-      }
     }
   }
 }

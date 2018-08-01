@@ -40,8 +40,12 @@
                         <option>Quantum of Solace</option>
                     </select>
                 </div>
-                <input type="email" name="email" value="" placeholder="Ex : georges.abitbol@flim.com">
                 <button class="button" id="showModal">Try it</button>
+                <div class="required error field">
+                    <label>Prénom</label>
+                    <input type="checkbox" name="x" id="x" value="on"><label for="x">Encadrement</label>
+                    <div class="error">Vous devez cocher la case</div>
+                </div>
             </div>
         </div>
     </div>
@@ -61,10 +65,15 @@
                 <div class="col-12 required error field">
                     <label>Email</label>
                     <input type="email" name="email" value="" placeholder="Ex : georges.abitbol@flim.com">
-                    <div class="error">L'adresse email est invalide</div>
+                    <div class="explanation">L'adresse email est invalide</div>
                     <p class="hint">
                         Ce sera notre moyen de communiquer avec vous. Cet email restera strictement confientiel... vous n'aimez pas les spams et nous non plus !
                     </p>
+                </div>
+                <div class="col-12 required error field">
+                    <label>Prénom</label>
+                    <input type="checkbox" checked="checked" name="xx" id="xx"><label for="xx">Encadrement</label>
+                    <div class="explanation">Vous devez cocher la case</div>
                 </div>
                 <div class="col-lg-6 required field">
                     <label>Téléphone (Portable de préférence)</label>

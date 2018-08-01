@@ -22,6 +22,7 @@ input[type=radio] {
     position: relative;
     padding-left: 1.3em;
     vertical-align: middle;
+    display: block;
 
     &:after {
       transform: scale(0.5);
@@ -29,7 +30,7 @@ input[type=radio] {
       display: block;
       opacity: 0;
       position: absolute;
-      top: 0.1em;
+      top: 0.15em;
       left: 0;
       width: $inputRadioSize;
       height: $inputRadioSize;
@@ -41,7 +42,7 @@ input[type=radio] {
       content: '';
       display: block;
       position: absolute;
-      top: 0.1em;
+      top: 0.15em;
       left: 0;
       width: $inputRadioSize;
       height: $inputRadioSize;
@@ -60,7 +61,7 @@ input[type=checkbox] {
       width: $inputRadioSize/2;
       height: $inputRadioSize;
       left: .25em;
-      top: .1em;
+      top: .05em;
       border: solid $white;
       border-width: 0 0.2em .2em 0;
       transform: rotate(45deg) scale(0.7);
@@ -81,7 +82,7 @@ input[type=checkbox] {
   & + label {
     cursor: pointer;
     user-select: none;
-    display: inline-block;
+    display: block;
     position: relative;
     padding-left: 1.3em;
     vertical-align: middle;
@@ -97,7 +98,7 @@ input[type=checkbox] {
       content: '';
       display: block;
       position: absolute;
-      top: 0.2em;
+      top: 0.1em;
       left: 0;
       width: $inputRadioSize;
       height: $inputRadioSize;
