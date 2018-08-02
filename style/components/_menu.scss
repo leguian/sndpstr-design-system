@@ -1,19 +1,29 @@
 .menu {
-    display: flex;
+  display: flex;
+
   .item {
     padding: 0.5rem 1rem;
     cursor: pointer;
     display: inline-block;
+    border-radius: $large-radius;
+
     &.active {
       font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.02);
     }
     &:hover {
       background-color: rgba(0, 0, 0, 0.05);
-      border-radius: $large-radius;
     }
   }
 
-  &.right .item{
+  &.right .item {
     float: right;
+  }
+
+  &.vertical {
+    display: block;
+    .item {
+      display: block;
+    }
   }
 }

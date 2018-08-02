@@ -222,9 +222,9 @@ svg:not(:root) {
 
 .hint {
   color: rgba(49, 36, 43, 0.7);
-  margin-top: 1rem;
+  margin: 0.5rem 0 0;
   font-size: 0.8rem;
-  line-height: 1.2;
+  line-height: 1.4;
   font-style: italic;
 }
 
@@ -2493,16 +2493,23 @@ ol {
   padding: 0.5rem 1rem;
   cursor: pointer;
   display: inline-block;
+  border-radius: 6px;
 }
 .menu .item.active {
   font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.02);
 }
 .menu .item:hover {
   background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 6px;
 }
 .menu.right .item {
   float: right;
+}
+.menu.vertical {
+  display: block;
+}
+.menu.vertical .item {
+  display: block;
 }
 
 .segment {
