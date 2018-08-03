@@ -8,55 +8,75 @@
     <title>Living Style Guide</title>
     <link rel="stylesheet" type="text/css" media="all" href="style/style.css"/>
     <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js" crossorigin="anonymous"></script>
     <style>
+        #wrap {
+            position: relative;
+            width: 668px;
+            height: 240px;
+            background-color: #ffffbc;
+            margin: auto;
+        }
 
+        #frame {
+            width: 600px;
+            height: 400px;
+            padding: 50px;
+            text-align: center;
+            background: white;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transform-origin: center center;
+        }
+
+        .left.text,
+        .right.text {
+            font-size: 18px;
+        }
+
+        .left.text {
+            float: left;
+        }
+
+        .right.text {
+            float: right;
+        }
     </style>
 </head>
 <script>
-    var pageWidth, pageHeight;
+    var $el = $("#frame");
+    var elHeight = $el.outerHeight();
+    var elWidth = $el.outerWidth();
 
-    var basePage = {
-        width: 1136,
-        height: 190,
-        scale: 1,
-        scaleX: 1,
-        scaleY: 1
-    };
+    var $wrapper = $("#wrapp");
 
-    $(document).ready(function () {
-
-        var $page = $('.frame');
-
-        getPageSize();
-        scalePages($page, pageWidth, pageHeight);
-
-        //using underscore to delay resize method till finished resizing window
-        $(window).resize(_.debounce(function () {
-            getPageSize();
-            scalePages($page, pageWidth, pageHeight);
-        }, 0));
-
-
-        function getPageSize() {
-            pageHeight = $('#frameWrapper').height();
-            pageWidth = $('#frameWrapper').width();
-        }
-
-        function scalePages(page, maxWidth, maxHeight) {
-            var scaleX = 1, scaleY = 1;
-            scaleX = maxWidth / basePage.width;
-            scaleY = maxHeight / basePage.height;
-            basePage.scaleX = scaleX;
-            basePage.scaleY = scaleY;
-            basePage.scale = (scaleX > scaleY) ? scaleY : scaleX;
-
-            var newLeftPos = Math.abs(Math.floor(((basePage.width * basePage.scale) - maxWidth) / 2));
-            var newTopPos = Math.abs(Math.floor(((basePage.height * basePage.scale) - maxHeight) / 2));
-
-            page.attr('style', '-webkit-transform:scale(' + basePage.scale + ');left:' + newLeftPos + 'px;top:' + newTopPos + 'px;');
-        }
+    $(window).resize(function (evt) {
+        doResize;
     });
+
+    function doResize(event, ui) {
+
+        var scale, origin;
+
+        scale = Math.min(
+                ui.size.width / elWidth,
+                ui.size.height / elHeight
+        );
+
+        $el.css({
+            transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
+        });
+
+    }
+
+    var starterData = {
+        size: {
+            width: $wrapper.width(),
+            height: $wrapper.height()
+        }
+    };
+    doResize(null, starterData);
 </script>
 <body class="sndpstr">
 
@@ -64,18 +84,18 @@
     <div class="container">
         <p>https://codepen.io/cRckls/pen/mcGCL</p>
         <p>https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/</p>
+        <p>https://codepen.io/thebabydino/pen/MajxzY?editors=1100</p>
     </div>
-    <div id="frameWrapper">
-        <div class="frame">
-            <svg viewBox="0 0 1136 82">
-                <g>
-                    <rect width="1136" height="82"/>
-                </g>
-            </svg>
-
-            <p>https://codepen.io/cRckls/pen/mcGCL</p>
-            <p>https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/</p>
-        </div>
+</div>
+<div id="wrap">
+    <div id="frame">
+        <svg viewBox="0 0 1136 82">
+            <g>
+                <rect width="1136" height="82"/>
+            </g>
+        </svg>
+        <div class="left text">Lorem ipsum</div>
+        <div class="right text">Lorem ipsum</div>
     </div>
 </div>
 </body>
