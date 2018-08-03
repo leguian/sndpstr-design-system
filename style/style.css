@@ -2642,6 +2642,33 @@ table.basic tfoot {
   border-top: 2px solid rgba(0, 0, 0, 0.2);
 }
 
+img {
+  max-width: 100%;
+}
+
+.image.mini {
+  max-width: 50px;
+}
+.image.tiny {
+  max-width: 100px;
+}
+.image.small {
+  max-width: 150px;
+}
+.image.medium {
+  max-width: 250px;
+}
+.image.large {
+  max-width: 350px;
+}
+.image.big {
+  max-width: 450px;
+}
+.image.centered {
+  margin: auto;
+  display: block;
+}
+
 .body.head {
   background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
 }
