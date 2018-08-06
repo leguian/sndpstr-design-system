@@ -2706,6 +2706,32 @@ img {
     transform: rotate(359.9deg);
   }
 }
+.label {
+  display: inline-block;
+  background: #6e7e85;
+  color: #FBFBFB;
+  font-size: 0.85em;
+  padding: 0.5em 1em;
+  border-radius: 99rem;
+  line-height: 1;
+}
+.label.black {
+  background-color: #31242b;
+}
+.label.red {
+  background-color: #f15a3b;
+}
+.label.blue {
+  background-color: #1340A4;
+}
+.label.yellow {
+  background-color: #FDC84A;
+  color: #7a5601;
+}
+.label.green {
+  background-color: #5e8c0c;
+}
+
 .body.head {
   background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
 }

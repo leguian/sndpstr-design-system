@@ -1,0 +1,26 @@
+.label {
+  display: inline-block;
+  background: $gray;
+  color: $white;
+  font-size:.85em;
+  padding: .5em 1em;
+  border-radius: 99rem;
+  line-height:1;
+
+  &.black {
+    background-color: $black;
+  }
+  &.red {
+    background-color: $red;
+  }
+  &.blue {
+    background-color: $blue;
+  }
+  &.yellow {
+    background-color: $yellow;
+    color: darken($yellow, 40);
+  }
+  &.green {
+    background-color: $green;
+  }
+}
