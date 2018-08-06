@@ -1,1 +1,45 @@
-// http://thesassway.com/projects/css-spinners
+.loader {
+  $size: 2em;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: $size/20;
+  height: $size;
+  width: $size;
+  display: block;
+  vertical-align: middle;
+  margin: $padding auto;
+
+  border-color: rgba(0, 0, 0, 0.2);
+  border-top-color: $primary-color;
+
+  animation: rotation .8s infinite linear;
+
+  &.small {
+    $multiplicator: .7;
+    width: $size*$multiplicator;
+    height: $size*$multiplicator;
+    border-width: $size*$multiplicator/8;
+  }
+
+  &.big {
+    $multiplicator: 1.5;
+    width: $size*$multiplicator;
+    height: $size*$multiplicator;
+    border-width: $size*$multiplicator/20;
+  }
+
+  &.description {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 .5em 0;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(359.9deg);
+  }
+}
