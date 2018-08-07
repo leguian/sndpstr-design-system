@@ -27,6 +27,4 @@ sass --watch sndpstr.scss:style.css
 ```
 
 ### Doc
-Components : http://thimblecss.com/docs
-
 Grids : http://reflexgrid.com/docs/index.html

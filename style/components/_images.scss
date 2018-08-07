@@ -1,6 +1,9 @@
 // Images
 img {
   max-width: 100%;
+  height: auto;
+  border: 0;
+  border-style: none;
 }
 .image {
   &.mini {
@@ -24,5 +27,11 @@ img {
   &.centered {
     margin: auto;
     display: block;
+  }
+
+  &.avatar,
+  &.rounded {
+    border-radius:99rem;
+    vertical-align: middle;
   }
 }

@@ -56,10 +56,11 @@ body {
 }
 
 hr {
-  height: 2px;
-  margin: 1rem auto;
+  margin: $padding auto;
   border: 0;
-  background: rgba(0, 0, 0, 0.3);
+  height: 0;
+  border-top: 0;
+  border-bottom: 1px solid $border-color;
 }
 
 .floated.left {
@@ -172,13 +173,6 @@ sub, .sub {
 }
 
 // Media
-.img, img {
-  max-width: 100%;
-  height: auto;
-  border: 0;
-  border-style: none;
-}
-
 svg:not(:root) {
   overflow: hidden;
 }
@@ -225,7 +219,7 @@ svg:not(:root) {
 }
 
 .hint {
-  color: rgba($text-color,.7);
+  color: rgba($text-color, .7);
   margin: .5rem 0 0;
   font-size: 0.8rem;
   line-height: 1.4;

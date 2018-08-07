@@ -56,10 +56,11 @@ body {
 }
 
 hr {
-  height: 2px;
-  margin: 1rem auto;
+  margin: 2em auto;
   border: 0;
-  background: rgba(0, 0, 0, 0.3);
+  height: 0;
+  border-top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .floated.left {
@@ -168,13 +169,6 @@ sub, .sub {
   text-overflow: clip;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.img, img {
-  max-width: 100%;
-  height: auto;
-  border: 0;
-  border-style: none;
 }
 
 svg:not(:root) {
@@ -423,10 +417,21 @@ svg:not(:root) {
 .card .image img {
   display: block;
   object-fit: cover;
+  max-width: 100%;
+  width: 100%;
 }
 .card .actions {
   padding: 0.6666666667em 1em;
   border-top: solid 1px rgba(49, 36, 43, 0.15);
+}
+@media screen and (max-width: 768px) {
+  .card .actions .button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .card .actions .button:last-child {
+    margin-bottom: 0;
+  }
 }
 .card .actions.right {
   text-align: right;
@@ -2644,6 +2649,9 @@ table.basic tfoot {
 
 img {
   max-width: 100%;
+  height: auto;
+  border: 0;
+  border-style: none;
 }
 
 .image.mini {
@@ -2667,6 +2675,10 @@ img {
 .image.centered {
   margin: auto;
   display: block;
+}
+.image.avatar, .image.rounded {
+  border-radius: 99rem;
+  vertical-align: middle;
 }
 
 .loader {
