@@ -1,5 +1,14 @@
 .header {
-
+  .menu {
+    .logo {
+      padding: 0.5rem 0;
+      
+      img {
+        width: 220px;
+        vertical-align: middle;
+      }
+    }
+  }
 }
 
 .body.head {

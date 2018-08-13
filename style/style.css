@@ -2744,6 +2744,14 @@ img {
   background-color: #5e8c0c;
 }
 
+.header .menu .logo {
+  padding: 0.5rem 0;
+}
+.header .menu .logo img {
+  width: 220px;
+  vertical-align: middle;
+}
+
 .body.head {
   background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
 }
@@ -2774,6 +2782,34 @@ img {
 }
 .checkout .promo.code {
   margin: 1rem 0;
+}
+
+.search.results.list {
+  background-color: #FBFBFB;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 0 0 4px 4px;
+}
+.search.results.list .item {
+  padding: 1em;
+  display: block;
+  width: 100%;
+}
+.search.results.list .item:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.search.results.list .item:hover {
+  background-color: #eeeeee;
+}
+.search.results.list .item .artist {
+  font-weight: 600;
+}
+.search.results.list .item .duration {
+  color: #FBFBFB;
+  background: #6e7e85;
+  font-size: 0.8em;
+  padding: 0.3em 0.5em;
+  float: right;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
