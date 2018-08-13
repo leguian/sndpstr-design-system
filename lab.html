@@ -30,15 +30,17 @@
             <div class="grid justify-center">
                 <div class="col-10">
                     <div class="field inline fluid action">
-                        <input type="text" placeholder="Rechercher sur YouTube" autocorrect="off" value="" tabindex="0" class="huge" autocomplete="off" spellcheck="false">
+                        <input type="text" placeholder="Rechercher un titre" autocorrect="off" value="" tabindex="0" class="huge" autocomplete="off" spellcheck="false">
                         <button class="button huge">Rechercher</button>
                     </div>
-                    <div class="search results list">
-                        <a class="item"><span class="artist">Daft Punk</span> - <span class="title">One More Time <span class="duration">5:22</span></a>
-                        <a class="item"><span class="artist">Daft Punk</span> - <span class="title">Instant Crush (Video) ft. Julian Casablancas <span class="duration">5:40</span></a>
-                        <a class="item"><span class="artist">Daft Punk</span> - <span class="title">Harder Better Faster <span class="duration">3:43</span></a>
-                        <a class="item"><span class="artist">Daft Punk</span> - <span class="title">Lose Yourself to Dance (Official Version) <span class="duration">4:11</span></a>
-                        <a class="item"><span class="artist">Daft Punk</span> - <span class="title">Get Lucky (Official Audio) ft. Pharrell Williams, Nile Rodgers <span class="duration">4:09</span></a>
+                    <div class="search results">
+                        <div class="list">
+                            <a class="item"><span class="artist">Daft Punk</span> - <span class="title">One More Time <span class="duration">5:22</span></a>
+                            <a class="item"><span class="artist">Daft Punk</span> - <span class="title">Instant Crush (Video) ft. Julian Casablancas <span class="duration">5:40</span></a>
+                            <a class="item"><span class="artist">Daft Punk</span> - <span class="title">Harder Better Faster <span class="duration">3:43</span></a>
+                            <a class="item"><span class="artist">Daft Punk</span> - <span class="title">Lose Yourself to Dance (Official Version) <span class="duration">4:11</span></a>
+                            <a class="item"><span class="artist">Daft Punk</span> - <span class="title">Get Lucky (Official Audio) ft. Pharrell Williams, Nile Rodgers <span class="duration">4:09</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,7 +157,43 @@
                             <div class="col-lg-4 field">
                                 <label>CVV</label> <a href="javascript:void(0)" class="tooltip" title="Les 3 derniers chiffres derrière votre CB :)">(Kezako ?)</a><input type="tel" name="cardCVV" value="" placeholder="Ex : 123">
                             </div>
+                            <div class="col-lg-4 field">
+                                <label>Expire le</label>
+                                <div class="dropdown">
+                                    <select>
+                                        <option>01 - Janvier</option>
+                                        <option>02 - Février</option>
+                                        <option>03 - Mars</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 field">
+                                <label>&nbsp;</label>
+                                <div class="dropdown">
+                                    <select>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="segment">
+                        <div class="required field">
+                            <input type="checkbox" name="x" id="cgv" value="on"><label for="cgv">En cochant cette case, vous acceptez les <a href="http://www.sndpstr.com/cgv.html" target="_blank">CGV / CGU</a>.</label>
+                        </div>
+                        <div class="required field">
+                            <input type="checkbox" name="x" id="optIn" value="on"><label for="optIn">J'accepte de recevoir des offres de la funky team de SoundPoster</label>
+                            <p class="hint">(Vous recevrez des codes promos, des cadeaux et plein d'autres trucs cool)</p>
+                        </div>
+                    </div>
+                    <div class="segment">
+                        <button class="primary center aligned big button">Commander</button>
+                        <p class="hint">Vous allez adorer votre poster :)</p>
+
                     </div>
                 </div>
             </div>

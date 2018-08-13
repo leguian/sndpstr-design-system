@@ -71,8 +71,12 @@ hr {
   float: right;
 }
 
-.hide, .xlarge-hide {
+.hide, .hidden, .xlarge-hide {
   display: none !important;
+}
+
+.visible {
+  display: block;
 }
 
 .small-show, .medium-show, .large-show, xlarge-show {
@@ -389,6 +393,10 @@ svg:not(:root) {
   font-size: 2em;
   padding: 0.7em 1.9em;
 }
+.button.center.aligned, input[type=submit].center.aligned, button.center.aligned {
+  margin: auto;
+  display: block;
+}
 
 .card {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
@@ -660,7 +668,7 @@ input[type=checkbox] + label:before {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
   vertical-align: middle;
 }
 .dropdown select {
@@ -669,6 +677,7 @@ input[type=checkbox] + label:before {
   font-size: inherit;
   padding: 0.7em 0.9em;
   padding-right: 2.5em;
+  width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0;
   border-radius: 4px;
@@ -705,6 +714,9 @@ input[type=checkbox] + label:before {
 }
 .dropdown select[disabled]:after {
   color: rgba(0, 0, 0, 0.1);
+}
+.dropdown .inline {
+  display: inline-block;
 }
 
 .field.required > label:first-child:after {
@@ -2784,26 +2796,35 @@ img {
   margin: 1rem 0;
 }
 
-.search.results.list {
+.search.results {
+  padding-left: inherit;
+  padding-right: inherit;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.search.results .list {
   background-color: #FBFBFB;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
   border-radius: 0 0 4px 4px;
+  z-index: 10;
+  width: 100%;
 }
-.search.results.list .item {
+.search.results .item {
   padding: 1em;
   display: block;
   width: 100%;
 }
-.search.results.list .item:not(:last-child) {
+.search.results .item:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-.search.results.list .item:hover {
+.search.results .item:hover {
   background-color: #eeeeee;
 }
-.search.results.list .item .artist {
+.search.results .item .artist {
   font-weight: 600;
 }
-.search.results.list .item .duration {
+.search.results .item .duration {
   color: #FBFBFB;
   background: #6e7e85;
   font-size: 0.8em;

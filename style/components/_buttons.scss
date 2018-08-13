@@ -161,4 +161,9 @@
     font-size: 2em;
     padding: 0.7em 1.9em;
   }
+
+  &.center.aligned {
+    margin: auto;
+    display: block;
+  }
 }

@@ -16,10 +16,20 @@
   }
 }
 
-.search.results.list {
-  background-color: $white;
-  box-shadow: $base-shadow;
-  border-radius: 0 0 $radius $radius;
+.search.results {
+  padding-left: inherit;
+  padding-right: inherit;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  .list {
+    background-color: $white;
+    box-shadow: $base-shadow;
+    border-radius: 0 0 $radius $radius;
+    z-index: 10;
+    width: 100%;
+  }
 
   .item {
     padding: $padding/2;
@@ -38,7 +48,7 @@
       font-weight: 600;
     }
     .duration {
-      color:$white;
+      color: $white;
       background: $gray;
       font-size: 0.8em;
       padding: 0.3em 0.5em;

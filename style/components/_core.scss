@@ -71,8 +71,12 @@ hr {
   float: right;
 }
 
-.hide, .xlarge-hide {
+.hide, .hidden, .xlarge-hide {
   display: none !important;
+}
+
+.visible {
+  display: block;
 }
 
 .small-show, .medium-show, .large-show, xlarge-show {
