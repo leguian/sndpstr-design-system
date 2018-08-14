@@ -10,10 +10,6 @@
 .checkout {
   padding: $padding*2 0;
   background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
-
-  .promo.code {
-    margin: 1rem 0;
-  }
 }
 
 .search.results {
@@ -22,12 +18,12 @@
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 10;
 
   .list {
     background-color: $white;
     box-shadow: $base-shadow;
     border-radius: 0 0 $radius $radius;
-    z-index: 10;
     width: 100%;
   }
 
@@ -56,4 +52,11 @@
       border-radius: $radius;
     }
   }
+}
+
+.intersection {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -1.5em !important;
 }

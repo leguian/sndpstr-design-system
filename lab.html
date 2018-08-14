@@ -70,7 +70,9 @@
         </form>
     </div>
 </div>
-
+<div class="intersection">
+    <div class="large primary button">Etape suivante</div>
+</div>
 <div class="checkout">
 
     <div class="container">
@@ -105,13 +107,14 @@
                     <tfoot>
                     <tr>
                         <th class="right aligned">
-                            <strong>Total</strong></th>
+                            <div class="right floated"><strong>Total</strong></div>
+                            <div class="promo code left floated"><a href="#">Code promo ?</a></div>
+                        </th>
                         <th class="right aligned"><strong>49&nbsp;€</strong></th>
                     </tr>
                     </tfoot>
                 </table>
 
-                <div class="promo code"><a href="#">Code promo ?</a></div>
 
                 <div class="segments">
                     <div class="segment secondary">
@@ -131,13 +134,29 @@
                                 <label>Email</label>
                                 <input type="email" name="email" value="" placeholder="Ex : georges.abitbol@flim.com">
                                 <p class="hint">
-                                    Ce sera notre moyen de communiquer avec vous. Cet email restera strictement confientiel... vous n'aimez pas les spams et nous non plus !
+                                    Ce sera notre moyen de communiquer avec vous. Cet email restera strictement confidentiel... vous n'aimez pas les spams et nous non plus !
                                 </p>
                             </div>
                             <div class="col-lg-6 required field">
                                 <label>Téléphone (Portable de préférence)</label>
                                 <input type="tel" name="phone" value="" placeholder="Ex : 0679461346">
                                 <p class="hint">Ce téléphone permet au livreur de vous contacter en cas de problème. En aucun cas il sera utilisé à des fins commerciales (on tient trop à votre vie privée :) )</p>
+                            </div>
+                            <div class="col-lg-12 required field">
+                                <label>Adresse</label>
+                                <input type="text" name="address" value="" placeholder="Ex : 10 rue des jolis posters">
+                            </div>
+                            <div class="col-lg-12 field">
+                                <label>Complément d'adresse</label>
+                                <textarea name="address2" placeholder="Ex : Bat C - 4ème étage droite, code 7777" rows="3" spellcheck="false" autocorrect="off"></textarea>
+                            </div>
+                            <div class="col-lg-6 required field">
+                                <label>Code postal</label>
+                                <input type="tel" name="postalCode" value="" placeholder="Ex : 30000">
+                            </div>
+                            <div class="col-lg-6 required field">
+                                <label>Ville</label>
+                                <input type="text" name="city" value="" placeholder="Ex : Nîmes" spellcheck="false" autocorrect="off">
                             </div>
                         </div>
                     </div>
@@ -190,8 +209,8 @@
                             <p class="hint">(Vous recevrez des codes promos, des cadeaux et plein d'autres trucs cool)</p>
                         </div>
                     </div>
-                    <div class="segment">
-                        <button class="primary center aligned big button">Commander</button>
+                    <div class="segment center aligned">
+                        <button class="primary big button">Commander</button>
                         <p class="hint">Vous allez adorer votre poster :)</p>
 
                     </div>

@@ -6,6 +6,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   border-radius: $small-radius;
+  margin-bottom: $padding;
 
   .aligned {
     &.right {

@@ -118,12 +118,15 @@ p:last-child {
 
 .aligned.left {
   text-align: left;
+  text-align-last: auto;
 }
 .aligned.right {
   text-align: right;
+  text-align-last: auto;
 }
 .aligned.center {
   text-align: center;
+  text-align-last: auto;
 }
 
 em, i, .em {
@@ -459,7 +462,8 @@ input[type=url],
 input[type=email],
 input[type=password],
 input[type=number],
-input[type=tel] {
+input[type=tel],
+textarea {
   box-sizing: border-box;
   width: 100%;
   padding: 0.6666666667em;
@@ -478,7 +482,8 @@ input[type=url]::placeholder,
 input[type=email]::placeholder,
 input[type=password]::placeholder,
 input[type=number]::placeholder,
-input[type=tel]::placeholder {
+input[type=tel]::placeholder,
+textarea::placeholder {
   color: rgba(49, 36, 43, 0.4);
 }
 input[type=text]:last-child,
@@ -486,7 +491,8 @@ input[type=url]:last-child,
 input[type=email]:last-child,
 input[type=password]:last-child,
 input[type=number]:last-child,
-input[type=tel]:last-child {
+input[type=tel]:last-child,
+textarea:last-child {
   margin-bottom: 0;
 }
 input[type=text]:focus,
@@ -494,7 +500,8 @@ input[type=url]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
 input[type=number]:focus,
-input[type=tel]:focus {
+input[type=tel]:focus,
+textarea:focus {
   border-color: #7c3eb9;
   box-shadow: 0 0 0 5px rgba(124, 62, 185, 0.2);
 }
@@ -503,7 +510,8 @@ input[type=url]:focus::placeholder,
 input[type=email]:focus::placeholder,
 input[type=password]:focus::placeholder,
 input[type=number]:focus::placeholder,
-input[type=tel]:focus::placeholder {
+input[type=tel]:focus::placeholder,
+textarea:focus::placeholder {
   color: rgba(49, 36, 43, 0.2);
 }
 input[type=text]:disabled,
@@ -511,7 +519,8 @@ input[type=url]:disabled,
 input[type=email]:disabled,
 input[type=password]:disabled,
 input[type=number]:disabled,
-input[type=tel]:disabled {
+input[type=tel]:disabled,
+textarea:disabled {
   background-color: #6e7e85;
   cursor: not-allowed;
 }
@@ -520,7 +529,8 @@ input[type=url].huge,
 input[type=email].huge,
 input[type=password].huge,
 input[type=number].huge,
-input[type=tel].huge {
+input[type=tel].huge,
+textarea.huge {
   font-size: 1.7em;
 }
 
@@ -533,7 +543,8 @@ input[type=tel].huge {
 .field input[type=email],
 .field input[type=password],
 .field input[type=number],
-.field input[type=tel] {
+.field input[type=tel],
+.field textarea {
   margin: 0;
 }
 .field.inline.action {
@@ -544,7 +555,8 @@ input[type=tel].huge {
 .field.inline.action input[type=email],
 .field.inline.action input[type=password],
 .field.inline.action input[type=number],
-.field.inline.action input[type=tel] {
+.field.inline.action input[type=tel],
+.field.inline.action textarea {
   max-width: 100%;
   border-radius: 4px 0 0 4px;
 }
@@ -553,7 +565,8 @@ input[type=tel].huge {
 .field.inline.action input[type=email]:focus + .button,
 .field.inline.action input[type=password]:focus + .button,
 .field.inline.action input[type=number]:focus + .button,
-.field.inline.action input[type=tel]:focus + .button {
+.field.inline.action input[type=tel]:focus + .button,
+.field.inline.action textarea:focus + .button {
   box-shadow: 0 0 0 5px rgba(124, 62, 185, 0.2);
   margin-left: 10px;
 }
@@ -2625,6 +2638,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   border-radius: 2px;
+  margin-bottom: 2em;
 }
 table .aligned.right {
   text-align-last: end;
@@ -2792,9 +2806,6 @@ img {
   padding: 4em 0;
   background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
 }
-.checkout .promo.code {
-  margin: 1rem 0;
-}
 
 .search.results {
   padding-left: inherit;
@@ -2802,12 +2813,12 @@ img {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 .search.results .list {
   background-color: #FBFBFB;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
   border-radius: 0 0 4px 4px;
-  z-index: 10;
   width: 100%;
 }
 .search.results .item {
@@ -2831,6 +2842,13 @@ img {
   padding: 0.3em 0.5em;
   float: right;
   border-radius: 4px;
+}
+
+.intersection {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -1.5em !important;
 }
 
 /*# sourceMappingURL=style.css.map */
