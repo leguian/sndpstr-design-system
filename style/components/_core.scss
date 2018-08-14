@@ -116,17 +116,17 @@ p {
 
 .aligned {
   &.left {
-    text-align: left;
-    text-align-last: auto;
+    text-align: left !important;
+    text-align-last: auto !important;
   }
   &.right {
-    text-align: right;
-    text-align-last: auto;
+    text-align: right !important;
+    text-align-last: auto !important;
   }
 
   &.center {
-    text-align: center;
-    text-align-last: auto;
+    text-align: center !important;
+    text-align-last: auto !important;
   }
 }
 

@@ -117,16 +117,16 @@ p:last-child {
 }
 
 .aligned.left {
-  text-align: left;
-  text-align-last: auto;
+  text-align: left !important;
+  text-align-last: auto !important;
 }
 .aligned.right {
-  text-align: right;
-  text-align-last: auto;
+  text-align: right !important;
+  text-align-last: auto !important;
 }
 .aligned.center {
-  text-align: center;
-  text-align-last: auto;
+  text-align: center !important;
+  text-align-last: auto !important;
 }
 
 em, i, .em {
@@ -2797,9 +2797,29 @@ img {
 .customize {
   padding: 4em 0;
 }
-.customize .frame {
-  border: 1px solid #000;
-  padding: 50px;
+.customize .wrapper {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.customize .wrapper .frame {
+  width: 1200px;
+  height: 400px;
+  padding: 80px 150px;
+  text-align: center;
+  background: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  box-shadow: 0 0 0 35px #000 inset;
+  line-height: 0;
+}
+.customize .wrapper .frame .svg .only {
+  height: 100%;
+}
+.customize .wrapper .frame .track {
+  margin-top: -45px;
+  text-transform: uppercase;
 }
 
 .checkout {
