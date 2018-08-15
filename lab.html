@@ -53,7 +53,10 @@
         <h2 class="center aligned">Personnalisation</h2>
         <div class="grid justify-center">
             <div class="col-lg-10 center aligned">
-                    <div class="button ghost active">Cadre</div>
+                <label class="toggle">
+                    <input type="checkbox" name="frame" checked="checked">
+                    <span>Cadre</span>
+                </label>
             </div>
         </div>
 
@@ -73,13 +76,12 @@
         <div class="grid justify-center">
             <div class="col-lg-10">
                 <form action="">
-                    <div class="grid">
+                    <div class="grid align-end">
                         <div class="col-sm-6 field">
                             <label>Textes</label>
                             <input type="text" placeholder="Daft Punk - Get Lucky" autocorrect="off" value="" tabindex="0" autocomplete="off" spellcheck="false">
                         </div>
                         <div class="col-sm-6 field">
-                            <label>&nbsp;</label>
                             <input type="text" placeholder="4:35" autocorrect="off" value="" tabindex="0" autocomplete="off" spellcheck="false">
                         </div>
                     </div>
@@ -140,7 +142,7 @@
                         <p>Veuillez entrer les informations demandées ci-dessous et choisissez un moyen de paiement. Le poster sera imprimé sous 7 jours puis expédié à votre adresse après un contrôle qualité.</p>
                     </div>
                     <div class="segment">
-                        <div class="grid">
+                        <div class="grid align-end">
                             <div class="col-sm-6 required field">
                                 <label>Prénom</label>
                                 <input type="text" name="firstName" value="" placeholder="Ex : Georges" spellcheck="false" autocorrect="off">
@@ -183,19 +185,20 @@
                         <h4>Paiement sécurisé</h4>
                     </div>
                     <div class="segment yellow">
-                        <div class="grid">
+                        <div class="grid align-end">
                             <div class="col-lg-8 field">
                                 <div class="icon ghost button"><i class="icon visa">Visa</i></div>
                                 <div class="icon ghost button"><i class="icon mastercard">mastercard</i></div>
                                 <div class="icon ghost button"><i class="icon amex">Amex</i></div>
                             </div>
-                            <div class="col-sm-8 field">
+                            <div class="col-sm-8 required error field">
                                 <label>Numéro de carte</label><input type="tel" name="cardNumber" value="" placeholder="Ex : 5435 4354 2345 7656">
+                                <div class="explanation">Ta carte est foireuse mec</div>
                             </div>
-                            <div class="col-sm-4 field">
+                            <div class="col-sm-4 required field">
                                 <label>CVV</label> <a href="javascript:void(0)" class="tooltip" title="Les 3 derniers chiffres derrière votre CB :)">(Kezako ?)</a><input type="tel" name="cardCVV" value="" placeholder="Ex : 123">
                             </div>
-                            <div class="col-sm-4 field">
+                            <div class="col-xs-4 required field">
                                 <label>Expire le</label>
                                 <div class="dropdown">
                                     <select>
@@ -206,8 +209,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-sm-4 field">
-                                <label>&nbsp;</label>
+                            <div class="col-xs-4 required field">
                                 <div class="dropdown">
                                     <select>
                                         <option>2018</option>
@@ -257,6 +259,7 @@
     var elWidth = $el.outerWidth();
 
     var $wrapper = $("#wrapper");
+    var wrapperHeight = $wrapper.height();
 
     scale = Math.min(
             $wrapper.width() / elWidth,
@@ -280,9 +283,13 @@
                 $wrapper.height() / elHeight
         );
 
+        console.log("scale:", scale)
+        console.log("wrapperHeight", wrapperHeight)
+
         $el.css({
             transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
         });
+        //$wrapper.css({ height: wrapperHeight*scale });
 
     }
 

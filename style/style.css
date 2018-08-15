@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cabin:700|Roboto:400,400i,700,700i");
+@import '../icons/webfont/sndpstr-icon.css';
 h1, h2, h3, h4, h5, p, blockquote, figure, ol, ul {
   margin: 0;
   padding: 0;
@@ -679,6 +680,51 @@ input[type=checkbox] + label:before {
   transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+label.toggle > span {
+  position: relative;
+  padding-left: 3em;
+}
+label.toggle > span:before {
+  background-color: #eeeeee;
+  border-radius: 99rem;
+  border: 0.1em solid transparent;
+  content: "";
+  height: 1.2em;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 2.4em;
+}
+label.toggle > span:after {
+  background-color: #c1c8cb;
+  border: 2px solid #eeeeee;
+  border-radius: 99rem;
+  content: "";
+  height: 1.2em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 1.2em;
+}
+label.toggle > input[type=checkbox] {
+  display: none;
+}
+label.toggle > input[type=checkbox]:checked + span {
+  font-weight: 700;
+  color: #7c3eb9;
+}
+label.toggle > input[type=checkbox]:checked + span:before {
+  background-color: #7c3eb9;
+}
+label.toggle > input[type=checkbox]:checked + span:after {
+  transform: translateX(100%);
+  background-color: #FBFBFB;
+  border: 2px solid #7c3eb9;
+}
+
 .dropdown {
   position: relative;
   display: block;
@@ -720,7 +766,7 @@ input[type=checkbox] + label:before {
   top: 0;
   bottom: 0;
   border-radius: 0 4px 4px 0;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .dropdown select[disabled] {
   color: rgba(0, 0, 0, 0.3);
@@ -2801,6 +2847,21 @@ img {
   position: relative;
   height: 400px;
   overflow: hidden;
+}
+@media (max-width: 1200px) {
+  .customize .wrapper {
+    height: 320px;
+  }
+}
+@media (max-width: 992px) {
+  .customize .wrapper {
+    height: 240px;
+  }
+}
+@media (max-width: 768px) {
+  .customize .wrapper {
+    height: 170px;
+  }
 }
 .customize .wrapper .frame {
   width: 1200px;

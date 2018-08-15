@@ -19,11 +19,10 @@ brew install --devel sass/sass/sass
 ```
 ### Set up
 
-Compile to your style sheet
+Generate style.css
 
 ```
-cd style/
-sass --watch sndpstr.scss:style.css
+npm start
 ```
 
 ### Doc

@@ -1,0 +1,29 @@
+{
+  "name": "sndpstr-design-system",
+  "version": "1.0.0",
+  "description": "SNDPSTR DS\r ==============",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "kss": "^3.0.0-beta.21",
+    "michelangelo": "^0.8.0",
+    "npm": "^6.1.0"
+  },
+  "devDependencies": {
+    "webfonts-generator": "^0.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node webfont-generator.js && cd style && sass --watch sndpstr.scss:style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leguian/sndpstr-design-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leguian/sndpstr-design-system/issues"
+  },
+  "homepage": "https://github.com/leguian/sndpstr-design-system#readme"
+}

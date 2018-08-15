@@ -1,15 +1,29 @@
 .customize {
   padding: $padding*2 0;
 
+  $frameHeight: 400px;
+
   .wrapper {
     position: relative;
-    //background: #666;
-    height: 400px;
+
+    height: $frameHeight;
     overflow: hidden;
+
+
+    @media (max-width: $reflex-lg) {
+      height: 320px;
+    }
+    @media (max-width: $reflex-md) {
+      height: 240px;
+    }
+
+    @media (max-width: $reflex-sm) {
+      height: 170px;
+    }
 
     .frame {
       width: 1200px;
-      height: 400px;
+      height: $frameHeight;
       padding: 80px 150px;
       text-align: center;
       background: white;
