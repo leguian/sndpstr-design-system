@@ -401,6 +401,12 @@ svg:not(:root) {
   margin: auto;
   display: block;
 }
+.button.icon, input[type=submit].icon, button.icon {
+  padding: 0.2em 1.1em;
+}
+.button.icon .icon, input[type=submit].icon .icon, button.icon .icon {
+  font-size: 2em;
+}
 
 .card {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);

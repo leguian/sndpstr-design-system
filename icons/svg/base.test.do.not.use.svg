@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;}
-</style>
-<path class="st0" d="M23,0H13h-1h-1H1H0v1v10v1v1v10v1h1h10h1h1h10h1v-1V13v-1v-1V1V0H23z M1,1h10v10H1V1z M1,23V13h10v10H1z M23,23
-	H13V13h10V23z M23,11H13V1h10V11z"/>
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<path d="M245.3,0H138.7H128h-10.7H10.7H0v10.7v106.7V128v10.7v106.7V256h10.7h106.7H128h10.7h106.7H256v-10.7V138.7V128v-10.7V10.7
+	V0H245.3z M10.7,10.7h106.7v106.7H10.7V10.7z M10.7,245.3V138.7h106.7v106.7H10.7z M245.3,245.3H138.7V138.7h106.7V245.3z
+	 M245.3,117.3H138.7V10.7h106.7V117.3z"/>
 </svg>

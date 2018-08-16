@@ -166,4 +166,12 @@
     margin: auto;
     display: block;
   }
+
+  &.icon {
+    padding: .2em 1.1em;
+
+    .icon {
+      font-size: 2em;
+    }
+  }
 }
