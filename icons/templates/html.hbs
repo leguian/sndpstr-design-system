@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>{{fontName}}</title>
-    <link rel="stylesheet" type="text/css" media="all" href="../../style/style.css"/>
-	<style>
-		body {
-			font-family: sans-serif;
-			margin: 0;
-			padding: 10px 20px;
-		}
-
-        .preview {
-            background: #7a5601;
+    <meta charset="UTF-8">
+    <title>{{fontName}}</title>
+    <!--<link rel="stylesheet" type="text/css" media="all" href="../../style/style.css"/>-->
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
         }
 
-		.preview__icon {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: 2;
-            background: yellow;
-		}
+        .preview {
+            font-size: 1em;
+            background: #eee;
+            padding: 0.7em;
+            border-radius: 6px;
+            margin-bottom: 5px;
+        }
 
-		{{{styles}}}
-	</style>
+        span {
+            vertical-align: middle;
+        }
+
+            {{{styles}}}
+    </style>
 </head>
 <body>
-	<h1>{{fontName}}</h1>
-	{{#each names}}
-	<div class="preview">
-		<span class="preview__icon">
-			<i class="{{../baseClass}}{{../classPrefix}} {{#dotreplace}}{{this}}{{/dotreplace}}"></i>
-		</span>
-		<span contenteditable="true">{{#dotreplace}}{{this}}{{/dotreplace}}</span>
-	</div>
-	{{/each}}
+<h1>{{fontName}}</h1>
+{{#each names}}
+    <div class="preview">
+
+        <i class="{{../baseClass}}{{../classPrefix}} {{#dotreplace}}{{this}}{{/dotreplace}}"></i>
+
+        <span contenteditable="true">{{#dotreplace}}{{this}}{{/dotreplace}}</span>
+    </div>
+{{/each}}
 </body>
 </html>

@@ -4,18 +4,22 @@
 }
 
 i{{baseSelector}} {
+    display: inline-block;
     line-height: normal;
     font-size: 140%;
-    vertical-align: middle;
     height: 1em;
     width: 1em;
+    text-align: center;
+    vertical-align: middle;
+    speak: none;
 }
 
 {{baseSelector}}:before {
 	font-family: {{fontName}} !important;
 	font-style: normal;
 	font-weight: normal !important;
-	vertical-align: middle;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 {{#each codepoints}}
