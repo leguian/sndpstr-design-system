@@ -680,6 +680,9 @@ input[type=checkbox] + label:before {
   transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+label.toggle {
+  cursor: pointer;
+}
 label.toggle > span {
   position: relative;
   padding-left: 3em;

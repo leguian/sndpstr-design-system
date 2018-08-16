@@ -3,19 +3,23 @@
 	src: {{{src}}};
 }
 
-{{baseSelector}} {
-	line-height: 1;
+i{{baseSelector}} {
+    line-height: normal;
+    font-size: 140%;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
 }
 
 {{baseSelector}}:before {
 	font-family: {{fontName}} !important;
 	font-style: normal;
 	font-weight: normal !important;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 {{#each codepoints}}
-.{{../classPrefix}}.{{@key}}:before {
+i.{{../classPrefix}}.{{@key}}:before {
 	content: "\\{{this}}";
 }
 {{/each}}
