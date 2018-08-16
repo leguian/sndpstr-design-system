@@ -11,6 +11,15 @@
             padding: 10px 20px;
         }
 
+        .wrap{
+            -webkit-column-count: 5;
+            -moz-column-count: 5;
+            column-count: 5;
+            -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            column-gap: 20px;
+        }
+
         .preview {
             font-size: 1em;
             background: #eee;
@@ -28,13 +37,15 @@
 </head>
 <body>
 <h1>{{fontName}}</h1>
-{{#each names}}
-    <div class="preview">
+<div class="wrap">
+    {{#each names}}
+        <div class="preview">
 
-        <i class="{{../baseClass}}{{../classPrefix}} {{#dotreplace}}{{this}}{{/dotreplace}}"></i>
+            <i class="{{../baseClass}}{{../classPrefix}} {{#dotreplace}}{{this}}{{/dotreplace}}"></i>
 
-        <span contenteditable="true">{{#dotreplace}}{{this}}{{/dotreplace}}</span>
-    </div>
-{{/each}}
+            <span contenteditable="true">{{#dotreplace}}{{this}}{{/dotreplace}}</span>
+        </div>
+    {{/each}}
+</div>
 </body>
 </html>
