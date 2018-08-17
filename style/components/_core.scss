@@ -130,6 +130,22 @@ p {
   }
 }
 
+/* MARGIN */
+.margin {
+  &.top {
+    margin-top: $padding/2;
+  }
+  &.bottom {
+    margin-top: $padding/2;
+  }
+  &.left {
+    margin-top: $padding/2;
+  }
+  &.right {
+    margin-top: $padding/2;
+  }
+}
+
 em, i, .em {
   font-style: italic;
   line-height: inherit;

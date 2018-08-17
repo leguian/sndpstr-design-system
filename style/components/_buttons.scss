@@ -36,6 +36,10 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 
+  .icon {
+    margin-right: .5rem;
+  }
+
   &:last-child {
     margin: 0;
   }
@@ -111,6 +115,43 @@
       border-color: adjust-hue($yellow, -6%);
     }
   }
+  &.facebook {
+    background-color: $facebook;
+    border-color: $facebook;
+    &.ghost {
+      background: transparent;
+      @include ghost-button($facebook);
+    }
+    &:hover {
+      background-color: darken($facebook, 10%);
+      border-color: darken($facebook, 10%);
+    }
+  }
+  &.twitter {
+    background-color: $twitter;
+    border-color: $twitter;
+    &.ghost {
+      background: transparent;
+      @include ghost-button($twitter);
+    }
+    &:hover {
+      background-color: darken($twitter, 10%);
+      border-color: darken($twitter, 10%);
+    }
+  }
+  &.instagram {
+    background-color: $instagram;
+    border-color: $instagram;
+    &.ghost {
+      background: transparent;
+      @include ghost-button($instagram);
+    }
+    &:hover {
+      background-color: darken($instagram, 10%);
+      border-color: darken($instagram, 10%);
+    }
+  }
+
   &.disabled {
     background-color: rgba($text-color, .2);
     border-color: transparent;

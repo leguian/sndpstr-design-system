@@ -130,6 +130,20 @@ p:last-child {
   text-align-last: auto !important;
 }
 
+/* MARGIN */
+.margin.top {
+  margin-top: 1em;
+}
+.margin.bottom {
+  margin-top: 1em;
+}
+.margin.left {
+  margin-top: 1em;
+}
+.margin.right {
+  margin-top: 1em;
+}
+
 em, i, .em {
   font-style: italic;
   line-height: inherit;
@@ -254,6 +268,9 @@ svg:not(:root) {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+.button .icon, input[type=submit] .icon, button .icon {
+  margin-right: 0.5rem;
+}
 .button:last-child, input[type=submit]:last-child, button:last-child {
   margin: 0;
 }
@@ -347,6 +364,54 @@ svg:not(:root) {
 .button.yellow:hover, input[type=submit].yellow:hover, button.yellow:hover {
   background-color: #fdb64a;
   border-color: #fdb64a;
+}
+.button.facebook, input[type=submit].facebook, button.facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+.button.facebook.ghost, input[type=submit].facebook.ghost, button.facebook.ghost {
+  background: transparent;
+  color: #3b5998;
+}
+.button.facebook.ghost:hover, input[type=submit].facebook.ghost:hover, button.facebook.ghost:hover {
+  background: #3b5998;
+  color: #FFFFFF;
+}
+.button.facebook:hover, input[type=submit].facebook:hover, button.facebook:hover {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+.button.twitter, input[type=submit].twitter, button.twitter {
+  background-color: #00aced;
+  border-color: #00aced;
+}
+.button.twitter.ghost, input[type=submit].twitter.ghost, button.twitter.ghost {
+  background: transparent;
+  color: #00aced;
+}
+.button.twitter.ghost:hover, input[type=submit].twitter.ghost:hover, button.twitter.ghost:hover {
+  background: #00aced;
+  color: #FFFFFF;
+}
+.button.twitter:hover, input[type=submit].twitter:hover, button.twitter:hover {
+  background-color: #0087ba;
+  border-color: #0087ba;
+}
+.button.instagram, input[type=submit].instagram, button.instagram {
+  background-color: #517fa4;
+  border-color: #517fa4;
+}
+.button.instagram.ghost, input[type=submit].instagram.ghost, button.instagram.ghost {
+  background: transparent;
+  color: #517fa4;
+}
+.button.instagram.ghost:hover, input[type=submit].instagram.ghost:hover, button.instagram.ghost:hover {
+  background: #517fa4;
+  color: #FFFFFF;
+}
+.button.instagram:hover, input[type=submit].instagram:hover, button.instagram:hover {
+  background-color: #406582;
+  border-color: #406582;
 }
 .button.disabled, input[type=submit].disabled, button.disabled {
   background-color: rgba(49, 36, 43, 0.2);
@@ -458,6 +523,7 @@ svg:not(:root) {
   color: #31242b;
   overflow: hidden;
   margin-bottom: 1rem;
+  height: 100%;
 }
 .card:last-child {
   margin-bottom: 0;
@@ -2863,7 +2929,7 @@ img {
   font-size: 0.85em;
   padding: 0.5em 1em;
   border-radius: 99rem;
-  line-height: 1;
+  line-height: normal;
 }
 .label.black {
   background-color: #31242b;
@@ -2880,6 +2946,12 @@ img {
 }
 .label.green {
   background-color: #5e8c0c;
+}
+.label.small {
+  font-size: 0.7em;
+}
+.label.big {
+  font-size: 1.1em;
 }
 
 .header .menu .logo {

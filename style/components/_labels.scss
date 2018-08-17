@@ -2,10 +2,10 @@
   display: inline-block;
   background: $gray;
   color: $white;
-  font-size:.85em;
+  font-size: .85em;
   padding: .5em 1em;
   border-radius: 99rem;
-  line-height:1;
+  line-height: normal;
 
   &.black {
     background-color: $black;
@@ -22,5 +22,12 @@
   }
   &.green {
     background-color: $green;
+  }
+
+  &.small {
+    font-size: .7em;
+  }
+  &.big {
+    font-size: 1.1em;
   }
 }
