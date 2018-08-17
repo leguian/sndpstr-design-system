@@ -209,7 +209,11 @@
   }
 
   &.icon {
-    padding: 0.2em 0.5em;
+    padding: 0.4em 0.6em;
+
+    .icon {
+      margin: 0;
+    }
   }
   &.responsive {
     @include tablet {

@@ -467,7 +467,10 @@ svg:not(:root) {
   display: block;
 }
 .button.icon, input[type=submit].icon, button.icon {
-  padding: 0.2em 0.5em;
+  padding: 0.4em 0.6em;
+}
+.button.icon .icon, input[type=submit].icon .icon, button.icon .icon {
+  margin: 0;
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .button.responsive, input[type=submit].responsive, button.responsive {
