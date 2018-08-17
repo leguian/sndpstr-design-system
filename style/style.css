@@ -932,10 +932,6 @@ label.toggle > input[type=checkbox]:checked + span:after {
   vertical-align: text-bottom;
 }
 
-.footer {
-  min-height: 150px;
-}
-
 .container,
 .container-full {
   -webkit-box-sizing: border-box;
@@ -2617,13 +2613,6 @@ h1.super-header, h2.super-header, h3.super-header, h4.super-header, h5.super-hea
 }
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, .h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child {
   margin-bottom: 0;
-}
-
-.super-header {
-  font-size: 4rem;
-}
-.super-header.vw {
-  font-size: 5vw;
 }
 
 h1, .h1 {

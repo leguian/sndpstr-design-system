@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Living Style Guide</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../style/style.css"/>
+
+</head>
+
+<style>
+    .demo div {
+        box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.2);
+        background: rgba(255, 0, 0, 0.07);
+    }
+</style>
+
+<body class="sndpstr">
+
+
+<div class="container">
+    <div class="grid">
+        <div class="col-auto">
+            <div class="segments">
+                <div class="segment">
+                    <p><input type="checkbox" name="checkbox" id="checkbox" value="on"><label for="checkbox">Checkbox</label></p>
+                    <p><input type="radio" name="radio" id="radio"><label for="radio">Radio</label></p>
+                    <div class="dropdown">
+                        <select>
+                            <option>Sherlock Holmes</option>
+                            <option>The Great Gatsby</option>
+                            <option>V for Vendetta</option>
+                            <option>The Wolf of Wallstreet</option>
+                            <option>Quantum of Solace</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="segment">
+                    <div class="grid">
+                        <div class="col-lg-6 required field">
+                            <label>Required</label>
+                            <input type="text" name="Required" value="" placeholder="Required">
+                        </div>
+                        <div class="col-lg-6 field">
+                            <label>Not required</label>
+                            <input type="text" name="Not required" value="" placeholder="Not required"><span></span>
+                        </div>
+                        <div class="col-6 required error field">
+                            <label>Required with error</label>
+                            <input type="text" name="equiredWithError" value="" placeholder="equired with error">
+                            <div class="explanation">Explanation of the error</div>
+                        </div>
+                        <div class="col-6 field">
+                            <label>Field with a hint</label>
+                            <input type="hint" name="hint" value="" placeholder="the hint is bellow">
+                            <p class="hint">
+                                The hint is here ! Be relevant...
+                            </p>
+                        </div>
+                        <div class="col-12 field">
+                            <label>Textarea</label>
+                            <textarea name="email" value="" placeholder="textarea"></textarea>
+                        </div>
+                        <div class="col-12 field">
+                            <label>Inline field with a button</label>
+                            <div class="field inline fluid action">
+                                <input type="text" placeholder="Inline field with a button" value="">
+                                <button class="button icon"><i class="icon search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+</html>
