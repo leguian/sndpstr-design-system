@@ -2665,6 +2665,11 @@ ul, ol, dl {
 ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
   margin-bottom: 0;
 }
+ul.links, ol.links, dl.links {
+  list-style-type: none;
+  margin: 0;
+  line-height: 2;
+}
 
 ul {
   margin-left: 1.2rem;
@@ -2986,7 +2991,16 @@ img {
 }
 
 .footer {
-  background: yellow;
+  padding: 2em 0;
+  background-image: linear-gradient(-122deg, #7c3eb9, #eb0066);
+  color: #FBFBFB;
+}
+.footer a {
+  color: #FBFBFB;
+  text-decoration: underline;
+}
+.footer a:hover {
+  opacity: 0.5;
 }
 
 .customize {

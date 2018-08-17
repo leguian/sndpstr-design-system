@@ -5,6 +5,12 @@ ul, ol, dl {
   ul, ol, dl {
     margin-bottom:0;
   }
+
+  &.links {
+    list-style-type: none;
+    margin: 0;
+    line-height: 2;
+  }
 }
 ul {
   margin-left:1.2rem;
