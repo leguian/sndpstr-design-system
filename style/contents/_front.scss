@@ -2,10 +2,22 @@
   .menu {
     .logo {
       padding: 0.5rem 0;
+
+      @include tablet {
+
+      }
       
       img {
         width: 220px;
+        max-height: 40px;
         vertical-align: middle;
+
+        @include mobile {
+          width: 52px;
+        }
+        @include tablet {
+          width: 52px;
+        }
       }
     }
   }

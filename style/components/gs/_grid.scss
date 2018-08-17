@@ -15,6 +15,11 @@
         margin-right: -$reflex-grid-spacing;
         margin-left: -$reflex-grid-spacing;
     }
+
+    @include mobile {
+        padding-right: ($reflex-grid-spacing);
+        padding-left: ($reflex-grid-spacing);
+    }
 }
 
 .#{$reflex-prefix}container {

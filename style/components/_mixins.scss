@@ -368,3 +368,27 @@ $brand-colors: ("red", $red), ("green", #008000), ("blue", #0000ff);
     }
   }
 }
+
+@mixin mobile {
+  @media (max-width: $reflex-xs) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $reflex-xs) and (max-width: $reflex-sm) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$reflex-sm}) and (max-width: #{$reflex-xlg}) {
+    @content;
+  }
+}
+
+@mixin desktop-xl {
+  @media (min-width: $reflex-xlg) {
+    @content;
+  }
+}

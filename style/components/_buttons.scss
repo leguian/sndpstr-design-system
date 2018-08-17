@@ -168,10 +168,44 @@
   }
 
   &.icon {
-    padding: .2em 1.1em;
+    padding: 0.2em 0.5em;
+  }
+  &.responsive {
+    @include tablet {
+      display: block;
+      width: 60%;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      text-align-last: center;
+      &:not(:last-child) {
+        margin-bottom: .5rem;
+      }
+    }
 
-    .icon {
-      font-size: 2em;
+    @include mobile {
+      display: block;
+      width: 100%;
+      text-align-last: center;
+      &:not(:last-child) {
+        margin-bottom: .5rem;
+      }
+    }
+  }
+
+  &.demo {
+    border: 0;
+
+    @include mobile {
+      background-color: $red;
+    }
+    @include tablet {
+      background-color: $blue;
+    }
+    @include desktop {
+      background-color: $yellow;
+    }
+    @include desktop-xl {
+      background-color: $green;
     }
   }
 }
