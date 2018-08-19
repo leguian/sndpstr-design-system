@@ -75,11 +75,23 @@
       background-color: $green;
     }
   }
+
+  &.flat {
+    box-shadow: 0 0 1px $border-color;
+  }
+
+  &.rounded {
+border-radius: $radius;
+  }
 }
 
 .segments {
   box-shadow: $base-shadow;
   margin-bottom: 2rem;
+
+  &.flat {
+    box-shadow: 0 0 1px $border-color;
+  }
 
   &:last-child {
     margin-bottom: 0;

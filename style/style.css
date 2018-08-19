@@ -2675,6 +2675,9 @@ ul.lined, ul.none {
   margin-left: 0;
 }
 ul.lined li {
+  line-height: 2;
+}
+ul.lined li:not(:last-child) {
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -2786,10 +2789,19 @@ ol {
 .segment.green.inverted, .segment.valid.inverted {
   background-color: #5e8c0c;
 }
+.segment.flat {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.segment.rounded {
+  border-radius: 4px;
+}
 
 .segments {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
   margin-bottom: 2rem;
+}
+.segments.flat {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
 .segments:last-child {
   margin-bottom: 0;
@@ -2814,6 +2826,7 @@ table {
   border-spacing: 0;
   border-radius: 2px;
   margin-bottom: 2em;
+  text-align: left;
 }
 table .aligned.right {
   text-align-last: end;
