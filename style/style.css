@@ -247,7 +247,6 @@ svg:not(:root) {
 .button, input[type=submit], button {
   display: inline-block;
   position: relative;
-  z-index: 2;
   vertical-align: middle;
   overflow: visible;
   border: solid 2px #7c3eb9;
@@ -2790,10 +2789,13 @@ ol {
   background-color: #5e8c0c;
 }
 .segment.flat {
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.13);
 }
 .segment.rounded {
   border-radius: 4px;
+}
+.segment.compact {
+  padding: 1em;
 }
 
 .segments {
@@ -2801,7 +2803,19 @@ ol {
   margin-bottom: 2rem;
 }
 .segments.flat {
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.13);
+}
+.segments.compact .segment {
+  padding: 1em;
+}
+.segments.rounded {
+  border-radius: 4px;
+}
+.segments.rounded .segment:first-child {
+  border-radius: 4px 4px 0 0;
+}
+.segments.rounded .segment:last-child {
+  border-radius: 0 0 4px 4px;
 }
 .segments:last-child {
   margin-bottom: 0;
@@ -2962,6 +2976,109 @@ img {
 }
 .label.big {
   font-size: 1.1em;
+}
+
+.modal {
+  display: none;
+}
+.modal .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .container {
+  will-change: transform;
+  background-color: #FBFBFB;
+  max-width: 650px;
+  max-height: 100vh;
+  border-radius: 4px;
+  overflow-y: auto;
+  padding: inherit;
+}
+.modal .container .icon.close {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.65);
+}
+.modal .container .icon.close:hover {
+  color: black;
+}
+.modal .container .header {
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.modal .container .content {
+  padding: 2em;
+}
+.modal .container .footer {
+  padding: 0 2em 2em 2em;
+  background: inherit;
+  color: inherit;
+}
+.modal.is-open {
+  display: block;
+}
+
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+.modal[aria-hidden=false] .overlay {
+  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal[aria-hidden=false] .container {
+  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal[aria-hidden=true] .overlay {
+  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal[aria-hidden=true] .container {
+  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.modal .container,
+.modal .overlay {
+  will-change: transform;
 }
 
 .header .menu .logo {

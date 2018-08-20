@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Living Style Guide</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="../style/style.css"/>
+</head>
+<body class="sndpstr">
+<div class="container">
+    <div class="segment">
+        <button class="button" data-modal-open="modal-1" role="button">
+            Demo Modal
+        </button>
+    </div>
+    <div class="segment">
+        <p>How to prevent error on action :</p>
+        <button class="button" data-modal-open="modal-2" role="button">Formater le site</button>
+        <button class="button" data-modal-open="modal-3" role="button">Ajouter des photos</button>
+    </div>
+    <div class="segment">
+        <p>SPECIFIC USE CASE : (How to discard a cancel action in french Oo !?)</p>
+        <button class="button" data-modal-open="modal-4" role="button">Annuler l'envoi de l'email</button>
+    </div>
+</div>
+
+<div class="modal" id="modal-1" aria-hidden="true">
+    <div class="overlay" data-modal-close>
+        <div class="container" role="dialog">
+            <header class="header">
+                Title
+                <i class="icon close" aria-label="Close modal" data-modal-close></i>
+            </header>
+            <div class="content">
+                <p>This is a completely accessible modal.</p>
+                <p>
+                    Try hitting the <strong>tab</strong>. To close modal hit the <strong>esc</strong> button, click on the overlay or just click the close button.
+                </p>
+                <div class="green flat compact segment">
+                    Un message d'avertissement.
+                </div>
+            </div>
+            <footer class="footer right aligned">
+                <button class="button">Continue</button>
+                <button class="ghost button" data-modal-close>Close</button>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-2" aria-hidden="true">
+    <div class="overlay" data-modal-close>
+        <div class="container" role="dialog">
+            <header class="header">
+                Formater le site
+                <i class="icon close" aria-label="Close modal" data-modal-close></i>
+            </header>
+            <div class="content">
+                <p>Souhaitez-vous formater le site ?</p>
+                <p>Cela entrainera la suppression de toutes les données et le nom de domaine sera revendu à George Abitbol. <span class="red text"><strong>Attention : </strong>Cette action est irreversible.</span></p>
+            </div>
+            <footer class="footer right aligned">
+                <button class="red button">Formatter</button>
+                <button class="ghost button" data-modal-close>Annuler</button>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-3" aria-hidden="true">
+    <div class="overlay" data-modal-close>
+        <div class="container" role="dialog">
+            <header class="header">
+                Ajouter des photos
+                <i class="icon close" aria-label="Close modal" data-modal-close></i>
+            </header>
+            <div class="content">
+                <p>Vous souhaitez ajouter 20 photos à votre album.</p>
+                <p>Cela consommera 25 MO sur le total de votre espace en ligne.</p>
+            </div>
+            <footer class="footer right aligned">
+                <button class="green button">Ajouter</button>
+                <button class="ghost button" data-modal-close>Annuler</button>
+            </footer>
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal-4" aria-hidden="true">
+    <div class="overlay" data-modal-close>
+        <div class="container" role="dialog">
+            <header class="header">
+                Annuler l'envoi
+                <i class="icon close" aria-label="Close modal" data-modal-close></i>
+            </header>
+            <div class="content">
+                <p>Souhaitez-vous vraiment annuler l'envoi de votre email ?</p>
+            </div>
+            <footer class="footer right aligned">
+                <button class="button">Annuler</button>
+                <button class="ghost button" data-modal-close>Fermer</button>
+            </footer>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+<script src="../style/js/core.js"></script>
+
+</body>
+</html>

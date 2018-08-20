@@ -77,11 +77,15 @@
   }
 
   &.flat {
-    box-shadow: 0 0 1px $border-color;
+    box-shadow: $flat-border;
   }
 
   &.rounded {
-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+  &.compact {
+    padding: $padding / 2;
   }
 }
 
@@ -90,7 +94,26 @@ border-radius: $radius;
   margin-bottom: 2rem;
 
   &.flat {
-    box-shadow: 0 0 1px $border-color;
+    box-shadow: $flat-border;
+  }
+
+  &.compact {
+    .segment {
+      padding: $padding / 2;
+    }
+  }
+
+  &.rounded {
+    border-radius: $radius;
+
+    .segment {
+      &:first-child {
+        border-radius: $radius $radius 0 0;
+      }
+      &:last-child {
+        border-radius: 0 0 $radius $radius;
+      }
+    }
   }
 
   &:last-child {
@@ -107,7 +130,7 @@ border-radius: $radius;
     &.blue,
     &.yellow,
     &.red,
-    &.green{
+    &.green {
       border: 0;
     }
 
