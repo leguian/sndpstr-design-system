@@ -2982,6 +2982,7 @@ img {
   display: none;
 }
 .modal .overlay {
+  will-change: transform;
   position: fixed;
   top: 0;
   left: 0;
@@ -3009,7 +3010,7 @@ img {
   color: black;
 }
 .modal .container .header {
-  padding: 2em;
+  padding: 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3018,11 +3019,12 @@ img {
 }
 .modal .container .content {
   padding: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .modal .container .footer {
-  padding: 0 2em 2em 2em;
-  background: inherit;
+  padding: 1em 2em;
   color: inherit;
+  background: rgba(0, 0, 0, 0.05);
 }
 .modal.is-open {
   display: block;
@@ -3061,24 +3063,17 @@ img {
   }
 }
 .modal[aria-hidden=false] .overlay {
-  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+  animation: mmfadeIn 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
-
 .modal[aria-hidden=false] .container {
-  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+  animation: mmslideIn 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .modal[aria-hidden=true] .overlay {
-  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+  animation: mmfadeOut 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
-
 .modal[aria-hidden=true] .container {
-  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
-}
-
-.modal .container,
-.modal .overlay {
-  will-change: transform;
+  animation: mmslideOut 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .header .menu .logo {
