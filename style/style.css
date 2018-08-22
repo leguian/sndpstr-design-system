@@ -132,16 +132,16 @@ p:last-child {
 
 /* MARGIN */
 .margin.top {
-  margin-top: 1em;
+  margin-top: 1em !important;
 }
 .margin.bottom {
-  margin-top: 1em;
+  margin-top: 1em !important;
 }
 .margin.left {
-  margin-top: 1em;
+  margin-top: 1em !important;
 }
 .margin.right {
-  margin-top: 1em;
+  margin-top: 1em !important;
 }
 
 em, i, .em {
@@ -290,6 +290,11 @@ svg:not(:root) {
 .button.ghost:hover, input[type=submit].ghost:hover, button.ghost:hover {
   background: #7c3eb9;
   color: #FFFFFF;
+}
+.button.inverted, input[type=submit].inverted, button.inverted {
+  background: white;
+  border: none;
+  color: #7c3eb9;
 }
 .button.active, input[type=submit].active, button.active {
   background-color: #623193;
@@ -582,6 +587,7 @@ input[type=number],
 input[type=tel],
 textarea {
   box-sizing: border-box;
+  position: relative;
   width: 100%;
   padding: 0.6666666667em;
   margin-bottom: 2em;
@@ -3119,6 +3125,14 @@ img {
   display: inline-block;
 }
 
+.video .iframe {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+}
+
+.how {
+  background-image: linear-gradient(80deg, rgba(88, 54, 122, 0.16), rgba(255, 255, 255, 0));
+}
+
 .footer {
   padding: 2em 0;
   background-image: linear-gradient(-122deg, #7c3eb9, #eb0066);
@@ -3173,6 +3187,13 @@ img {
 .customize .wrapper .frame .track {
   margin-top: -45px;
   text-transform: uppercase;
+}
+
+.hero .field .loader {
+  position: absolute;
+  left: auto;
+  right: 8em;
+  top: 0.5em;
 }
 
 .checkout {
