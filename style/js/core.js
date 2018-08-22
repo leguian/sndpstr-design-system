@@ -1,20 +1,26 @@
 /**
  * Created by leguian on 20/08/2018.
  */
-var feed = new Instafeed({
-    get: 'popular',
-    tagName: 'awesome',
-    clientId: '1df79a5058474d36adfb3465f073b1a7',
-    template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
-});
-feed.run();
-MicroModal.init({
-    openTrigger: 'data-modal-open',
-    closeTrigger: 'data-modal-close',
-    disableScroll: true,
-    disableFocus: false,
-    awaitCloseAnimation: false,
-    debugMode: true
-});
+jQuery(document).ready(function ($) {
+    try {
+        $("#instagram").jqinstapics({
+            "user_id": "3567011117",
+            "access_token": "3567011117.674061d.59160f04ba3c477b9ee08304569fa270",
+            "count": 15
+        });
 
-tippy('.tooltip');
+        MicroModal.init({
+            openTrigger: 'data-modal-open',
+            closeTrigger: 'data-modal-close',
+            disableScroll: true,
+            disableFocus: false,
+            awaitCloseAnimation: false,
+            debugMode: true
+        });
+
+        tippy('.tooltip');
+
+    } catch (err) {
+        console.log(err)
+    }
+});

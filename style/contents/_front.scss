@@ -46,6 +46,12 @@ $bloc-padding: $padding * 2 0;
       font-size: .5em;
     }
   }
+
+  #instagram {
+    div {
+      display: inline-block;
+    }
+  }
 }
 
 .footer {
