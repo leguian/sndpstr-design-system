@@ -1,3 +1,5 @@
+$bloc-padding: $padding * 2 0;
+
 .header {
   .menu {
     .logo {
@@ -6,7 +8,7 @@
       @include tablet {
 
       }
-      
+
       img {
         width: 220px;
         max-height: 40px;
@@ -23,18 +25,27 @@
   }
 }
 
-.body.head {
-  background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
-
-  .hero {
-    padding: 4rem 0;
-
-  }
+.bloc {
+  padding: $bloc-padding;
 }
 
-.main {
+.hero {
+  background-image: linear-gradient(0deg, rgba(88, 54, 122, 0.16), rgba(255, 255, 255, 0));
+}
+
+.showcase {
   background-image: linear-gradient(-122deg, $primary-color, $secondary-color);
   color: $white;
+
+  .h1 {
+    line-height: .9;
+    margin-bottom: $padding / 2;
+
+    .subtitle {
+      color: transparentize($white, .4);
+      font-size: .5em;
+    }
+  }
 }
 
 .footer {
@@ -45,7 +56,7 @@
   a {
     color: $white;
     text-decoration: underline;
-    
+
     &:hover {
       opacity: .5;
     }

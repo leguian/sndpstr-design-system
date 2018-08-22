@@ -3095,16 +3095,25 @@ img {
   }
 }
 
-.body.head {
-  background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
-}
-.body.head .hero {
-  padding: 4rem 0;
+.bloc {
+  padding: 4em 0;
 }
 
-.main {
+.hero {
+  background-image: linear-gradient(0deg, rgba(88, 54, 122, 0.16), rgba(255, 255, 255, 0));
+}
+
+.showcase {
   background-image: linear-gradient(-122deg, #7c3eb9, #eb0066);
   color: #FBFBFB;
+}
+.showcase .h1 {
+  line-height: 0.9;
+  margin-bottom: 1em;
+}
+.showcase .h1 .subtitle {
+  color: rgba(251, 251, 251, 0.6);
+  font-size: 0.5em;
 }
 
 .footer {
