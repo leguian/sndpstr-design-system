@@ -6,6 +6,7 @@ input[type=number],
 input[type=tel],
 textarea {
   box-sizing: border-box;
+  position: relative;
   width: 100%;
   padding: $padding/3;
   margin-bottom: $padding;

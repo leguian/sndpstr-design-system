@@ -13,6 +13,10 @@
     }
   }
 
+  @mixin inverted-button($inverted-button-color) {
+    color: $inverted-button-color;
+  }
+
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -56,6 +60,11 @@
   &.ghost {
     background: transparent;
     @include ghost-button($primary-color);
+  }
+  &.inverted {
+    background: white;
+    border:none;
+    @include inverted-button($primary-color);
   }
   &.active {
     background-color: darken($primary-color, 10%);

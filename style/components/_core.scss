@@ -133,16 +133,16 @@ p {
 /* MARGIN */
 .margin {
   &.top {
-    margin-top: $padding/2;
+    margin-top: $padding/2 !important;
   }
   &.bottom {
-    margin-top: $padding/2;
+    margin-top: $padding/2 !important;
   }
   &.left {
-    margin-top: $padding/2;
+    margin-top: $padding/2 !important;
   }
   &.right {
-    margin-top: $padding/2;
+    margin-top: $padding/2 !important;
   }
 }
 

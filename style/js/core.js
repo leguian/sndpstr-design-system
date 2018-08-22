@@ -12,13 +12,12 @@ MicroModal.init({
 
 tippy('.tooltip');
 
+// scrollMove( ele ,frame ,step )
+
+
 jQuery(document).ready(function ($) {
     try {
-        $("#instagram").jqinstapics({
-            "user_id": "3567011117",
-            "access_token": "3567011117.674061d.59160f04ba3c477b9ee08304569fa270",
-            "count": 15
-        });
+        scrollMove('.medium',60 ,1 );
 
     } catch (err) {
         console.log(err)
