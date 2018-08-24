@@ -102,8 +102,9 @@ a {
   cursor: pointer;
   -webkit-text-decoration-skip: objects;
 }
-a:active, a:hover {
+a:active:not(.button):not(.item), a:hover:not(.button):not(.item) {
   color: #49246d;
+  text-decoration: underline;
 }
 a img {
   border: 0;
@@ -3104,15 +3105,66 @@ img {
 .bloc {
   padding: 4em 0;
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  .bloc {
+    padding: 2em 0;
+  }
+}
+@media (max-width: 576px) {
+  .bloc {
+    padding: 2em 0;
+  }
+}
 
 .hero {
   background-image: linear-gradient(0deg, rgba(88, 54, 122, 0.16), rgba(255, 255, 255, 0));
+}
+@media (max-width: 576px) {
+  .hero .h1 {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .hero .h1 {
+    font-size: 1.7em;
+  }
+}
+.hero .image {
+  margin: 0 0 2em;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
 }
 
 .showcase {
   background-image: linear-gradient(-122deg, #7c3eb9, #eb0066);
   color: #FBFBFB;
   overflow: hidden;
+  position: relative;
+}
+.showcase:before, .showcase:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  top: 0;
+}
+.showcase:before {
+  background: linear-gradient(to right, #eb0066 0%, #eb0066 0%, rgba(235, 0, 102, 0) 100%);
+  left: 0;
+}
+.showcase:after {
+  background: linear-gradient(to left, #7c3eb9 0%, rgba(124, 62, 185, 0));
+  right: 0;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .showcase .big.button {
+    margin: 0.5em !important;
+  }
+}
+@media (max-width: 576px) {
+  .showcase .big.button {
+    margin: 0.5em !important;
+  }
 }
 .showcase .h1 {
   line-height: 0.9;
@@ -3122,14 +3174,37 @@ img {
   color: rgba(251, 251, 251, 0.6);
   font-size: 0.5em;
 }
+@media (max-width: 576px) {
+  .showcase .h1 {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .showcase .h1 {
+    font-size: 1.7em;
+  }
+}
 .showcase .slider {
-  height: 250px;
+  min-height: 250px;
   overflow: hidden;
-  width: 5000px;
+  width: 7250px;
   margin-bottom: 2em;
+  padding: 2em;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .showcase .slider {
+    padding: 1em;
+    margin: 0;
+  }
+}
+@media (max-width: 576px) {
+  .showcase .slider {
+    padding: 1em;
+    margin: 0;
+  }
 }
 .showcase .slider .first {
-  animation: bannermove 40s linear infinite;
+  animation: bannermove 60s linear infinite;
 }
 @keyframes bannermove {
   0% {
@@ -3139,6 +3214,22 @@ img {
     margin-left: -2125px;
   }
 }
+.showcase .slider img {
+  padding: 1em;
+  background: #FBFBFB;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  margin: 0 2em;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .showcase .slider img {
+    margin: 0 1em;
+  }
+}
+@media (max-width: 576px) {
+  .showcase .slider img {
+    margin: 0 1em;
+  }
+}
 
 .video .iframe {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
@@ -3146,6 +3237,17 @@ img {
 
 .how {
   background-image: linear-gradient(80deg, rgba(88, 54, 122, 0.16), rgba(255, 255, 255, 0));
+}
+@media (max-width: 576px) {
+  .how .h1 {
+    font-size: 1.7em;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .how .h1 {
+    font-size: 1.7em;
+  }
 }
 
 .footer {
@@ -3158,6 +3260,7 @@ img {
   text-decoration: underline;
 }
 .footer a:hover {
+  color: #FBFBFB !important;
   opacity: 0.5;
 }
 

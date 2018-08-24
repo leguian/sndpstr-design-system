@@ -1,13 +1,7 @@
-$bloc-padding: $padding * 2 0;
-
 .header {
   .menu {
     .logo {
       padding: 0.5rem 0;
-
-      @include tablet {
-
-      }
 
       img {
         width: 220px;
@@ -26,17 +20,68 @@ $bloc-padding: $padding * 2 0;
 }
 
 .bloc {
-  padding: $bloc-padding;
+  padding: $padding * 2 0;
+
+  @include tablet {
+    padding: $padding 0;
+  }
+  @include mobile {
+    padding: $padding 0;
+  }
 }
 
 .hero {
   background-image: linear-gradient(0deg, rgba(88, 54, 122, 0.16), rgba(255, 255, 255, 0));
+
+  .h1 {
+    @include mobile {
+      font-size: 1.7em;
+    }
+    @include tablet {
+      font-size: 1.7em;
+    }
+  }
+
+  .image {
+    margin: 0 0 $padding;
+    box-shadow: $base-shadow;
+  }
 }
 
 .showcase {
   background-image: linear-gradient(-122deg, $primary-color, $secondary-color);
   color: $white;
   overflow: hidden;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+  }
+
+  &:before {
+    background: linear-gradient(to right,  $secondary-color 0%, transparentize($secondary-color, 0));
+    left: 0;
+  }
+
+  &:after {
+    background: linear-gradient(to left, $primary-color 0%, transparentize($primary-color, 0));
+    right:0;
+  }
+
+  .big.button {
+    @include tablet {
+      margin: 0.5em !important;
+    }
+    @include mobile {
+      margin: 0.5em !important;
+    }
+  }
 
   .h1 {
     line-height: .9;
@@ -46,13 +91,31 @@ $bloc-padding: $padding * 2 0;
       color: transparentize($white, .4);
       font-size: .5em;
     }
+
+    @include mobile {
+      font-size: 1.7em;
+    }
+    @include tablet {
+      font-size: 1.7em;
+    }
+
   }
 
   .slider {
-    height: 250px;
+    min-height: 250px;
     overflow: hidden;
-    width: 5000px;
+    width: 7250px;
     margin-bottom: $padding;
+    padding: $padding;
+
+    @include tablet {
+      padding: $padding / 2;
+      margin: 0;
+    }
+    @include mobile {
+      padding: $padding / 2;
+      margin: 0;
+    }
 
     .first {
       @keyframes bannermove {
@@ -63,7 +126,21 @@ $bloc-padding: $padding * 2 0;
           margin-left: -2125px;
         }
       }
-      animation: bannermove 40s linear infinite;
+      animation: bannermove 60s linear infinite;
+    }
+
+    img {
+      padding: $padding / 2;
+      background: $white;
+      box-shadow: $base-shadow;
+      margin: 0 $padding;
+
+      @include tablet {
+        margin: 0 $padding / 2;
+      }
+      @include mobile {
+        margin: 0 $padding / 2;
+      }
     }
   }
 }
@@ -71,11 +148,23 @@ $bloc-padding: $padding * 2 0;
 .video {
   .iframe {
     box-shadow: $base-shadow;
+    padding: 1rem;
+    border-radius: $radius;
   }
 }
 
 .how {
   background-image: linear-gradient(80deg, rgba(88, 54, 122, 0.16), rgba(255, 255, 255, 0));
+
+  .h1 {
+    @include mobile {
+      font-size: 1.7em;
+      margin-bottom: $padding/2;
+    }
+    @include tablet {
+      font-size: 1.7em;
+    }
+  }
 }
 
 .footer {
@@ -88,6 +177,7 @@ $bloc-padding: $padding * 2 0;
     text-decoration: underline;
 
     &:hover {
+      color: $white !important;
       opacity: .5;
     }
   }

@@ -97,7 +97,10 @@ a {
   cursor: pointer;
   -webkit-text-decoration-skip: objects;
   &:active, &:hover {
-    color: $link-hover;
+    &:not(.button):not(.item){
+      color: $link-hover;
+      text-decoration: underline;
+    }
   }
   img {
     border: 0;
