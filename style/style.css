@@ -3198,9 +3198,9 @@ img {
     font-size: 1.7em;
   }
 }
-.hero .image {
+.hero .image.poster {
   margin: 0 0 2em;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14), 0 2px 8px rgba(0, 0, 0, 0.14), 18px 9px 18px -4px rgba(0, 0, 0, 0.14);
 }
 
 .showcase {
@@ -3359,6 +3359,13 @@ img {
   background: linear-gradient(-122deg, #fff9f9, #f5e6ed);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
   position: relative;
+  opacity: 0.7;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact .letter:hover {
+  box-shadow: 0 5px 55px rgba(0, 0, 0, 0.2), 0 2px 28px rgba(0, 0, 0, 0.14);
+  transform: translateY(-15px) scale(1.05);
+  opacity: 1;
 }
 .contact .letter .address {
   margin-left: 50%;
@@ -3376,7 +3383,6 @@ img {
 .customize .wrapper {
   position: relative;
   height: 400px;
-  overflow: hidden;
 }
 @media (max-width: 1200px) {
   .customize .wrapper {
@@ -3402,15 +3408,34 @@ img {
   position: relative;
   left: 50%;
   top: 50%;
-  box-shadow: 0 0 0 35px #000 inset;
   line-height: 0;
+  border-width: 35px;
+  border-style: solid;
+  border-color: #292929 #212020 #191919 #212121;
 }
-.customize .wrapper .frame .svg .only {
+.customize .wrapper .frame .svg.only {
   height: 100%;
 }
 .customize .wrapper .frame .track {
-  margin-top: -45px;
   text-transform: uppercase;
+}
+.customize .size {
+  background: #e4e4e4;
+  height: 2px;
+  width: 97%;
+  position: relative;
+  margin: 1em auto;
+}
+.customize .size .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  text-align: center;
+  background-color: white;
+  top: -10px;
 }
 
 .hero .field .loader {
@@ -3418,6 +3443,17 @@ img {
   left: auto;
   right: 8em;
   top: 0.5em;
+}
+.hero .charts .card .image {
+  padding: 1em;
+}
+.hero .charts .card .content {
+  background-color: #eaedee;
+  font-size: 0.75em;
+}
+.hero .charts .card:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .checkout {

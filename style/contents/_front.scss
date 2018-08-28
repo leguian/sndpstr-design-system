@@ -42,9 +42,10 @@
     }
   }
 
-  .image {
+  .image.poster {
     margin: 0 0 $padding;
-    box-shadow: $base-shadow;
+    box-shadow: $base-shadow, 0 2px 8px rgba(0, 0, 0, 0.14), 18px 9px 18px -4px rgba(0, 0, 0, 0.14);
+
   }
 }
 
@@ -213,6 +214,14 @@
     background: linear-gradient(-122deg, #fff9f9, #f5e6ed);
     box-shadow: $base-shadow;
     position: relative;
+    opacity: 0.7;
+    transition: $normal-speed;
+
+    &:hover {
+      box-shadow: 0 5px 55px rgba(0, 0, 0, 0.2), 0 2px 28px rgba(0, 0, 0, 0.14);
+      transform: translateY(-15px) scale(1.05);
+      opacity: 1;
+    }
 
     .address {
       margin-left: 50%;
