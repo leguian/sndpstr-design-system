@@ -4264,20 +4264,59 @@ img {
 .about {
   background: #FBFBFB;
 }
+@media (max-width: 576px) {
+  .about .h1 {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .about .h1 {
+    font-size: 1.7em;
+  }
+}
 
 .cgv .h1,
-.contact .h1 {
+.contact .h1,
+.legals .h1 {
   line-height: 0.9;
   margin-bottom: 1em;
 }
 .cgv .h1 .subtitle,
-.contact .h1 .subtitle {
+.contact .h1 .subtitle,
+.legals .h1 .subtitle {
   color: rgba(49, 36, 43, 0.6);
   font-size: 0.5em;
 }
+@media (max-width: 576px) {
+  .cgv .h1,
+.contact .h1,
+.legals .h1 {
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .cgv .h1,
+.contact .h1,
+.legals .h1 {
+    font-size: 1.7em;
+  }
+}
 
-.cgv .h3:not(:first-child) {
+.cgv .h3:not(:first-child),
+.legals .h3:not(:first-child) {
   margin-top: 2em;
+}
+@media (max-width: 576px) {
+  .cgv .h3,
+.legals .h3 {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .cgv .h3,
+.legals .h3 {
+    font-size: 1.5em;
+  }
 }
 
 .contact .letter {

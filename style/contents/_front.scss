@@ -66,14 +66,13 @@
   }
 
   &:before {
-    background: linear-gradient(to right,  $secondary-color 0%, transparentize($secondary-color, 1));
+    background: linear-gradient(to right, $secondary-color 0%, transparentize($secondary-color, 1));
     left: 0;
   }
 
-
   &:after {
     background: linear-gradient(to left, $primary-color 0%, transparentize($primary-color, 1));
-    right:0;
+    right: 0;
   }
 
   .big.button {
@@ -187,9 +186,20 @@
 
 .about {
   background: $white;
+
+  .h1 {
+    @include mobile {
+      font-size: 1.7em;
+    }
+    @include tablet {
+      font-size: 1.7em;
+    }
+  }
 }
+
 .cgv,
-.contact {
+.contact,
+.legals {
   .h1 {
     line-height: .9;
     margin-bottom: $padding / 2;
@@ -198,15 +208,32 @@
       color: transparentize($text-color, .4);
       font-size: .5em;
     }
+
+    @include mobile {
+      font-size: 1.7em;
+    }
+    @include tablet {
+      font-size: 1.7em;
+    }
   }
 }
-.cgv {
+
+.cgv,
+.legals {
   .h3 {
     &:not(:first-child) {
       margin-top: $padding;
     }
+
+    @include mobile {
+      font-size: 1.3em;
+    }
+    @include tablet {
+      font-size: 1.5em;
+    }
   }
 }
+
 .contact {
 
   .letter {
