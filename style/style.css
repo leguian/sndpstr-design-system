@@ -3217,11 +3217,11 @@ img {
   top: 0;
 }
 .showcase:before {
-  background: linear-gradient(to right, #eb0066 0%, #eb0066);
+  background: linear-gradient(to right, #eb0066 0%, rgba(235, 0, 102, 0));
   left: 0;
 }
 .showcase:after {
-  background: linear-gradient(to left, #7c3eb9 0%, #7c3eb9);
+  background: linear-gradient(to left, #7c3eb9 0%, rgba(124, 62, 185, 0));
   right: 0;
 }
 @media (min-width: 576px) and (max-width: 768px) {

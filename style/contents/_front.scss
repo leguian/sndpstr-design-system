@@ -65,12 +65,13 @@
   }
 
   &:before {
-    background: linear-gradient(to right,  $secondary-color 0%, transparentize($secondary-color, 0));
+    background: linear-gradient(to right,  $secondary-color 0%, transparentize($secondary-color, 1));
     left: 0;
   }
 
+
   &:after {
-    background: linear-gradient(to left, $primary-color 0%, transparentize($primary-color, 0));
+    background: linear-gradient(to left, $primary-color 0%, transparentize($primary-color, 1));
     right:0;
   }
 
