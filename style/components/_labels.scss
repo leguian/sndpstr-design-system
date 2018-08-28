@@ -7,21 +7,13 @@
   border-radius: 99rem;
   line-height: normal;
 
-  &.black {
-    background-color: $black;
-  }
-  &.red {
-    background-color: $red;
-  }
-  &.blue {
-    background-color: $blue;
-  }
-  &.yellow {
-    background-color: $yellow;
-    color: darken($yellow, 40);
-  }
-  &.green {
-    background-color: $green;
+  @each $swatch, $color in $swatch {
+    &.#{$swatch} {
+      background-color: $color;
+      @if (lightness($color) > 60) {
+        color: $text-color;
+      }
+    }
   }
 
   &.small {

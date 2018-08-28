@@ -236,6 +236,18 @@ svg:not(:root) {
 .text.white {
   color: #FBFBFB;
 }
+.text.black {
+  color: #31242b;
+}
+.text.facebook {
+  color: #3b5998;
+}
+.text.twitter {
+  color: #00aced;
+}
+.text.instagram {
+  color: #517fa4;
+}
 
 .hint {
   color: rgba(49, 36, 43, 0.7);
@@ -248,13 +260,13 @@ svg:not(:root) {
 .button,
 input[type=submit],
 button {
+  /* Setup defaults */
   display: inline-block;
   position: relative;
   vertical-align: middle;
   overflow: visible;
   border: solid 2px #7c3eb9;
   font: inherit;
-  -webkit-font-smoothing: inherit;
   letter-spacing: inherit;
   background: none;
   cursor: pointer;
@@ -267,26 +279,17 @@ button {
   text-align: center;
   font-size: 1rem;
   line-height: normal;
+  -webkit-font-smoothing: inherit;
   -webkit-appearance: none;
   -moz-appearance: none;
-}
-.button .icon,
-input[type=submit] .icon,
-button .icon {
-  margin-right: 0.5rem;
-}
-.button:last-child,
-input[type=submit]:last-child,
-button:last-child {
-  margin: 0;
+  user-select: none;
+  /* Ok, for each color in swatch, we build different properties with the color name */
 }
 .button:hover,
 input[type=submit]:hover,
 button:hover {
-  background-color: #623193;
-  border-color: #623193;
-  color: #FBFBFB;
   transform: scale(1.05);
+  color: #FBFBFB;
 }
 .button:active, .button:focus, .button:visited,
 input[type=submit]:active,
@@ -301,21 +304,14 @@ button:visited {
 .button.ghost,
 input[type=submit].ghost,
 button.ghost {
-  background: transparent;
   color: #7c3eb9;
+  background: none;
 }
 .button.ghost:hover,
 input[type=submit].ghost:hover,
 button.ghost:hover {
-  background: #7c3eb9;
-  color: #FFFFFF;
-}
-.button.inverted,
-input[type=submit].inverted,
-button.inverted {
-  background: white;
-  border: none;
-  color: #7c3eb9;
+  background-color: transparent;
+  border-color: #623193;
 }
 .button.active,
 input[type=submit].active,
@@ -323,180 +319,7 @@ button.active {
   background-color: #623193;
   border-color: #623193;
   color: #FBFBFB;
-  box-shadow: 0 0 0px 2px rgba(255, 255, 255, 0.48) inset;
-}
-.button.full-width,
-input[type=submit].full-width,
-button.full-width {
-  width: 100%;
-}
-.button.blue,
-input[type=submit].blue,
-button.blue {
-  background-color: #1340A4;
-  border-color: #1340A4;
-}
-.button.blue.ghost,
-input[type=submit].blue.ghost,
-button.blue.ghost {
-  background: transparent;
-  color: #1340A4;
-}
-.button.blue.ghost:hover,
-input[type=submit].blue.ghost:hover,
-button.blue.ghost:hover {
-  background: #1340A4;
-  color: #FFFFFF;
-}
-.button.blue:hover,
-input[type=submit].blue:hover,
-button.blue:hover {
-  background-color: #0e2e76;
-  border-color: #0e2e76;
-}
-.button.green,
-input[type=submit].green,
-button.green {
-  background-color: #5e8c0c;
-  border-color: #5e8c0c;
-}
-.button.green.ghost,
-input[type=submit].green.ghost,
-button.green.ghost {
-  background: transparent;
-  color: #5e8c0c;
-}
-.button.green.ghost:hover,
-input[type=submit].green.ghost:hover,
-button.green.ghost:hover {
-  background: #5e8c0c;
-  color: #FFFFFF;
-}
-.button.green:hover,
-input[type=submit].green:hover,
-button.green:hover {
-  background-color: #3e5d08;
-  border-color: #3e5d08;
-}
-.button.red,
-input[type=submit].red,
-button.red {
-  background-color: #f15a3b;
-  border-color: #f15a3b;
-}
-.button.red.ghost,
-input[type=submit].red.ghost,
-button.red.ghost {
-  background: transparent;
-  color: #f15a3b;
-}
-.button.red.ghost:hover,
-input[type=submit].red.ghost:hover,
-button.red.ghost:hover {
-  background: #f15a3b;
-  color: #FFFFFF;
-}
-.button.red:hover,
-input[type=submit].red:hover,
-button.red:hover {
-  background-color: #e83511;
-  border-color: #e83511;
-}
-.button.yellow,
-input[type=submit].yellow,
-button.yellow {
-  background-color: #FDC84A;
-  border-color: #FDC84A;
-}
-.button.yellow.ghost,
-input[type=submit].yellow.ghost,
-button.yellow.ghost {
-  background: transparent;
-  color: #FDC84A;
-}
-.button.yellow.ghost:hover,
-input[type=submit].yellow.ghost:hover,
-button.yellow.ghost:hover {
-  background: #FDC84A;
-  color: #FFFFFF;
-}
-.button.yellow:hover,
-input[type=submit].yellow:hover,
-button.yellow:hover {
-  background-color: #fdb64a;
-  border-color: #fdb64a;
-}
-.button.facebook,
-input[type=submit].facebook,
-button.facebook {
-  background-color: #3b5998;
-  border-color: #3b5998;
-}
-.button.facebook.ghost,
-input[type=submit].facebook.ghost,
-button.facebook.ghost {
-  background: transparent;
-  color: #3b5998;
-}
-.button.facebook.ghost:hover,
-input[type=submit].facebook.ghost:hover,
-button.facebook.ghost:hover {
-  background: #3b5998;
-  color: #FFFFFF;
-}
-.button.facebook:hover,
-input[type=submit].facebook:hover,
-button.facebook:hover {
-  background-color: #2d4373;
-  border-color: #2d4373;
-}
-.button.twitter,
-input[type=submit].twitter,
-button.twitter {
-  background-color: #00aced;
-  border-color: #00aced;
-}
-.button.twitter.ghost,
-input[type=submit].twitter.ghost,
-button.twitter.ghost {
-  background: transparent;
-  color: #00aced;
-}
-.button.twitter.ghost:hover,
-input[type=submit].twitter.ghost:hover,
-button.twitter.ghost:hover {
-  background: #00aced;
-  color: #FFFFFF;
-}
-.button.twitter:hover,
-input[type=submit].twitter:hover,
-button.twitter:hover {
-  background-color: #0087ba;
-  border-color: #0087ba;
-}
-.button.instagram,
-input[type=submit].instagram,
-button.instagram {
-  background-color: #517fa4;
-  border-color: #517fa4;
-}
-.button.instagram.ghost,
-input[type=submit].instagram.ghost,
-button.instagram.ghost {
-  background: transparent;
-  color: #517fa4;
-}
-.button.instagram.ghost:hover,
-input[type=submit].instagram.ghost:hover,
-button.instagram.ghost:hover {
-  background: #517fa4;
-  color: #FFFFFF;
-}
-.button.instagram:hover,
-input[type=submit].instagram:hover,
-button.instagram:hover {
-  background-color: #406582;
-  border-color: #406582;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
 }
 .button.disabled,
 input[type=submit].disabled,
@@ -511,6 +334,1023 @@ input[type=submit].disabled:hover,
 button.disabled:hover {
   background-color: rgba(49, 36, 43, 0.2);
   border-color: transparent;
+  transform: scale(1);
+}
+.button.inverted,
+input[type=submit].inverted,
+button.inverted {
+  background: white;
+  border: none;
+  color: #7c3eb9;
+}
+.button.inverted:hover,
+input[type=submit].inverted:hover,
+button.inverted:hover {
+  background-color: #eee6f7;
+}
+.button.flat,
+input[type=submit].flat,
+button.flat {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(49, 36, 43, 0.75);
+}
+.button.flat:hover,
+input[type=submit].flat:hover,
+button.flat:hover {
+  color: #31242b;
+  background-color: rgba(49, 36, 43, 0.1);
+  border-color: transparent;
+}
+.button.flat:active,
+input[type=submit].flat:active,
+button.flat:active {
+  background-color: rgba(49, 36, 43, 0.2);
+  border-color: transparent;
+}
+.button.primary,
+input[type=submit].primary,
+button.primary {
+  background-color: #7c3eb9;
+  border-color: #7c3eb9;
+}
+.button.primary:hover,
+input[type=submit].primary:hover,
+button.primary:hover {
+  background-color: #623193;
+  border-color: #623193;
+}
+.button.active.primary,
+input[type=submit].active.primary,
+button.active.primary {
+  background-color: #623193;
+  border-color: #623193;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.primary,
+input[type=submit].disabled.primary,
+button.disabled.primary {
+  background-color: rgba(124, 62, 185, 0.2);
+  border-color: transparent;
+  color: rgba(124, 62, 185, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.primary:hover,
+input[type=submit].disabled.primary:hover,
+button.disabled.primary:hover {
+  background-color: rgba(124, 62, 185, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.primary,
+input[type=submit].ghost.primary,
+button.ghost.primary {
+  color: #7c3eb9;
+  background: none;
+}
+.button.ghost.primary:hover,
+input[type=submit].ghost.primary:hover,
+button.ghost.primary:hover {
+  background-color: transparent;
+  border-color: #623193;
+}
+.button.inverted.primary,
+input[type=submit].inverted.primary,
+button.inverted.primary {
+  background: white;
+  border: none;
+  color: #7c3eb9;
+}
+.button.inverted.primary:hover,
+input[type=submit].inverted.primary:hover,
+button.inverted.primary:hover {
+  background-color: #d5c0ea;
+}
+.button.flat.primary,
+input[type=submit].flat.primary,
+button.flat.primary {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(124, 62, 185, 0.75);
+}
+.button.flat.primary:hover,
+input[type=submit].flat.primary:hover,
+button.flat.primary:hover {
+  color: #7c3eb9;
+  background-color: rgba(124, 62, 185, 0.1);
+  border-color: transparent;
+}
+.button.flat.primary:active,
+input[type=submit].flat.primary:active,
+button.flat.primary:active {
+  background-color: rgba(124, 62, 185, 0.2);
+  border-color: transparent;
+}
+.button.secondary,
+input[type=submit].secondary,
+button.secondary {
+  background-color: #eb0066;
+  border-color: #eb0066;
+}
+.button.secondary:hover,
+input[type=submit].secondary:hover,
+button.secondary:hover {
+  background-color: #b80050;
+  border-color: #b80050;
+}
+.button.active.secondary,
+input[type=submit].active.secondary,
+button.active.secondary {
+  background-color: #b80050;
+  border-color: #b80050;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.secondary,
+input[type=submit].disabled.secondary,
+button.disabled.secondary {
+  background-color: rgba(235, 0, 102, 0.2);
+  border-color: transparent;
+  color: rgba(235, 0, 102, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.secondary:hover,
+input[type=submit].disabled.secondary:hover,
+button.disabled.secondary:hover {
+  background-color: rgba(235, 0, 102, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.secondary,
+input[type=submit].ghost.secondary,
+button.ghost.secondary {
+  color: #eb0066;
+  background: none;
+}
+.button.ghost.secondary:hover,
+input[type=submit].ghost.secondary:hover,
+button.ghost.secondary:hover {
+  background-color: transparent;
+  border-color: #b80050;
+}
+.button.inverted.secondary,
+input[type=submit].inverted.secondary,
+button.inverted.secondary {
+  background: white;
+  border: none;
+  color: #eb0066;
+}
+.button.inverted.secondary:hover,
+input[type=submit].inverted.secondary:hover,
+button.inverted.secondary:hover {
+  background-color: #ff9fc8;
+}
+.button.flat.secondary,
+input[type=submit].flat.secondary,
+button.flat.secondary {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(235, 0, 102, 0.75);
+}
+.button.flat.secondary:hover,
+input[type=submit].flat.secondary:hover,
+button.flat.secondary:hover {
+  color: #eb0066;
+  background-color: rgba(235, 0, 102, 0.1);
+  border-color: transparent;
+}
+.button.flat.secondary:active,
+input[type=submit].flat.secondary:active,
+button.flat.secondary:active {
+  background-color: rgba(235, 0, 102, 0.2);
+  border-color: transparent;
+}
+.button.blue,
+input[type=submit].blue,
+button.blue {
+  background-color: #1340A4;
+  border-color: #1340A4;
+}
+.button.blue:hover,
+input[type=submit].blue:hover,
+button.blue:hover {
+  background-color: #0e2e76;
+  border-color: #0e2e76;
+}
+.button.active.blue,
+input[type=submit].active.blue,
+button.active.blue {
+  background-color: #0e2e76;
+  border-color: #0e2e76;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.blue,
+input[type=submit].disabled.blue,
+button.disabled.blue {
+  background-color: rgba(19, 64, 164, 0.2);
+  border-color: transparent;
+  color: rgba(19, 64, 164, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.blue:hover,
+input[type=submit].disabled.blue:hover,
+button.disabled.blue:hover {
+  background-color: rgba(19, 64, 164, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.blue,
+input[type=submit].ghost.blue,
+button.ghost.blue {
+  color: #1340A4;
+  background: none;
+}
+.button.ghost.blue:hover,
+input[type=submit].ghost.blue:hover,
+button.ghost.blue:hover {
+  background-color: transparent;
+  border-color: #0e2e76;
+}
+.button.inverted.blue,
+input[type=submit].inverted.blue,
+button.inverted.blue {
+  background: white;
+  border: none;
+  color: #1340A4;
+}
+.button.inverted.blue:hover,
+input[type=submit].inverted.blue:hover,
+button.inverted.blue:hover {
+  background-color: #7a9ef0;
+}
+.button.flat.blue,
+input[type=submit].flat.blue,
+button.flat.blue {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(19, 64, 164, 0.75);
+}
+.button.flat.blue:hover,
+input[type=submit].flat.blue:hover,
+button.flat.blue:hover {
+  color: #1340A4;
+  background-color: rgba(19, 64, 164, 0.1);
+  border-color: transparent;
+}
+.button.flat.blue:active,
+input[type=submit].flat.blue:active,
+button.flat.blue:active {
+  background-color: rgba(19, 64, 164, 0.2);
+  border-color: transparent;
+}
+.button.yellow,
+input[type=submit].yellow,
+button.yellow {
+  background-color: #FDC84A;
+  border-color: #FDC84A;
+  color: #31242b;
+}
+.button.yellow:hover,
+input[type=submit].yellow:hover,
+button.yellow:hover {
+  background-color: #fcb918;
+  border-color: #fcb918;
+}
+.button.active.yellow,
+input[type=submit].active.yellow,
+button.active.yellow {
+  background-color: #fcb918;
+  border-color: #fcb918;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.yellow,
+input[type=submit].disabled.yellow,
+button.disabled.yellow {
+  background-color: rgba(253, 200, 74, 0.2);
+  border-color: transparent;
+  color: rgba(253, 200, 74, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.yellow:hover,
+input[type=submit].disabled.yellow:hover,
+button.disabled.yellow:hover {
+  background-color: rgba(253, 200, 74, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.yellow,
+input[type=submit].ghost.yellow,
+button.ghost.yellow {
+  color: #FDC84A;
+  background: none;
+}
+.button.ghost.yellow:hover,
+input[type=submit].ghost.yellow:hover,
+button.ghost.yellow:hover {
+  background-color: transparent;
+  border-color: #fcb918;
+}
+.button.inverted.yellow,
+input[type=submit].inverted.yellow,
+button.inverted.yellow {
+  background: white;
+  border: none;
+  color: #FDC84A;
+}
+.button.inverted.yellow:hover,
+input[type=submit].inverted.yellow:hover,
+button.inverted.yellow:hover {
+  background-color: #fffefb;
+}
+.button.flat.yellow,
+input[type=submit].flat.yellow,
+button.flat.yellow {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(253, 200, 74, 0.75);
+}
+.button.flat.yellow:hover,
+input[type=submit].flat.yellow:hover,
+button.flat.yellow:hover {
+  color: #FDC84A;
+  background-color: rgba(253, 200, 74, 0.1);
+  border-color: transparent;
+}
+.button.flat.yellow:active,
+input[type=submit].flat.yellow:active,
+button.flat.yellow:active {
+  background-color: rgba(253, 200, 74, 0.2);
+  border-color: transparent;
+}
+.button.red,
+input[type=submit].red,
+button.red {
+  background-color: #f15a3b;
+  border-color: #f15a3b;
+}
+.button.red:hover,
+input[type=submit].red:hover,
+button.red:hover {
+  background-color: #e83511;
+  border-color: #e83511;
+}
+.button.active.red,
+input[type=submit].active.red,
+button.active.red {
+  background-color: #e83511;
+  border-color: #e83511;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.red,
+input[type=submit].disabled.red,
+button.disabled.red {
+  background-color: rgba(241, 90, 59, 0.2);
+  border-color: transparent;
+  color: rgba(241, 90, 59, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.red:hover,
+input[type=submit].disabled.red:hover,
+button.disabled.red:hover {
+  background-color: rgba(241, 90, 59, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.red,
+input[type=submit].ghost.red,
+button.ghost.red {
+  color: #f15a3b;
+  background: none;
+}
+.button.ghost.red:hover,
+input[type=submit].ghost.red:hover,
+button.ghost.red:hover {
+  background-color: transparent;
+  border-color: #e83511;
+}
+.button.inverted.red,
+input[type=submit].inverted.red,
+button.inverted.red {
+  background: white;
+  border: none;
+  color: #f15a3b;
+}
+.button.inverted.red:hover,
+input[type=submit].inverted.red:hover,
+button.inverted.red:hover {
+  background-color: #fde6e2;
+}
+.button.flat.red,
+input[type=submit].flat.red,
+button.flat.red {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(241, 90, 59, 0.75);
+}
+.button.flat.red:hover,
+input[type=submit].flat.red:hover,
+button.flat.red:hover {
+  color: #f15a3b;
+  background-color: rgba(241, 90, 59, 0.1);
+  border-color: transparent;
+}
+.button.flat.red:active,
+input[type=submit].flat.red:active,
+button.flat.red:active {
+  background-color: rgba(241, 90, 59, 0.2);
+  border-color: transparent;
+}
+.button.green,
+input[type=submit].green,
+button.green {
+  background-color: #5e8c0c;
+  border-color: #5e8c0c;
+}
+.button.green:hover,
+input[type=submit].green:hover,
+button.green:hover {
+  background-color: #3e5d08;
+  border-color: #3e5d08;
+}
+.button.active.green,
+input[type=submit].active.green,
+button.active.green {
+  background-color: #3e5d08;
+  border-color: #3e5d08;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.green,
+input[type=submit].disabled.green,
+button.disabled.green {
+  background-color: rgba(94, 140, 12, 0.2);
+  border-color: transparent;
+  color: rgba(94, 140, 12, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.green:hover,
+input[type=submit].disabled.green:hover,
+button.disabled.green:hover {
+  background-color: rgba(94, 140, 12, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.green,
+input[type=submit].ghost.green,
+button.ghost.green {
+  color: #5e8c0c;
+  background: none;
+}
+.button.ghost.green:hover,
+input[type=submit].ghost.green:hover,
+button.ghost.green:hover {
+  background-color: transparent;
+  border-color: #3e5d08;
+}
+.button.inverted.green,
+input[type=submit].inverted.green,
+button.inverted.green {
+  background: white;
+  border: none;
+  color: #5e8c0c;
+}
+.button.inverted.green:hover,
+input[type=submit].inverted.green:hover,
+button.inverted.green:hover {
+  background-color: #bbf15a;
+}
+.button.flat.green,
+input[type=submit].flat.green,
+button.flat.green {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(94, 140, 12, 0.75);
+}
+.button.flat.green:hover,
+input[type=submit].flat.green:hover,
+button.flat.green:hover {
+  color: #5e8c0c;
+  background-color: rgba(94, 140, 12, 0.1);
+  border-color: transparent;
+}
+.button.flat.green:active,
+input[type=submit].flat.green:active,
+button.flat.green:active {
+  background-color: rgba(94, 140, 12, 0.2);
+  border-color: transparent;
+}
+.button.gray,
+input[type=submit].gray,
+button.gray {
+  background-color: #6e7e85;
+  border-color: #6e7e85;
+}
+.button.gray:hover,
+input[type=submit].gray:hover,
+button.gray:hover {
+  background-color: #576469;
+  border-color: #576469;
+}
+.button.active.gray,
+input[type=submit].active.gray,
+button.active.gray {
+  background-color: #576469;
+  border-color: #576469;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.gray,
+input[type=submit].disabled.gray,
+button.disabled.gray {
+  background-color: rgba(110, 126, 133, 0.2);
+  border-color: transparent;
+  color: rgba(110, 126, 133, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.gray:hover,
+input[type=submit].disabled.gray:hover,
+button.disabled.gray:hover {
+  background-color: rgba(110, 126, 133, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.gray,
+input[type=submit].ghost.gray,
+button.ghost.gray {
+  color: #6e7e85;
+  background: none;
+}
+.button.ghost.gray:hover,
+input[type=submit].ghost.gray:hover,
+button.ghost.gray:hover {
+  background-color: transparent;
+  border-color: #576469;
+}
+.button.inverted.gray,
+input[type=submit].inverted.gray,
+button.inverted.gray {
+  background: white;
+  border: none;
+  color: #6e7e85;
+}
+.button.inverted.gray:hover,
+input[type=submit].inverted.gray:hover,
+button.inverted.gray:hover {
+  background-color: #cfd4d7;
+}
+.button.flat.gray,
+input[type=submit].flat.gray,
+button.flat.gray {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(110, 126, 133, 0.75);
+}
+.button.flat.gray:hover,
+input[type=submit].flat.gray:hover,
+button.flat.gray:hover {
+  color: #6e7e85;
+  background-color: rgba(110, 126, 133, 0.1);
+  border-color: transparent;
+}
+.button.flat.gray:active,
+input[type=submit].flat.gray:active,
+button.flat.gray:active {
+  background-color: rgba(110, 126, 133, 0.2);
+  border-color: transparent;
+}
+.button.white,
+input[type=submit].white,
+button.white {
+  background-color: #FBFBFB;
+  border-color: #FBFBFB;
+  color: #31242b;
+}
+.button.white:hover,
+input[type=submit].white:hover,
+button.white:hover {
+  background-color: #e2e2e2;
+  border-color: #e2e2e2;
+}
+.button.active.white,
+input[type=submit].active.white,
+button.active.white {
+  background-color: #e2e2e2;
+  border-color: #e2e2e2;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.white,
+input[type=submit].disabled.white,
+button.disabled.white {
+  background-color: rgba(251, 251, 251, 0.2);
+  border-color: transparent;
+  color: rgba(251, 251, 251, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.white:hover,
+input[type=submit].disabled.white:hover,
+button.disabled.white:hover {
+  background-color: rgba(251, 251, 251, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.white,
+input[type=submit].ghost.white,
+button.ghost.white {
+  color: #FBFBFB;
+  background: none;
+}
+.button.ghost.white:hover,
+input[type=submit].ghost.white:hover,
+button.ghost.white:hover {
+  background-color: transparent;
+  border-color: #e2e2e2;
+}
+.button.inverted.white,
+input[type=submit].inverted.white,
+button.inverted.white {
+  background: white;
+  border: none;
+  color: #FBFBFB;
+}
+.button.inverted.white:hover,
+input[type=submit].inverted.white:hover,
+button.inverted.white:hover {
+  background-color: white;
+}
+.button.flat.white,
+input[type=submit].flat.white,
+button.flat.white {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(251, 251, 251, 0.75);
+}
+.button.flat.white:hover,
+input[type=submit].flat.white:hover,
+button.flat.white:hover {
+  color: #FBFBFB;
+  background-color: rgba(251, 251, 251, 0.1);
+  border-color: transparent;
+}
+.button.flat.white:active,
+input[type=submit].flat.white:active,
+button.flat.white:active {
+  background-color: rgba(251, 251, 251, 0.2);
+  border-color: transparent;
+}
+.button.black,
+input[type=submit].black,
+button.black {
+  background-color: #31242b;
+  border-color: #31242b;
+}
+.button.black:hover,
+input[type=submit].black:hover,
+button.black:hover {
+  background-color: #140e11;
+  border-color: #140e11;
+}
+.button.active.black,
+input[type=submit].active.black,
+button.active.black {
+  background-color: #140e11;
+  border-color: #140e11;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.black,
+input[type=submit].disabled.black,
+button.disabled.black {
+  background-color: rgba(49, 36, 43, 0.2);
+  border-color: transparent;
+  color: rgba(49, 36, 43, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.black:hover,
+input[type=submit].disabled.black:hover,
+button.disabled.black:hover {
+  background-color: rgba(49, 36, 43, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.black,
+input[type=submit].ghost.black,
+button.ghost.black {
+  color: #31242b;
+  background: none;
+}
+.button.ghost.black:hover,
+input[type=submit].ghost.black:hover,
+button.ghost.black:hover {
+  background-color: transparent;
+  border-color: #140e11;
+}
+.button.inverted.black,
+input[type=submit].inverted.black,
+button.inverted.black {
+  background: white;
+  border: none;
+  color: #31242b;
+}
+.button.inverted.black:hover,
+input[type=submit].inverted.black:hover,
+button.inverted.black:hover {
+  background-color: #977185;
+}
+.button.flat.black,
+input[type=submit].flat.black,
+button.flat.black {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(49, 36, 43, 0.75);
+}
+.button.flat.black:hover,
+input[type=submit].flat.black:hover,
+button.flat.black:hover {
+  color: #31242b;
+  background-color: rgba(49, 36, 43, 0.1);
+  border-color: transparent;
+}
+.button.flat.black:active,
+input[type=submit].flat.black:active,
+button.flat.black:active {
+  background-color: rgba(49, 36, 43, 0.2);
+  border-color: transparent;
+}
+.button.facebook,
+input[type=submit].facebook,
+button.facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+.button.facebook:hover,
+input[type=submit].facebook:hover,
+button.facebook:hover {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+.button.active.facebook,
+input[type=submit].active.facebook,
+button.active.facebook {
+  background-color: #2d4373;
+  border-color: #2d4373;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.facebook,
+input[type=submit].disabled.facebook,
+button.disabled.facebook {
+  background-color: rgba(59, 89, 152, 0.2);
+  border-color: transparent;
+  color: rgba(59, 89, 152, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.facebook:hover,
+input[type=submit].disabled.facebook:hover,
+button.disabled.facebook:hover {
+  background-color: rgba(59, 89, 152, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.facebook,
+input[type=submit].ghost.facebook,
+button.ghost.facebook {
+  color: #3b5998;
+  background: none;
+}
+.button.ghost.facebook:hover,
+input[type=submit].ghost.facebook:hover,
+button.ghost.facebook:hover {
+  background-color: transparent;
+  border-color: #2d4373;
+}
+.button.inverted.facebook,
+input[type=submit].inverted.facebook,
+button.inverted.facebook {
+  background: white;
+  border: none;
+  color: #3b5998;
+}
+.button.inverted.facebook:hover,
+input[type=submit].inverted.facebook:hover,
+button.inverted.facebook:hover {
+  background-color: #a8b9dd;
+}
+.button.flat.facebook,
+input[type=submit].flat.facebook,
+button.flat.facebook {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(59, 89, 152, 0.75);
+}
+.button.flat.facebook:hover,
+input[type=submit].flat.facebook:hover,
+button.flat.facebook:hover {
+  color: #3b5998;
+  background-color: rgba(59, 89, 152, 0.1);
+  border-color: transparent;
+}
+.button.flat.facebook:active,
+input[type=submit].flat.facebook:active,
+button.flat.facebook:active {
+  background-color: rgba(59, 89, 152, 0.2);
+  border-color: transparent;
+}
+.button.twitter,
+input[type=submit].twitter,
+button.twitter {
+  background-color: #00aced;
+  border-color: #00aced;
+}
+.button.twitter:hover,
+input[type=submit].twitter:hover,
+button.twitter:hover {
+  background-color: #0087ba;
+  border-color: #0087ba;
+}
+.button.active.twitter,
+input[type=submit].active.twitter,
+button.active.twitter {
+  background-color: #0087ba;
+  border-color: #0087ba;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.twitter,
+input[type=submit].disabled.twitter,
+button.disabled.twitter {
+  background-color: rgba(0, 172, 237, 0.2);
+  border-color: transparent;
+  color: rgba(0, 172, 237, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.twitter:hover,
+input[type=submit].disabled.twitter:hover,
+button.disabled.twitter:hover {
+  background-color: rgba(0, 172, 237, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.twitter,
+input[type=submit].ghost.twitter,
+button.ghost.twitter {
+  color: #00aced;
+  background: none;
+}
+.button.ghost.twitter:hover,
+input[type=submit].ghost.twitter:hover,
+button.ghost.twitter:hover {
+  background-color: transparent;
+  border-color: #0087ba;
+}
+.button.inverted.twitter,
+input[type=submit].inverted.twitter,
+button.inverted.twitter {
+  background: white;
+  border: none;
+  color: #00aced;
+}
+.button.inverted.twitter:hover,
+input[type=submit].inverted.twitter:hover,
+button.inverted.twitter:hover {
+  background-color: #a1e5ff;
+}
+.button.flat.twitter,
+input[type=submit].flat.twitter,
+button.flat.twitter {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(0, 172, 237, 0.75);
+}
+.button.flat.twitter:hover,
+input[type=submit].flat.twitter:hover,
+button.flat.twitter:hover {
+  color: #00aced;
+  background-color: rgba(0, 172, 237, 0.1);
+  border-color: transparent;
+}
+.button.flat.twitter:active,
+input[type=submit].flat.twitter:active,
+button.flat.twitter:active {
+  background-color: rgba(0, 172, 237, 0.2);
+  border-color: transparent;
+}
+.button.instagram,
+input[type=submit].instagram,
+button.instagram {
+  background-color: #517fa4;
+  border-color: #517fa4;
+}
+.button.instagram:hover,
+input[type=submit].instagram:hover,
+button.instagram:hover {
+  background-color: #406582;
+  border-color: #406582;
+}
+.button.active.instagram,
+input[type=submit].active.instagram,
+button.active.instagram {
+  background-color: #406582;
+  border-color: #406582;
+  color: #FBFBFB;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
+}
+.button.disabled.instagram,
+input[type=submit].disabled.instagram,
+button.disabled.instagram {
+  background-color: rgba(81, 127, 164, 0.2);
+  border-color: transparent;
+  color: rgba(81, 127, 164, 0.5);
+  cursor: not-allowed;
+}
+.button.disabled.instagram:hover,
+input[type=submit].disabled.instagram:hover,
+button.disabled.instagram:hover {
+  background-color: rgba(81, 127, 164, 0.2);
+  border-color: transparent;
+  transform: scale(1);
+}
+.button.ghost.instagram,
+input[type=submit].ghost.instagram,
+button.ghost.instagram {
+  color: #517fa4;
+  background: none;
+}
+.button.ghost.instagram:hover,
+input[type=submit].ghost.instagram:hover,
+button.ghost.instagram:hover {
+  background-color: transparent;
+  border-color: #406582;
+}
+.button.inverted.instagram,
+input[type=submit].inverted.instagram,
+button.inverted.instagram {
+  background: white;
+  border: none;
+  color: #517fa4;
+}
+.button.inverted.instagram:hover,
+input[type=submit].inverted.instagram:hover,
+button.inverted.instagram:hover {
+  background-color: #c5d5e2;
+}
+.button.flat.instagram,
+input[type=submit].flat.instagram,
+button.flat.instagram {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgba(81, 127, 164, 0.75);
+}
+.button.flat.instagram:hover,
+input[type=submit].flat.instagram:hover,
+button.flat.instagram:hover {
+  color: #517fa4;
+  background-color: rgba(81, 127, 164, 0.1);
+  border-color: transparent;
+}
+.button.flat.instagram:active,
+input[type=submit].flat.instagram:active,
+button.flat.instagram:active {
+  background-color: rgba(81, 127, 164, 0.2);
+  border-color: transparent;
+}
+.button .icon,
+input[type=submit] .icon,
+button .icon {
+  margin-right: 0.5rem;
+  font-size: 1.2em;
+}
+.button.small,
+input[type=submit].small,
+button.small {
+  font-size: 0.675em;
+  padding: 0.5em 1.4em;
+}
+.button.big,
+input[type=submit].big,
+button.big {
+  font-size: 1.5em;
+  padding: 0.5em 1.9em;
+}
+.button.huge,
+input[type=submit].huge,
+button.huge {
+  font-size: 2em;
+  padding: 0.5em 1.9em;
+}
+.button:last-child,
+input[type=submit]:last-child,
+button:last-child {
+  margin: 0;
+}
+.button.full-width,
+input[type=submit].full-width,
+button.full-width {
+  width: 100%;
 }
 .button.raised,
 input[type=submit].raised,
@@ -530,46 +1370,10 @@ button.raised:active {
   border-color: transparent;
   box-shadow: 0 12px 46px rgba(0, 0, 0, 0.25), 0 18px 40px rgba(0, 0, 0, 0.19);
 }
-.button.flat,
-input[type=submit].flat,
-button.flat {
-  background-color: transparent;
-  border-color: transparent;
-  color: rgba(49, 36, 43, 0.75);
-}
-.button.flat:hover,
-input[type=submit].flat:hover,
-button.flat:hover {
-  color: #31242b;
-  background-color: rgba(49, 36, 43, 0.1);
-}
-.button.flat:active,
-input[type=submit].flat:active,
-button.flat:active {
-  background-color: rgba(49, 36, 43, 0.2);
-}
 .button.round,
 input[type=submit].round,
 button.round {
   border-radius: 99rem;
-}
-.button.small,
-input[type=submit].small,
-button.small {
-  font-size: 0.675em;
-  padding: 0.5em 1.4em;
-}
-.button.big,
-input[type=submit].big,
-button.big {
-  font-size: 1.5em;
-  padding: 0.7em 1.9em;
-}
-.button.huge,
-input[type=submit].huge,
-button.huge {
-  font-size: 2em;
-  padding: 0.7em 1.9em;
 }
 .button.center.aligned,
 input[type=submit].center.aligned,
@@ -580,7 +1384,8 @@ button.center.aligned {
 .button.icon,
 input[type=submit].icon,
 button.icon {
-  padding: 0.4em 0.6em;
+  padding: 0.6rem 0.8rem;
+  line-height: 1;
 }
 .button.icon .icon,
 input[type=submit].icon .icon,
@@ -615,39 +1420,6 @@ button.responsive {
 input[type=submit].responsive:not(:last-child),
 button.responsive:not(:last-child) {
     margin-bottom: 0.5rem;
-  }
-}
-.button.demo,
-input[type=submit].demo,
-button.demo {
-  border: 0;
-}
-@media (max-width: 576px) {
-  .button.demo,
-input[type=submit].demo,
-button.demo {
-    background-color: #f15a3b;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .button.demo,
-input[type=submit].demo,
-button.demo {
-    background-color: #1340A4;
-  }
-}
-@media (min-width: 768px) and (max-width: 1200px) {
-  .button.demo,
-input[type=submit].demo,
-button.demo {
-    background-color: #FDC84A;
-  }
-}
-@media (min-width: 1200px) {
-  .button.demo,
-input[type=submit].demo,
-button.demo {
-    background-color: #5e8c0c;
   }
 }
 
@@ -2802,6 +3574,9 @@ ol {
   margin-bottom: 2rem;
   color: rgba(0, 0, 0, 0.8);
 }
+.segment.header {
+  background-color: #f6f3f5;
+}
 .segment:last-child {
   margin-bottom: 0;
 }
@@ -2810,59 +3585,114 @@ ol {
   background: #31242b;
 }
 .segment.primary {
-  background-color: white;
+  background-color: #ebe1f5;
 }
 .segment.primary.header {
-  background-color: #eee6f7;
+  background-color: #d1bae8;
 }
 .segment.primary.inverted {
   background-color: #7c3eb9;
 }
 .segment.secondary {
-  background-color: #faf0f4;
+  background-color: #ffd6e8;
 }
 .segment.secondary.header {
-  background-color: #edcad9;
+  background-color: #ff9fc9;
 }
 .segment.secondary.inverted {
-  background-color: #493c42;
+  background-color: #eb0066;
 }
-.segment.blue, .segment.info {
-  background-color: #ecf1fd;
+.segment.blue {
+  background-color: #d3dffa;
 }
-.segment.blue.header, .segment.info.header {
-  background-color: #bed0f8;
+.segment.blue.header {
+  background-color: #98b5f3;
 }
-.segment.blue.inverted, .segment.info.inverted {
+.segment.blue.inverted {
   background-color: #1340A4;
 }
-.segment.yellow, .segment.warning {
-  background-color: #feeec8;
-}
-.segment.yellow.header, .segment.warning.header {
-  background-color: #fedf96;
-}
-.segment.yellow.inverted, .segment.warning.inverted {
-  background-color: #FDC84A;
+.segment.yellow {
+  background-color: #fff7e4;
   color: #31242b;
 }
-.segment.red, .segment.error {
+.segment.yellow.header {
+  background-color: #feecc0;
+}
+.segment.yellow.inverted {
+  background-color: #FDC84A;
+}
+.segment.red {
   background-color: #fde6e2;
 }
-.segment.red.header, .segment.error.header {
-  background-color: #fabeb2;
+.segment.red.header {
+  background-color: #fac5ba;
 }
-.segment.red.inverted, .segment.error.inverted {
+.segment.red.inverted {
   background-color: #f15a3b;
 }
-.segment.green, .segment.valid {
-  background-color: #e8eedc;
+.segment.green {
+  background-color: #ebfbce;
 }
-.segment.green.header, .segment.valid.header {
-  background-color: #d0ddba;
+.segment.green.header {
+  background-color: #cff58c;
 }
-.segment.green.inverted, .segment.valid.inverted {
+.segment.green.inverted {
   background-color: #5e8c0c;
+}
+.segment.gray {
+  background-color: #e9eced;
+}
+.segment.gray.header {
+  background-color: #ccd2d5;
+}
+.segment.gray.inverted {
+  background-color: #6e7e85;
+}
+.segment.white {
+  background-color: #fefefe;
+  color: #31242b;
+}
+.segment.white.header {
+  background-color: #fefefe;
+}
+.segment.white.inverted {
+  background-color: #FBFBFB;
+}
+.segment.black {
+  background-color: #e4dae0;
+}
+.segment.black.header {
+  background-color: #c0a9b6;
+}
+.segment.black.inverted {
+  background-color: #31242b;
+}
+.segment.facebook {
+  background-color: #dfe5f2;
+}
+.segment.facebook.header {
+  background-color: #b4c2e2;
+}
+.segment.facebook.inverted {
+  background-color: #3b5998;
+}
+.segment.twitter {
+  background-color: #d6f4ff;
+}
+.segment.twitter.header {
+  background-color: #9fe5ff;
+}
+.segment.twitter.inverted {
+  background-color: #00aced;
+}
+.segment.instagram {
+  background-color: #e4ecf2;
+}
+.segment.instagram.header {
+  background-color: #c1d2e0;
+}
+.segment.instagram.inverted {
+  background-color: #517fa4;
 }
 .segment.flat {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.13);
@@ -2901,7 +3731,40 @@ ol {
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.segments .segment.primary, .segments .segment.secondary, .segments .segment.blue, .segments .segment.yellow, .segments .segment.red, .segments .segment.green {
+.segments .segment.primary {
+  border: 0;
+}
+.segments .segment.secondary {
+  border: 0;
+}
+.segments .segment.blue {
+  border: 0;
+}
+.segments .segment.yellow {
+  border: 0;
+}
+.segments .segment.red {
+  border: 0;
+}
+.segments .segment.green {
+  border: 0;
+}
+.segments .segment.gray {
+  border: 0;
+}
+.segments .segment.white {
+  border: 0;
+}
+.segments .segment.black {
+  border: 0;
+}
+.segments .segment.facebook {
+  border: 0;
+}
+.segments .segment.twitter {
+  border: 0;
+}
+.segments .segment.instagram {
   border: 0;
 }
 .segments .segment:last-child {
@@ -3031,21 +3894,43 @@ img {
   border-radius: 99rem;
   line-height: normal;
 }
-.label.black {
-  background-color: #31242b;
+.label.primary {
+  background-color: #7c3eb9;
 }
-.label.red {
-  background-color: #f15a3b;
+.label.secondary {
+  background-color: #eb0066;
 }
 .label.blue {
   background-color: #1340A4;
 }
 .label.yellow {
   background-color: #FDC84A;
-  color: #7a5601;
+  color: #31242b;
+}
+.label.red {
+  background-color: #f15a3b;
 }
 .label.green {
   background-color: #5e8c0c;
+}
+.label.gray {
+  background-color: #6e7e85;
+}
+.label.white {
+  background-color: #FBFBFB;
+  color: #31242b;
+}
+.label.black {
+  background-color: #31242b;
+}
+.label.facebook {
+  background-color: #3b5998;
+}
+.label.twitter {
+  background-color: #00aced;
+}
+.label.instagram {
+  background-color: #517fa4;
 }
 .label.small {
   font-size: 0.7em;

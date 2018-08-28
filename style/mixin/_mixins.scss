@@ -12,18 +12,6 @@
 // --------------------------------------------------
 // reflex grid generation mixins
 // --------------------------------------------------
-$brand-colors: ("red", $red), ("green", #008000), ("blue", #0000ff);
-@mixin colors {
-  @each $color in $brand-colors {
-    &.#{nth($color,1)} {
-      background-color: nth($color, 2);
-    }
-  }
-}
-
-// --------------------------------------------------
-// reflex grid generation mixins
-// --------------------------------------------------
 
 @mixin make-reflex-grid($class) {
   @include loop-reflex-columns($reflex-columns, $class, width);

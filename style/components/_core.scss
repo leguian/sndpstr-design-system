@@ -97,7 +97,7 @@ a {
   cursor: pointer;
   -webkit-text-decoration-skip: objects;
   &:active, &:hover {
-    &:not(.button):not(.item){
+    &:not(.button):not(.item) {
       color: $link-hover;
       text-decoration: underline;
     }
@@ -218,29 +218,10 @@ svg:not(:root) {
 }
 
 .text {
-  &.primary {
-    color: $primary-color;
-  }
-  &.secondary {
-    color: $secondary-color;
-  }
-  &.blue {
-    color: $blue;
-  }
-  &.yellow {
-    color: $yellow;
-  }
-  &.red {
-    color: $red;
-  }
-  &.green {
-    color: $green;
-  }
-  &.gray {
-    color: $gray;
-  }
-  &.white {
-    color: $white;
+  @each $swatch, $color in $swatch {
+    &.#{$swatch} {
+      color: $color;
+    }
   }
 }
 

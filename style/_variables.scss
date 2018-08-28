@@ -1,19 +1,29 @@
 // Colors
 $primary-color: #7c3eb9;
 $secondary-color: #eb0066;
-
 $blue: #1340A4;
 $yellow: #FDC84A;
 $red: #f15a3b;
 $green: #5e8c0c;
 $gray: #6e7e85;
-
 $white: #FBFBFB;
 $black: #31242b;
-
 $facebook: #3b5998;
 $twitter: #00aced;
 $instagram: #517fa4;
+
+$swatch: ('primary', $primary-color),
+        ('secondary', $secondary-color),
+        ('blue', $blue),
+        ('yellow', $yellow),
+        ('red', $red),
+        ('green', $green),
+        ('gray', $gray),
+        ('white', $white),
+        ('black', $black),
+        ('facebook', $facebook),
+        ('twitter', $twitter),
+        ('instagram', $instagram);
 
 // Typo
 @import url('https://fonts.googleapis.com/css?family=Cabin:700|Roboto:400,400i,700,700i');
