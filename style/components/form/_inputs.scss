@@ -1,10 +1,23 @@
-input[type=text],
-input[type=url],
-input[type=email],
-input[type=password],
-input[type=number],
-input[type=tel],
-textarea {
+$components: (
+        'input[type=text]',
+        'input[type=url]',
+        'input[type=email]',
+        'input[type=password]',
+        'input[type=text]',
+        'input[type=url]',
+        'input[type=email]',
+        'input[type=password]',
+        'input[type=number]',
+        'input[type=tel]',
+        'textarea'
+);
+$selector: ();
+
+@each $item in $components {
+  $selector: append($selector, unquote('#{$item}'), 'comma');
+}
+
+#{$selector} {
   box-sizing: border-box;
   position: relative;
   width: 100%;
@@ -53,26 +66,14 @@ textarea {
     display: inline-block;
   }
 
-  input[type=text],
-  input[type=url],
-  input[type=email],
-  input[type=password],
-  input[type=number],
-  input[type=tel],
-  textarea {
+  #{$selector} {
     margin: 0;
   }
 
   &.inline.action {
     display: inline-flex;
 
-    input[type=text],
-    input[type=url],
-    input[type=email],
-    input[type=password],
-    input[type=number],
-    input[type=tel],
-    textarea {
+    #{$selector} {
       max-width: 100%;
       border-radius: $radius 0 0 $radius;
 

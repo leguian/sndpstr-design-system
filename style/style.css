@@ -245,7 +245,9 @@ svg:not(:root) {
   font-style: italic;
 }
 
-.button, input[type=submit], button {
+.button,
+input[type=submit],
+button {
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -268,257 +270,383 @@ svg:not(:root) {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-.button .icon, input[type=submit] .icon, button .icon {
+.button .icon,
+input[type=submit] .icon,
+button .icon {
   margin-right: 0.5rem;
 }
-.button:last-child, input[type=submit]:last-child, button:last-child {
+.button:last-child,
+input[type=submit]:last-child,
+button:last-child {
   margin: 0;
 }
-.button:hover, input[type=submit]:hover, button:hover {
+.button:hover,
+input[type=submit]:hover,
+button:hover {
   background-color: #623193;
   border-color: #623193;
   color: #FBFBFB;
   transform: scale(1.05);
 }
-.button:active, .button:focus, .button:visited, input[type=submit]:active, input[type=submit]:focus, input[type=submit]:visited, button:active, button:focus, button:visited {
+.button:active, .button:focus, .button:visited,
+input[type=submit]:active,
+input[type=submit]:focus,
+input[type=submit]:visited,
+button:active,
+button:focus,
+button:visited {
   color: #FBFBFB;
   transform: scale(1);
 }
-.button.ghost, input[type=submit].ghost, button.ghost {
+.button.ghost,
+input[type=submit].ghost,
+button.ghost {
   background: transparent;
   color: #7c3eb9;
 }
-.button.ghost:hover, input[type=submit].ghost:hover, button.ghost:hover {
+.button.ghost:hover,
+input[type=submit].ghost:hover,
+button.ghost:hover {
   background: #7c3eb9;
   color: #FFFFFF;
 }
-.button.inverted, input[type=submit].inverted, button.inverted {
+.button.inverted,
+input[type=submit].inverted,
+button.inverted {
   background: white;
   border: none;
   color: #7c3eb9;
 }
-.button.active, input[type=submit].active, button.active {
+.button.active,
+input[type=submit].active,
+button.active {
   background-color: #623193;
   border-color: #623193;
   color: #FBFBFB;
   box-shadow: 0 0 0px 2px rgba(255, 255, 255, 0.48) inset;
 }
-.button.full-width, input[type=submit].full-width, button.full-width {
+.button.full-width,
+input[type=submit].full-width,
+button.full-width {
   width: 100%;
 }
-.button.blue, input[type=submit].blue, button.blue {
+.button.blue,
+input[type=submit].blue,
+button.blue {
   background-color: #1340A4;
   border-color: #1340A4;
 }
-.button.blue.ghost, input[type=submit].blue.ghost, button.blue.ghost {
+.button.blue.ghost,
+input[type=submit].blue.ghost,
+button.blue.ghost {
   background: transparent;
   color: #1340A4;
 }
-.button.blue.ghost:hover, input[type=submit].blue.ghost:hover, button.blue.ghost:hover {
+.button.blue.ghost:hover,
+input[type=submit].blue.ghost:hover,
+button.blue.ghost:hover {
   background: #1340A4;
   color: #FFFFFF;
 }
-.button.blue:hover, input[type=submit].blue:hover, button.blue:hover {
+.button.blue:hover,
+input[type=submit].blue:hover,
+button.blue:hover {
   background-color: #0e2e76;
   border-color: #0e2e76;
 }
-.button.green, input[type=submit].green, button.green {
+.button.green,
+input[type=submit].green,
+button.green {
   background-color: #5e8c0c;
   border-color: #5e8c0c;
 }
-.button.green.ghost, input[type=submit].green.ghost, button.green.ghost {
+.button.green.ghost,
+input[type=submit].green.ghost,
+button.green.ghost {
   background: transparent;
   color: #5e8c0c;
 }
-.button.green.ghost:hover, input[type=submit].green.ghost:hover, button.green.ghost:hover {
+.button.green.ghost:hover,
+input[type=submit].green.ghost:hover,
+button.green.ghost:hover {
   background: #5e8c0c;
   color: #FFFFFF;
 }
-.button.green:hover, input[type=submit].green:hover, button.green:hover {
+.button.green:hover,
+input[type=submit].green:hover,
+button.green:hover {
   background-color: #3e5d08;
   border-color: #3e5d08;
 }
-.button.red, input[type=submit].red, button.red {
+.button.red,
+input[type=submit].red,
+button.red {
   background-color: #f15a3b;
   border-color: #f15a3b;
 }
-.button.red.ghost, input[type=submit].red.ghost, button.red.ghost {
+.button.red.ghost,
+input[type=submit].red.ghost,
+button.red.ghost {
   background: transparent;
   color: #f15a3b;
 }
-.button.red.ghost:hover, input[type=submit].red.ghost:hover, button.red.ghost:hover {
+.button.red.ghost:hover,
+input[type=submit].red.ghost:hover,
+button.red.ghost:hover {
   background: #f15a3b;
   color: #FFFFFF;
 }
-.button.red:hover, input[type=submit].red:hover, button.red:hover {
+.button.red:hover,
+input[type=submit].red:hover,
+button.red:hover {
   background-color: #e83511;
   border-color: #e83511;
 }
-.button.yellow, input[type=submit].yellow, button.yellow {
+.button.yellow,
+input[type=submit].yellow,
+button.yellow {
   background-color: #FDC84A;
   border-color: #FDC84A;
 }
-.button.yellow.ghost, input[type=submit].yellow.ghost, button.yellow.ghost {
+.button.yellow.ghost,
+input[type=submit].yellow.ghost,
+button.yellow.ghost {
   background: transparent;
   color: #FDC84A;
 }
-.button.yellow.ghost:hover, input[type=submit].yellow.ghost:hover, button.yellow.ghost:hover {
+.button.yellow.ghost:hover,
+input[type=submit].yellow.ghost:hover,
+button.yellow.ghost:hover {
   background: #FDC84A;
   color: #FFFFFF;
 }
-.button.yellow:hover, input[type=submit].yellow:hover, button.yellow:hover {
+.button.yellow:hover,
+input[type=submit].yellow:hover,
+button.yellow:hover {
   background-color: #fdb64a;
   border-color: #fdb64a;
 }
-.button.facebook, input[type=submit].facebook, button.facebook {
+.button.facebook,
+input[type=submit].facebook,
+button.facebook {
   background-color: #3b5998;
   border-color: #3b5998;
 }
-.button.facebook.ghost, input[type=submit].facebook.ghost, button.facebook.ghost {
+.button.facebook.ghost,
+input[type=submit].facebook.ghost,
+button.facebook.ghost {
   background: transparent;
   color: #3b5998;
 }
-.button.facebook.ghost:hover, input[type=submit].facebook.ghost:hover, button.facebook.ghost:hover {
+.button.facebook.ghost:hover,
+input[type=submit].facebook.ghost:hover,
+button.facebook.ghost:hover {
   background: #3b5998;
   color: #FFFFFF;
 }
-.button.facebook:hover, input[type=submit].facebook:hover, button.facebook:hover {
+.button.facebook:hover,
+input[type=submit].facebook:hover,
+button.facebook:hover {
   background-color: #2d4373;
   border-color: #2d4373;
 }
-.button.twitter, input[type=submit].twitter, button.twitter {
+.button.twitter,
+input[type=submit].twitter,
+button.twitter {
   background-color: #00aced;
   border-color: #00aced;
 }
-.button.twitter.ghost, input[type=submit].twitter.ghost, button.twitter.ghost {
+.button.twitter.ghost,
+input[type=submit].twitter.ghost,
+button.twitter.ghost {
   background: transparent;
   color: #00aced;
 }
-.button.twitter.ghost:hover, input[type=submit].twitter.ghost:hover, button.twitter.ghost:hover {
+.button.twitter.ghost:hover,
+input[type=submit].twitter.ghost:hover,
+button.twitter.ghost:hover {
   background: #00aced;
   color: #FFFFFF;
 }
-.button.twitter:hover, input[type=submit].twitter:hover, button.twitter:hover {
+.button.twitter:hover,
+input[type=submit].twitter:hover,
+button.twitter:hover {
   background-color: #0087ba;
   border-color: #0087ba;
 }
-.button.instagram, input[type=submit].instagram, button.instagram {
+.button.instagram,
+input[type=submit].instagram,
+button.instagram {
   background-color: #517fa4;
   border-color: #517fa4;
 }
-.button.instagram.ghost, input[type=submit].instagram.ghost, button.instagram.ghost {
+.button.instagram.ghost,
+input[type=submit].instagram.ghost,
+button.instagram.ghost {
   background: transparent;
   color: #517fa4;
 }
-.button.instagram.ghost:hover, input[type=submit].instagram.ghost:hover, button.instagram.ghost:hover {
+.button.instagram.ghost:hover,
+input[type=submit].instagram.ghost:hover,
+button.instagram.ghost:hover {
   background: #517fa4;
   color: #FFFFFF;
 }
-.button.instagram:hover, input[type=submit].instagram:hover, button.instagram:hover {
+.button.instagram:hover,
+input[type=submit].instagram:hover,
+button.instagram:hover {
   background-color: #406582;
   border-color: #406582;
 }
-.button.disabled, input[type=submit].disabled, button.disabled {
+.button.disabled,
+input[type=submit].disabled,
+button.disabled {
   background-color: rgba(49, 36, 43, 0.2);
   border-color: transparent;
   color: rgba(49, 36, 43, 0.5);
   cursor: not-allowed;
 }
-.button.disabled:hover, input[type=submit].disabled:hover, button.disabled:hover {
+.button.disabled:hover,
+input[type=submit].disabled:hover,
+button.disabled:hover {
   background-color: rgba(49, 36, 43, 0.2);
   border-color: transparent;
 }
-.button.raised, input[type=submit].raised, button.raised {
+.button.raised,
+input[type=submit].raised,
+button.raised {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
   border-color: transparent;
 }
-.button.raised:hover, input[type=submit].raised:hover, button.raised:hover {
+.button.raised:hover,
+input[type=submit].raised:hover,
+button.raised:hover {
   box-shadow: 0 12px 35px 0px rgba(0, 0, 0, 0.31), 0 2px 4px 0px rgba(0, 0, 0, 0.14);
   border-color: transparent;
 }
-.button.raised:active, input[type=submit].raised:active, button.raised:active {
+.button.raised:active,
+input[type=submit].raised:active,
+button.raised:active {
   border-color: transparent;
   box-shadow: 0 12px 46px rgba(0, 0, 0, 0.25), 0 18px 40px rgba(0, 0, 0, 0.19);
 }
-.button.flat, input[type=submit].flat, button.flat {
+.button.flat,
+input[type=submit].flat,
+button.flat {
   background-color: transparent;
   border-color: transparent;
   color: rgba(49, 36, 43, 0.75);
 }
-.button.flat:hover, input[type=submit].flat:hover, button.flat:hover {
+.button.flat:hover,
+input[type=submit].flat:hover,
+button.flat:hover {
   color: #31242b;
   background-color: rgba(49, 36, 43, 0.1);
 }
-.button.flat:active, input[type=submit].flat:active, button.flat:active {
+.button.flat:active,
+input[type=submit].flat:active,
+button.flat:active {
   background-color: rgba(49, 36, 43, 0.2);
 }
-.button.round, input[type=submit].round, button.round {
+.button.round,
+input[type=submit].round,
+button.round {
   border-radius: 99rem;
 }
-.button.small, input[type=submit].small, button.small {
+.button.small,
+input[type=submit].small,
+button.small {
   font-size: 0.675em;
   padding: 0.5em 1.4em;
 }
-.button.big, input[type=submit].big, button.big {
+.button.big,
+input[type=submit].big,
+button.big {
   font-size: 1.5em;
   padding: 0.7em 1.9em;
 }
-.button.huge, input[type=submit].huge, button.huge {
+.button.huge,
+input[type=submit].huge,
+button.huge {
   font-size: 2em;
   padding: 0.7em 1.9em;
 }
-.button.center.aligned, input[type=submit].center.aligned, button.center.aligned {
+.button.center.aligned,
+input[type=submit].center.aligned,
+button.center.aligned {
   margin: auto;
   display: block;
 }
-.button.icon, input[type=submit].icon, button.icon {
+.button.icon,
+input[type=submit].icon,
+button.icon {
   padding: 0.4em 0.6em;
 }
-.button.icon .icon, input[type=submit].icon .icon, button.icon .icon {
+.button.icon .icon,
+input[type=submit].icon .icon,
+button.icon .icon {
   margin: 0;
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .button.responsive, input[type=submit].responsive, button.responsive {
+  .button.responsive,
+input[type=submit].responsive,
+button.responsive {
     display: block;
     width: 60%;
     margin-left: auto !important;
     margin-right: auto !important;
     text-align-last: center;
   }
-  .button.responsive:not(:last-child), input[type=submit].responsive:not(:last-child), button.responsive:not(:last-child) {
+  .button.responsive:not(:last-child),
+input[type=submit].responsive:not(:last-child),
+button.responsive:not(:last-child) {
     margin-bottom: 0.5rem;
   }
 }
 @media (max-width: 576px) {
-  .button.responsive, input[type=submit].responsive, button.responsive {
+  .button.responsive,
+input[type=submit].responsive,
+button.responsive {
     display: block;
     width: 100%;
     text-align-last: center;
   }
-  .button.responsive:not(:last-child), input[type=submit].responsive:not(:last-child), button.responsive:not(:last-child) {
+  .button.responsive:not(:last-child),
+input[type=submit].responsive:not(:last-child),
+button.responsive:not(:last-child) {
     margin-bottom: 0.5rem;
   }
 }
-.button.demo, input[type=submit].demo, button.demo {
+.button.demo,
+input[type=submit].demo,
+button.demo {
   border: 0;
 }
 @media (max-width: 576px) {
-  .button.demo, input[type=submit].demo, button.demo {
+  .button.demo,
+input[type=submit].demo,
+button.demo {
     background-color: #f15a3b;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .button.demo, input[type=submit].demo, button.demo {
+  .button.demo,
+input[type=submit].demo,
+button.demo {
     background-color: #1340A4;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  .button.demo, input[type=submit].demo, button.demo {
+  .button.demo,
+input[type=submit].demo,
+button.demo {
     background-color: #FDC84A;
   }
 }
 @media (min-width: 1200px) {
-  .button.demo, input[type=submit].demo, button.demo {
+  .button.demo,
+input[type=submit].demo,
+button.demo {
     background-color: #5e8c0c;
   }
 }
@@ -580,13 +708,7 @@ svg:not(:root) {
   padding: 1em 2em;
 }
 
-input[type=text],
-input[type=url],
-input[type=email],
-input[type=password],
-input[type=number],
-input[type=tel],
-textarea {
+input[type=text], input[type=url], input[type=email], input[type=password], input[type=text], input[type=url], input[type=email], input[type=password], input[type=number], input[type=tel], textarea {
   box-sizing: border-box;
   position: relative;
   width: 100%;
@@ -601,60 +723,24 @@ textarea {
   background-color: white;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-input[type=text]::placeholder,
-input[type=url]::placeholder,
-input[type=email]::placeholder,
-input[type=password]::placeholder,
-input[type=number]::placeholder,
-input[type=tel]::placeholder,
-textarea::placeholder {
+input[type=text]::placeholder, input[type=url]::placeholder, input[type=email]::placeholder, input[type=password]::placeholder, input[type=text]::placeholder, input[type=url]::placeholder, input[type=email]::placeholder, input[type=password]::placeholder, input[type=number]::placeholder, input[type=tel]::placeholder, textarea::placeholder {
   color: rgba(49, 36, 43, 0.4);
 }
-input[type=text]:last-child,
-input[type=url]:last-child,
-input[type=email]:last-child,
-input[type=password]:last-child,
-input[type=number]:last-child,
-input[type=tel]:last-child,
-textarea:last-child {
+input[type=text]:last-child, input[type=url]:last-child, input[type=email]:last-child, input[type=password]:last-child, input[type=text]:last-child, input[type=url]:last-child, input[type=email]:last-child, input[type=password]:last-child, input[type=number]:last-child, input[type=tel]:last-child, textarea:last-child {
   margin-bottom: 0;
 }
-input[type=text]:focus,
-input[type=url]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=number]:focus,
-input[type=tel]:focus,
-textarea:focus {
+input[type=text]:focus, input[type=url]:focus, input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, input[type=url]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus, input[type=tel]:focus, textarea:focus {
   border-color: #7c3eb9;
   box-shadow: 0 0 0 5px rgba(124, 62, 185, 0.2);
 }
-input[type=text]:focus::placeholder,
-input[type=url]:focus::placeholder,
-input[type=email]:focus::placeholder,
-input[type=password]:focus::placeholder,
-input[type=number]:focus::placeholder,
-input[type=tel]:focus::placeholder,
-textarea:focus::placeholder {
+input[type=text]:focus::placeholder, input[type=url]:focus::placeholder, input[type=email]:focus::placeholder, input[type=password]:focus::placeholder, input[type=text]:focus::placeholder, input[type=url]:focus::placeholder, input[type=email]:focus::placeholder, input[type=password]:focus::placeholder, input[type=number]:focus::placeholder, input[type=tel]:focus::placeholder, textarea:focus::placeholder {
   color: rgba(49, 36, 43, 0.2);
 }
-input[type=text]:disabled,
-input[type=url]:disabled,
-input[type=email]:disabled,
-input[type=password]:disabled,
-input[type=number]:disabled,
-input[type=tel]:disabled,
-textarea:disabled {
+input[type=text]:disabled, input[type=url]:disabled, input[type=email]:disabled, input[type=password]:disabled, input[type=text]:disabled, input[type=url]:disabled, input[type=email]:disabled, input[type=password]:disabled, input[type=number]:disabled, input[type=tel]:disabled, textarea:disabled {
   background-color: #6e7e85;
   cursor: not-allowed;
 }
-input[type=text].huge,
-input[type=url].huge,
-input[type=email].huge,
-input[type=password].huge,
-input[type=number].huge,
-input[type=tel].huge,
-textarea.huge {
+input[type=text].huge, input[type=url].huge, input[type=email].huge, input[type=password].huge, input[type=text].huge, input[type=url].huge, input[type=email].huge, input[type=password].huge, input[type=number].huge, input[type=tel].huge, textarea.huge {
   font-size: 1.7em;
 }
 
@@ -662,35 +748,17 @@ textarea.huge {
   margin-bottom: 0.4rem;
   display: inline-block;
 }
-.field input[type=text],
-.field input[type=url],
-.field input[type=email],
-.field input[type=password],
-.field input[type=number],
-.field input[type=tel],
-.field textarea {
+.field input[type=text], .field input[type=url], .field input[type=email], .field input[type=password], .field input[type=text], .field input[type=url], .field input[type=email], .field input[type=password], .field input[type=number], .field input[type=tel], .field textarea {
   margin: 0;
 }
 .field.inline.action {
   display: inline-flex;
 }
-.field.inline.action input[type=text],
-.field.inline.action input[type=url],
-.field.inline.action input[type=email],
-.field.inline.action input[type=password],
-.field.inline.action input[type=number],
-.field.inline.action input[type=tel],
-.field.inline.action textarea {
+.field.inline.action input[type=text], .field.inline.action input[type=url], .field.inline.action input[type=email], .field.inline.action input[type=password], .field.inline.action input[type=text], .field.inline.action input[type=url], .field.inline.action input[type=email], .field.inline.action input[type=password], .field.inline.action input[type=number], .field.inline.action input[type=tel], .field.inline.action textarea {
   max-width: 100%;
   border-radius: 4px 0 0 4px;
 }
-.field.inline.action input[type=text]:focus + .button,
-.field.inline.action input[type=url]:focus + .button,
-.field.inline.action input[type=email]:focus + .button,
-.field.inline.action input[type=password]:focus + .button,
-.field.inline.action input[type=number]:focus + .button,
-.field.inline.action input[type=tel]:focus + .button,
-.field.inline.action textarea:focus + .button {
+.field.inline.action input[type=text]:focus + .button, .field.inline.action input[type=url]:focus + .button, .field.inline.action input[type=email]:focus + .button, .field.inline.action input[type=password]:focus + .button, .field.inline.action input[type=text]:focus + .button, .field.inline.action input[type=url]:focus + .button, .field.inline.action input[type=email]:focus + .button, .field.inline.action input[type=password]:focus + .button, .field.inline.action input[type=number]:focus + .button, .field.inline.action input[type=tel]:focus + .button, .field.inline.action textarea:focus + .button {
   box-shadow: 0 0 0 5px rgba(124, 62, 185, 0.2);
   margin-left: 10px;
 }
@@ -3149,11 +3217,11 @@ img {
   top: 0;
 }
 .showcase:before {
-  background: linear-gradient(to right, #eb0066 0%, #eb0066 0%, rgba(235, 0, 102, 0) 100%);
+  background: linear-gradient(to right, #eb0066 0%, #eb0066);
   left: 0;
 }
 .showcase:after {
-  background: linear-gradient(to left, #7c3eb9 0%, rgba(124, 62, 185, 0));
+  background: linear-gradient(to left, #7c3eb9 0%, #7c3eb9);
   right: 0;
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -3233,6 +3301,8 @@ img {
 
 .video .iframe {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  padding: 1rem;
+  border-radius: 4px;
 }
 
 .how {

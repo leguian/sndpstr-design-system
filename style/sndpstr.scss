@@ -1,6 +1,6 @@
 // Import base
 @import 'variables';
-@import 'components/mixins';
+@import 'mixin/_mixins';
 @import 'components/core';
 
 // Import components
@@ -17,6 +17,8 @@
 @import 'components/loaders';
 @import 'components/labels';
 @import 'components/modal';
+
+// Import Icons stylesheet
 @import '../icons/webfont/sndpstr-icon.css';
 
 // add here more stylesheets if needed

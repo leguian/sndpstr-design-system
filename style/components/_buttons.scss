@@ -1,4 +1,6 @@
-.button, input[type="submit"], button {
+.button,
+input[type="submit"],
+button {
   @mixin ghost-button($ghost-button-color) {
     color: $ghost-button-color;
 
