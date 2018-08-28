@@ -288,8 +288,10 @@ button {
 .button:hover,
 input[type=submit]:hover,
 button:hover {
-  transform: scale(1.05);
+  background-color: #623193;
+  border-color: #623193;
   color: #FBFBFB;
+  transform: scale(1.05);
 }
 .button:active, .button:focus, .button:visited,
 input[type=submit]:active,
@@ -1375,12 +1377,17 @@ input[type=submit].round,
 button.round {
   border-radius: 99rem;
 }
-.button.center.aligned,
-input[type=submit].center.aligned,
-button.center.aligned {
+.button.fluid,
+input[type=submit].fluid,
+button.fluid {
   margin: auto;
   display: block;
-  align-self: center;
+  width: 100%;
+}
+.button.fluid:hover,
+input[type=submit].fluid:hover,
+button.fluid:hover {
+  transform: scale(1);
 }
 .button.icon,
 input[type=submit].icon,

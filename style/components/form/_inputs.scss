@@ -41,8 +41,8 @@ $selector: ();
   }
 
   &:focus {
-    border-color: $primary-color;
-    box-shadow: 0 0 0 5px rgba($primary-color, .2);
+    border-color: $default-color;
+    box-shadow: 0 0 0 5px rgba($default-color, .2);
 
     &::placeholder {
       color: rgba($text-color, .2);
@@ -79,7 +79,7 @@ $selector: ();
 
       &:focus {
         + .button {
-          box-shadow: 0 0 0 5px rgba($primary-color, .2);
+          box-shadow: 0 0 0 5px rgba($default-color, .2);
           margin-left: 10px;
         }
       }

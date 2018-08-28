@@ -13,12 +13,12 @@ main {
 }
 
 ::-moz-selection {
-  background-color: $primary-color;
+  background-color: $default-color;
   color: #fff;
 }
 
 ::selection {
-  background-color: $primary-color;
+  background-color: $default-color;
   color: #fff;
 }
 
