@@ -3417,7 +3417,12 @@ img {
   height: 100%;
 }
 .customize .wrapper .frame .track {
+  font-size: 0.75em;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+}
+.customize .wrapper .frame .track .artist {
+  font-weight: 700;
 }
 .customize .size {
   background: #e4e4e4;

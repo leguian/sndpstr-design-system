@@ -39,7 +39,13 @@
       }
 
       .track {
+        font-size: 0.75em;
+        font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
+
+        .artist {
+          font-weight: 700;
+        }
       }
     }
   }
