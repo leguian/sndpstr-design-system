@@ -283,7 +283,7 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   user-select: none;
-  /* Ok, for each color in swatch, we build different properties with the color name */
+  /* Ok, for each color in swatch array, we build different class with the color name */
 }
 .button:hover,
 input[type=submit]:hover,
@@ -1380,6 +1380,7 @@ input[type=submit].center.aligned,
 button.center.aligned {
   margin: auto;
   display: block;
+  align-self: center;
 }
 .button.icon,
 input[type=submit].icon,
@@ -1420,6 +1421,39 @@ button.responsive {
 input[type=submit].responsive:not(:last-child),
 button.responsive:not(:last-child) {
     margin-bottom: 0.5rem;
+  }
+}
+.button.demo,
+input[type=submit].demo,
+button.demo {
+  border: 0;
+}
+@media (max-width: 576px) {
+  .button.demo,
+input[type=submit].demo,
+button.demo {
+    background-color: #f15a3b;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .button.demo,
+input[type=submit].demo,
+button.demo {
+    background-color: #1340A4;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .button.demo,
+input[type=submit].demo,
+button.demo {
+    background-color: #FDC84A;
+  }
+}
+@media (min-width: 1200px) {
+  .button.demo,
+input[type=submit].demo,
+button.demo {
+    background-color: #5e8c0c;
   }
 }
 
