@@ -136,13 +136,13 @@ p:last-child {
   margin-top: 1em !important;
 }
 .margin.bottom {
-  margin-top: 1em !important;
+  margin-bottom: 1em !important;
 }
 .margin.left {
-  margin-top: 1em !important;
+  margin-left: 1em !important;
 }
 .margin.right {
-  margin-top: 1em !important;
+  margin-right: 1em !important;
 }
 
 em, i, .em {
@@ -2788,7 +2788,8 @@ ol {
 }
 .navigation .menu .items .item.active {
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.02);
+  color: #31242b;
+  background-color: rgba(0, 0, 0, 0.03);
 }
 .navigation .menu .items .item:hover {
   background-color: rgba(0, 0, 0, 0.05);
@@ -3332,6 +3333,41 @@ img {
 .footer a:hover {
   color: #FBFBFB !important;
   opacity: 0.5;
+}
+
+.about {
+  background: #FBFBFB;
+}
+
+.cgv .h1,
+.contact .h1 {
+  line-height: 0.9;
+  margin-bottom: 1em;
+}
+.cgv .h1 .subtitle,
+.contact .h1 .subtitle {
+  color: rgba(49, 36, 43, 0.6);
+  font-size: 0.5em;
+}
+
+.cgv .h3:not(:first-child) {
+  margin-top: 2em;
+}
+
+.contact .letter {
+  padding: 6em 4em 4em 0;
+  background: linear-gradient(-122deg, #fff9f9, #f5e6ed);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  position: relative;
+}
+.contact .letter .address {
+  margin-left: 50%;
+}
+.contact .letter .stamp {
+  position: absolute;
+  width: 50px;
+  right: 1.5em;
+  top: 1.5em;
 }
 
 .customize {

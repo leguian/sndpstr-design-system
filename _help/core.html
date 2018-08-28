@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Living Style Guide</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../style/style.css"/>
+    <style>
+        .margins {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body class="sndpstr">
+
+
+<div class="container">
+    <div class="grid">
+        <div class="col-auto">
+
+            <h2 class="h4">Alignements</h2>
+            <div class="compact segments">
+                <div class="segment left aligned">Left</div>
+                <div class="segment center aligned">Center</div>
+                <div class="segment right aligned">Right</div>
+            </div>
+
+            <h2 class="h4">Floatings</h2>
+            <p class="red text">Add "clearing" class to container to avoid weird bottom spacing</p>
+            <div class="segment clearing">
+                <div class="right floated">Right floated</div>
+                <div class="left floated">Left floated</div>
+            </div>
+
+            <h2 class="h4">Margins</h2>
+
+            <p class="blue text">Based on <strong>$padding</strong> value in <strong>_variables.scss</strong></p>
+
+            <div class="compact margins segment">
+                <div class="label margin top">Label with top margin</div>
+            </div>
+            <div class="compact margins segment">
+                <div class="label margin right">Label with right margin</div>
+            </div>
+            <div class="compact margins segment">
+                <div class="label margin bottom">Label with bottom margin</div>
+            </div>
+            <div class="compact margins segment">
+                <div class="label margin left">Label with left margin</div>
+            </div>
+
+            <h2 class="h4">Text format</h2>
+            <div class="segment">
+                <p><span class="uppercase">uppercase</span> <span class="em">Italic</span> <span class="strong">Strong</span></p>
+                <p><span class="small">Small</span> <span class="large">Large</span></p>
+                <p>Text with <span class="sup">Superior</span></p>
+                <p>Text with <span class="sub">Inferior</span></p>
+                <div class="flat compact segment ellipsis" style="max-width: 600px;">Ellipsis text (<span class="red text">Need a fixed container width</span>) : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie</div>
+                <p class="primary text">Text with primary color</p>
+                <p class="secondary text">Text with secondary color</p>
+                <p class="blue text">Text with blue color</p>
+                <p class="yellow text">Text with yellow color</p>
+                <p class="red text">Text with red color</p>
+                <p class="green text">Text with green color</p>
+                <p class="gray text">Text with gray color</p>
+                <p class="white text" style="background: black">Text with white color</p>
+                <p class="hint">Hinting text ! Please, be relevant</p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

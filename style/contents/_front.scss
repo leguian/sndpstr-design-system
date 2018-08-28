@@ -183,3 +183,46 @@
     }
   }
 }
+
+.about {
+  background: $white;
+}
+.cgv,
+.contact {
+  .h1 {
+    line-height: .9;
+    margin-bottom: $padding / 2;
+
+    .subtitle {
+      color: transparentize($text-color, .4);
+      font-size: .5em;
+    }
+  }
+}
+.cgv {
+  .h3 {
+    &:not(:first-child) {
+      margin-top: $padding;
+    }
+  }
+}
+.contact {
+
+  .letter {
+    padding: ($padding * 3) ($padding * 2) ($padding * 2) 0;
+    background: linear-gradient(-122deg, #fff9f9, #f5e6ed);
+    box-shadow: $base-shadow;
+    position: relative;
+
+    .address {
+      margin-left: 50%;
+    }
+
+    .stamp {
+      position: absolute;
+      width: 50px;
+      right: 1.5em;
+      top: 1.5em;
+    }
+  }
+}

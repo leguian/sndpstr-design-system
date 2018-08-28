@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SoundPoster - Nous contacter</title>
+
+    <link rel="stylesheet" type="text/css" media="all" href="style/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+
+<body class="sndpstr contact">
+
+<header class="header container">
+    <div class="grid">
+        <div class="col-auto hidden-xxs hidden-xs">
+            <div class="navigation">
+                <div class="menu">
+                    <a class="logo" title="Logo SoundPoster">
+                        <img src="style/assets/img/logo-sndpstr.svg" alt="SoundPoster - When Music meets Art">
+                    </a>
+                    <div class="items">
+                        <a href="index.html" class="item">Accueil</a>
+                        <a href="about.html" class="item">Qui sommes-nous ?</a>
+                        <a href="contact.html" class="item active">contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-auto hidden-sm hidden-md hidden-lg hidden-xlg">
+            <div class="navigation">
+                <div class="menu">
+                    <a class="logo">
+                        <img src="style/assets/img/logo-sndpstr-wave.svg" alt="SoundPoster - When Music meets Art">
+                    </a>
+                    <div class="items">
+                        <a href="index.html" class="item"><i class="icon home"></i></a>
+                        <a href="about.html" class="item"><i class="icon help"></i></a>
+                        <a href="contact.html" class="item active"><i class="icon contact"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="bloc">
+    <div class="container center aligned">
+        <h1 class="h1">
+            Nous sommes à votre écoute
+            <br><span class="subtitle">Nous vous répondons en moins de 48h… promis !</span>
+        </h1>
+        <div class="grid justify-center">
+            <div class="col-sm-10 hidden-md hidden-lg hidden-xlg">
+                <p>Pour nous contacter, on a fait simple !<br>Utilisez l'adresse : <strong><a href="mailto:hello@sndpstr.com">hello@sndpstr.com</a></strong></p>
+                <hr/>
+                <h2 class="h5">Pour nous joindre par courrier :</h2>
+                <p>RANIRO SAS - SoundPoster<br>60 route des gardes<br>92190 Meudon<br><br>FRANCE</p>
+            </div>
+            <div class="col-sm-6 hidden-sm hidden-xxs hidden-xs">
+                <p>Pour nous contacter, on a fait simple !<br>Utilisez l'adresse : <strong><a href="mailto:hello@sndpstr.com">hello@sndpstr.com</a></strong>.</p>
+                <hr/>
+                <h2 class="h5">Pour nous joindre par courrier :</h2>
+                <div class="letter">
+                    <div class="stamp"><img src="style/assets/img/stamp.svg" alt="Timbre SoundPoster" class="image"></div>
+                    <div class="address">RANIRO SAS - SoundPoster<br>60 route des gardes<br>92190 Meudon<br><br>FRANCE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="grid">
+            <div class="col-sm-4">
+                <h3 class="h4">Navigation</h3>
+                <ul class="links">
+                    <li><a href="index.html" class="active item">Accueil</a></li>
+                    <li><a href="contact.html" class="item">Nous contacter</a></li>
+                    <li><a href="cgv.html" class="item">Conditions générales de vente</a></li>
+                    <li><a href="mentions-legales.html" class="item">Mentions légales</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="h4">Contact</h3>
+                <p>Une question, un doute ? Contactez-nous !<br>Nous nous ferons un plaisir de vous répondre rapidement
+                    :)</p>
+                <p><a href="mailto:hello@sndpstr.com">hello@sndpstr.com</a><br><a href="contact.html">Plus de moyen de
+                    contact ?</a></p>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="h4">Suivez-vous !</h3>
+                <ul class="links">
+                    <li><a href="https://www.facebook.com/sndpstr" target="_blank"><i class="facebook icon"></i>
+                        Facebook</a></li>
+                    <li><a href="https://www.instagram.com/soundposter" target="_blank"><i class="instagram icon"></i>
+                        Instagram</a></li>
+                    <li><a href="https://www.twitter.com/sndpstr" target="_blank"><i class="twitter icon"></i>
+                        Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p>© 2018 - Tous droits réservés - Créé en France, imprimé en Allemagne. <i class="icon help tooltip"
+                                                                                    title="D'ailleurs, si vous connaissez de bons imprimeurs compétitifs en France, envoyez-nous un email :) !"></i>
+        </p>
+    </div>
+</footer>
+<div class="modal" id="modal-how" aria-hidden="true">
+    <div class="overlay" data-modal-close>
+        <div class="container" role="dialog">
+            <header class="header">
+                Explication technique
+                <i class="icon close" aria-label="Close modal" data-modal-close></i>
+            </header>
+            <div class="content">
+                <div class="description">
+                    <p>Dans un premier temps, nous extrayons la modulation par impulsion et codage ou MIC, (en anglais Pulse Code Modulation), généralement abrégé en PCM qui est une représentation numérique d'un signal électrique résultant d'un processus de numérisation. Le signal est d'abord échantillonné, puis chaque échantillon est quantifié indépendamment des autres échantillons, et chacune des valeurs quantifiées est convertie en un code numérique (au final, ça <a href="https://commons.wikimedia.org/wiki/File:Pcm.svg?uselang=fr" target="_blank"> ressemble à ça</a> !).</p>
+                    <p>Puis, SoundPoster quantifie. C'est à dire que nous convertissons une valeur prise dans un ensemble continu en une autre, correspondant à un nombre fini d'intervalles de valeurs possibles.</p>
+                    <p>Enfin, nous récupérons ces données afin de générer des SVG (c'est un format de données conçu pour décrire des ensembles de graphiques vectoriels et basé sur XML) qui sont une réprésentation graphique de l'onde sonore.</p>
+                    <p>Si tout ça n'est pas assez clair, nos équipes de scientifiques se feront un plaisir d'éclairer votre lanterne : <a href="mailto:hello@sndpstr.com">hello@sndpstr.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="style/js/micromodal.min.js"></script>
+<script src="style/js/tippy.all.min.js"></script>
+<script src="style/js/scrollMove.js"></script>
+<script src="style/js/core.js"></script>
+</body>
+</html>
