@@ -142,6 +142,10 @@
       padding: 0.3em 0.5em;
       float: right;
       border-radius: $radius;
+
+      @media (max-width: $reflex-sm) {
+        display:none;
+      }
     }
   }
 }

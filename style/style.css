@@ -4470,6 +4470,11 @@ img {
   float: right;
   border-radius: 4px;
 }
+@media (max-width: 768px) {
+  .search.results .item .duration {
+    display: none;
+  }
+}
 
 .intersection {
   position: absolute;
