@@ -13,6 +13,7 @@ $twitter: #00aced;
 $instagram: #517fa4;
 $default-color: $primary-color;
 
+// Adding new color will create new components with the color property (buttons, labels, segments & text colors...)
 $swatch: ('primary', $primary-color),
         ('secondary', $secondary-color),
         ('blue', $blue),
