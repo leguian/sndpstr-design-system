@@ -4347,7 +4347,6 @@ img {
 
 .customize {
   padding: 4em 0;
-  background: #FBFBFB;
 }
 .customize .wrapper {
   position: relative;
@@ -4388,6 +4387,7 @@ img {
   background: white;
   width: 1164px;
   height: 388px;
+  padding: 100px 130px;
 }
 .customize .wrapper .frame .svg.only {
   height: 100%;

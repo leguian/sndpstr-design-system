@@ -1,8 +1,5 @@
 .customize {
   padding: $padding*2 0;
-
-  background: $white;
-
   $frameHeight: 400px;
 
   .wrapper {
@@ -40,6 +37,7 @@
         background: white;
         width: 1164px;
         height: 388px;
+        padding: 100px 130px;
       }
 
       .svg {
