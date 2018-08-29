@@ -4347,6 +4347,7 @@ img {
 
 .customize {
   padding: 4em 0;
+  background: #FBFBFB;
 }
 .customize .wrapper {
   position: relative;
@@ -4381,6 +4382,13 @@ img {
   border-style: solid;
   border-color: #292929 #212020 #191919 #212121;
 }
+.customize .wrapper .frame.no {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+  border-width: 0;
+  background: white;
+  width: 1164px;
+  height: 388px;
+}
 .customize .wrapper .frame .svg.only {
   height: 100%;
 }
@@ -4409,6 +4417,33 @@ img {
   text-align: center;
   background-color: white;
   top: -10px;
+}
+.customize .price {
+  font-size: 2.4rem;
+  background: #eff1f1;
+  border-radius: 6px;
+  padding: 0.2em;
+  line-height: 1;
+}
+.customize .price:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%) rotate(-135deg);
+  width: 0.4em;
+  height: 0.4em;
+  border: none;
+  z-index: 2;
+  background: #eff1f1;
+}
+.customize .price sup {
+  font-size: 0.57em;
+  color: #9ea8a9;
+}
+.customize .price .shipping {
+  font-size: 0.3em;
+  margin-top: 0.5em;
+  display: block;
 }
 
 .hero .field .loader {
