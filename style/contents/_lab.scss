@@ -87,7 +87,7 @@
         padding: $padding / 2;
       }
       .content {
-        background-color: lighten($gray, 45);
+        background-color: lighten($grey, 45);
         font-size: .75em;
       }
 
@@ -137,7 +137,7 @@
     }
     .duration {
       color: $white;
-      background: $gray;
+      background: $grey;
       font-size: 0.8em;
       padding: 0.3em 0.5em;
       float: right;

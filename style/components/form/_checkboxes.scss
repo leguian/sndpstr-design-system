@@ -76,7 +76,7 @@ input[type=checkbox] {
       background: darken($white, 10);
     }
     & + label:after {
-      border-color: $gray;
+      border-color: $grey;
     }
   }
   & + label {
@@ -133,7 +133,7 @@ label {
       }
 
       &:after {
-        background-color: lighten($gray, 30);
+        background-color: lighten($grey, 30);
         border: 2px solid darken($white, 5);
         border-radius: $rounded;
         content: '';
