@@ -230,8 +230,8 @@ svg:not(:root) {
 .text.green {
   color: #5e8c0c;
 }
-.text.gray {
-  color: #6e7e85;
+.text.grey {
+  color: #9ea8a9;
 }
 .text.white {
   color: #FBFBFB;
@@ -328,7 +328,7 @@ input[type=submit].disabled,
 button.disabled {
   background-color: rgba(49, 36, 43, 0.2);
   border-color: transparent;
-  color: rgba(49, 36, 43, 0.5);
+  color: rgba(49, 36, 43, 0.35);
   cursor: not-allowed;
 }
 .button.disabled:hover,
@@ -845,83 +845,84 @@ button.flat.green:active {
   background-color: rgba(94, 140, 12, 0.2);
   border-color: transparent;
 }
-.button.gray,
-input[type=submit].gray,
-button.gray {
-  background-color: #6e7e85;
-  border-color: #6e7e85;
+.button.grey,
+input[type=submit].grey,
+button.grey {
+  background-color: #9ea8a9;
+  border-color: #9ea8a9;
+  color: #31242b;
 }
-.button.gray:hover,
-input[type=submit].gray:hover,
-button.gray:hover {
-  background-color: #576469;
-  border-color: #576469;
+.button.grey:hover,
+input[type=submit].grey:hover,
+button.grey:hover {
+  background-color: #839091;
+  border-color: #839091;
 }
-.button.active.gray,
-input[type=submit].active.gray,
-button.active.gray {
-  background-color: #576469;
-  border-color: #576469;
+.button.active.grey,
+input[type=submit].active.grey,
+button.active.grey {
+  background-color: #839091;
+  border-color: #839091;
   color: #FBFBFB;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.48) inset;
 }
-.button.disabled.gray,
-input[type=submit].disabled.gray,
-button.disabled.gray {
-  background-color: rgba(110, 126, 133, 0.2);
+.button.disabled.grey,
+input[type=submit].disabled.grey,
+button.disabled.grey {
+  background-color: rgba(158, 168, 169, 0.2);
   border-color: transparent;
-  color: rgba(110, 126, 133, 0.5);
+  color: rgba(158, 168, 169, 0.5);
   cursor: not-allowed;
 }
-.button.disabled.gray:hover,
-input[type=submit].disabled.gray:hover,
-button.disabled.gray:hover {
-  background-color: rgba(110, 126, 133, 0.2);
+.button.disabled.grey:hover,
+input[type=submit].disabled.grey:hover,
+button.disabled.grey:hover {
+  background-color: rgba(158, 168, 169, 0.2);
   border-color: transparent;
   transform: scale(1);
 }
-.button.ghost.gray,
-input[type=submit].ghost.gray,
-button.ghost.gray {
-  color: #6e7e85;
+.button.ghost.grey,
+input[type=submit].ghost.grey,
+button.ghost.grey {
+  color: #9ea8a9;
   background: none;
 }
-.button.ghost.gray:hover,
-input[type=submit].ghost.gray:hover,
-button.ghost.gray:hover {
+.button.ghost.grey:hover,
+input[type=submit].ghost.grey:hover,
+button.ghost.grey:hover {
   background-color: transparent;
-  border-color: #576469;
+  border-color: #839091;
 }
-.button.inverted.gray,
-input[type=submit].inverted.gray,
-button.inverted.gray {
+.button.inverted.grey,
+input[type=submit].inverted.grey,
+button.inverted.grey {
   background: white;
   border: none;
-  color: #6e7e85;
+  color: #9ea8a9;
 }
-.button.inverted.gray:hover,
-input[type=submit].inverted.gray:hover,
-button.inverted.gray:hover {
-  background-color: #cfd4d7;
+.button.inverted.grey:hover,
+input[type=submit].inverted.grey:hover,
+button.inverted.grey:hover {
+  background-color: #fdfdfd;
 }
-.button.flat.gray,
-input[type=submit].flat.gray,
-button.flat.gray {
+.button.flat.grey,
+input[type=submit].flat.grey,
+button.flat.grey {
   background-color: transparent;
   border-color: transparent;
-  color: rgba(110, 126, 133, 0.75);
+  color: rgba(158, 168, 169, 0.75);
 }
-.button.flat.gray:hover,
-input[type=submit].flat.gray:hover,
-button.flat.gray:hover {
-  color: #6e7e85;
-  background-color: rgba(110, 126, 133, 0.1);
+.button.flat.grey:hover,
+input[type=submit].flat.grey:hover,
+button.flat.grey:hover {
+  color: #9ea8a9;
+  background-color: rgba(158, 168, 169, 0.1);
   border-color: transparent;
 }
-.button.flat.gray:active,
-input[type=submit].flat.gray:active,
-button.flat.gray:active {
-  background-color: rgba(110, 126, 133, 0.2);
+.button.flat.grey:active,
+input[type=submit].flat.grey:active,
+button.flat.grey:active {
+  background-color: rgba(158, 168, 169, 0.2);
   border-color: transparent;
 }
 .button.white,
@@ -1550,7 +1551,7 @@ input[type=text]:focus::placeholder, input[type=url]:focus::placeholder, input[t
   color: rgba(49, 36, 43, 0.2);
 }
 input[type=text]:disabled, input[type=url]:disabled, input[type=email]:disabled, input[type=password]:disabled, input[type=text]:disabled, input[type=url]:disabled, input[type=email]:disabled, input[type=password]:disabled, input[type=number]:disabled, input[type=tel]:disabled, textarea:disabled {
-  background-color: #6e7e85;
+  background-color: #9ea8a9;
   cursor: not-allowed;
 }
 input[type=text].huge, input[type=url].huge, input[type=email].huge, input[type=password].huge, input[type=text].huge, input[type=url].huge, input[type=email].huge, input[type=password].huge, input[type=number].huge, input[type=tel].huge, textarea.huge {
@@ -1658,7 +1659,7 @@ input[type=checkbox]:active + label:before {
   background: #e2e2e2;
 }
 input[type=checkbox]:active + label:after {
-  border-color: #6e7e85;
+  border-color: #9ea8a9;
 }
 input[type=checkbox] + label {
   cursor: pointer;
@@ -1710,7 +1711,7 @@ label.toggle > span:before {
   width: 2.4em;
 }
 label.toggle > span:after {
-  background-color: #c1c8cb;
+  background-color: #eff1f1;
   border: 2px solid #eeeeee;
   border-radius: 99rem;
   content: "";
@@ -3680,14 +3681,15 @@ ol {
 .segment.green.inverted {
   background-color: #5e8c0c;
 }
-.segment.gray {
-  background-color: #e9eced;
+.segment.grey {
+  background-color: #f0f2f2;
+  color: #31242b;
 }
-.segment.gray.header {
-  background-color: #ccd2d5;
+.segment.grey.header {
+  background-color: #dde1e1;
 }
-.segment.gray.inverted {
-  background-color: #6e7e85;
+.segment.grey.inverted {
+  background-color: #9ea8a9;
 }
 .segment.white {
   background-color: #fefefe;
@@ -3790,7 +3792,7 @@ ol {
 .segments .segment.green {
   border: 0;
 }
-.segments .segment.gray {
+.segments .segment.grey {
   border: 0;
 }
 .segments .segment.white {
@@ -3928,7 +3930,7 @@ img {
 }
 .label {
   display: inline-block;
-  background: #6e7e85;
+  background: #9ea8a9;
   color: #FBFBFB;
   font-size: 0.85em;
   padding: 0.5em 1em;
@@ -3954,8 +3956,9 @@ img {
 .label.green {
   background-color: #5e8c0c;
 }
-.label.gray {
-  background-color: #6e7e85;
+.label.grey {
+  background-color: #9ea8a9;
+  color: #31242b;
 }
 .label.white {
   background-color: #FBFBFB;
@@ -4418,7 +4421,7 @@ img {
   padding: 1em;
 }
 .hero .charts .card .content {
-  background-color: #eaedee;
+  background-color: white;
   font-size: 0.75em;
 }
 .hero .charts .card:hover {
@@ -4461,7 +4464,7 @@ img {
 }
 .search.results .item .duration {
   color: #FBFBFB;
-  background: #6e7e85;
+  background: #9ea8a9;
   font-size: 0.8em;
   padding: 0.3em 0.5em;
   float: right;
