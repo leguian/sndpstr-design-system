@@ -1,6 +1,48 @@
+.hero {
+  .field {
+    .loader {
+      position: absolute;
+      left: auto;
+      right: 8em;
+      top: 0.5em;
+    }
+  }
+
+  .h2 {
+    @include mobile {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .charts {
+
+    .card {
+      .image {
+        padding: $padding / 2;
+      }
+      .content {
+        background-color: lighten($grey, 45);
+        font-size: .75em;
+      }
+
+      &:hover {
+        opacity: .8;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 .customize {
-  padding: $padding*2 0;
   $frameHeight: 400px;
+
+  .h2 {
+    @include mobile {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+    }
+  }
 
   .wrapper {
     position: relative;
@@ -57,6 +99,7 @@
       }
     }
   }
+
   .size {
     background: #e4e4e4;
     height: 2px;
@@ -109,38 +152,33 @@
   }
 }
 
-.hero {
-  .field {
-    .loader {
-      position: absolute;
-      left: auto;
-      right: 8em;
-      top: 0.5em;
-    }
-  }
-
-  .charts {
-
-    .card {
-      .image {
-        padding: $padding / 2;
-      }
-      .content {
-        background-color: lighten($grey, 45);
-        font-size: .75em;
-      }
-
-      &:hover {
-        opacity: .8;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
 .checkout {
-  padding: $padding*2 0;
   background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
+
+  .h2 {
+    @include mobile {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .segment.yellow.header {
+    .icons {
+      .icon {
+        font-size: 2.5rem;
+
+        @include mobile {
+          font-size: 1.9em;
+        }
+      }
+    }
+
+    .h4 {
+      @include mobile {
+        font-size: 1.1em;
+      }
+    }
+  }
 }
 
 .search.results {

@@ -4345,8 +4345,35 @@ img {
   top: 1.5em;
 }
 
-.customize {
-  padding: 4em 0;
+.hero .field .loader {
+  position: absolute;
+  left: auto;
+  right: 8em;
+  top: 0.5em;
+}
+@media (max-width: 576px) {
+  .hero .h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+}
+.hero .charts .card .image {
+  padding: 1em;
+}
+.hero .charts .card .content {
+  background-color: white;
+  font-size: 0.75em;
+}
+.hero .charts .card:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .customize .h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
 }
 .customize .wrapper {
   position: relative;
@@ -4446,27 +4473,27 @@ img {
   display: block;
 }
 
-.hero .field .loader {
-  position: absolute;
-  left: auto;
-  right: 8em;
-  top: 0.5em;
-}
-.hero .charts .card .image {
-  padding: 1em;
-}
-.hero .charts .card .content {
-  background-color: white;
-  font-size: 0.75em;
-}
-.hero .charts .card:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
 .checkout {
-  padding: 4em 0;
   background-image: linear-gradient(-122deg, rgba(88, 54, 122, 0.16), #ffffff);
+}
+@media (max-width: 576px) {
+  .checkout .h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+}
+.checkout .segment.yellow.header .icons .icon {
+  font-size: 2.5rem;
+}
+@media (max-width: 576px) {
+  .checkout .segment.yellow.header .icons .icon {
+    font-size: 1.9em;
+  }
+}
+@media (max-width: 576px) {
+  .checkout .segment.yellow.header .h4 {
+    font-size: 1.1em;
+  }
 }
 
 .search.results {

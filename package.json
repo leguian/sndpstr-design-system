@@ -14,7 +14,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node webfont-generator.js && cd style && sass --watch sndpstr.scss:style.css"
+    "start": "node webfont-generator.js && cd style && sass --watch sndpstr.scss:style.css",
+    "build": "node webfont-generator.js && cd style && sass --watch sndpstr.scss:style.css --style compressed"
   },
   "repository": {
     "type": "git",
