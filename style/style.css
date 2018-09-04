@@ -1466,14 +1466,17 @@ button.demo {
 }
 
 .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  color: #31242b;
+  background-color: #FBFBFB;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
   border-radius: 2px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #FBFBFB;
-  color: #31242b;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  height: 100%;
 }
 .card:last-child {
   margin-bottom: 0;
@@ -1497,6 +1500,8 @@ button.demo {
   width: 100%;
 }
 .card .actions {
+  align-self: flex-end;
+  width: 100%;
   padding: 0.6666666667em 1em;
   border-top: solid 1px rgba(49, 36, 43, 0.15);
 }
