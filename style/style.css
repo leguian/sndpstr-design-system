@@ -4250,6 +4250,41 @@ img {
   }
 }
 
+@media (max-width: 576px) {
+  .testimonials .h1 {
+    font-size: 1.7em;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .testimonials .h1 {
+    font-size: 1.7em;
+  }
+}
+.testimonials .card:hover {
+  background: #eeeeee;
+}
+.testimonials .card:hover .avatar {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.05);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2), 0 2px 8px rgba(0, 0, 0, 0.14);
+}
+.testimonials .card .content .avatar {
+  margin-bottom: 2em;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .testimonials .card .content .avatar {
+    max-width: 80px;
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 576px) {
+  .testimonials .card .content .avatar {
+    max-width: 100px;
+    margin-bottom: 1em;
+  }
+}
+
 .footer {
   padding: 2em 0;
   background-image: linear-gradient(-122deg, #7c3eb9, #eb0066);
@@ -4423,9 +4458,18 @@ img {
   font-size: 0.75em;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  line-height: normal;
+}
+.customize .wrapper .frame .track .artist,
+.customize .wrapper .frame .track .duration {
+  max-width: 50%;
 }
 .customize .wrapper .frame .track .artist {
   font-weight: 700;
+  text-align: left;
+}
+.customize .wrapper .frame .track .duration {
+  text-align: right;
 }
 .customize .size {
   background: #e4e4e4;

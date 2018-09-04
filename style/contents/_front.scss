@@ -167,6 +167,44 @@
     }
   }
 }
+.testimonials {
+
+  .h1 {
+    @include mobile {
+      font-size: 1.7em;
+      margin-bottom: $padding/2;
+    }
+    @include tablet {
+      font-size: 1.7em;
+    }
+  }
+
+  .card {
+    &:hover {
+      background: darken($white,5);
+      .avatar {
+        transition: $normal-speed;
+        transform: scale(1.05);
+        box-shadow: $base-shadow;
+      }
+    }
+    .content {
+      .avatar {
+        margin-bottom: $padding;
+
+        @include desktop {
+          max-width: 80px;
+          margin-bottom:  $padding / 2;
+        }
+
+        @include mobile {
+          max-width: 100px;
+          margin-bottom:  $padding / 2;
+        }
+      }
+    }
+  }
+}
 
 .footer {
   padding: $padding 0;

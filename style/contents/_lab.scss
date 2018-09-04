@@ -92,9 +92,20 @@
         font-size: 0.75em;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
+        line-height: normal;
+
+        .artist,
+        .duration {
+          max-width: 50%;
+        }
 
         .artist {
           font-weight: 700;
+          text-align: left;
+        }
+
+        .duration {
+          text-align: right;
         }
       }
     }
