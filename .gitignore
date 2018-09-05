@@ -1,6 +1,7 @@
 /.idea/*
 .idea/workspace.xml
-/style/icons/node_modules/
+/style/icons/node_modules/*
+/node_modules/*
 /design-system/
 /icons/webfont/
 /style/style.css
