@@ -86,7 +86,7 @@ button {
     }
   }
 
-  /* Ok, for each color in swatch array, we build different class with the color name */
+  /* Ok, for each color in swatch array, we build different class with the color name defined in _variables.scss */
   @each $swatch, $color in $swatch {
     &.#{$swatch} {
       background-color: $color;
