@@ -4456,6 +4456,53 @@ img {
   height: 388px;
   padding: 100px 130px;
 }
+.customize .wrapper .frame .loader .logo-sign {
+  position: absolute;
+  width: 54px;
+  height: 30px;
+  left: 50%;
+  top: 50%;
+  margin-left: -27px;
+  margin-top: -15px;
+  transition: all 0.2s ease;
+}
+.customize .wrapper .frame .loader .logo-sign .logo-sign__line {
+  transition: all 0.2s ease;
+  animation: wavy 1s ease infinite forwards;
+  transform-origin: 50% 50%;
+}
+.customize .wrapper .frame .loader .logo-sign .logo-sign__line:nth-child(1) {
+  animation-delay: 0.25s;
+}
+.customize .wrapper .frame .loader .logo-sign .logo-sign__line:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.customize .wrapper .frame .loader .logo-sign .logo-sign__line:nth-child(3) {
+  animation-delay: 0.75s;
+}
+.customize .wrapper .frame .loader .logo-sign .logo-sign__line:nth-child(4) {
+  animation-delay: 1s;
+}
+.customize .wrapper .frame .loader .logo-sign .logo-sign__line:nth-child(5) {
+  animation-delay: 1.25s;
+}
+.customize .wrapper .frame .loader .logo-sign .logo-sign__line:nth-child(6) {
+  animation-delay: 1.5s;
+}
+.customize .wrapper .frame .loader .logo-sign .logo-sign__line:nth-child(7) {
+  animation-delay: 1.75s;
+}
+@keyframes wavy {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.6);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .customize .wrapper .frame .svg.only {
   height: 100%;
 }

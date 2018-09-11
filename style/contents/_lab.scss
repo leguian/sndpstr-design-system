@@ -82,6 +82,44 @@
         padding: 100px 130px;
       }
 
+      .loader {
+        .logo-sign {
+          position: absolute;
+          width: 54px;
+          height: 30px;
+          left: 50%;
+          top: 50%;
+          margin-left: -27px;
+          margin-top: -15px;
+          transition: all .2s ease;
+
+          .logo-sign__line {
+            transition: all .2s ease;
+            animation: wavy 1s ease infinite forwards;
+            transform-origin: 50% 50%;
+          }
+
+          @for $i from 1 through 7 {
+            .logo-sign__line:nth-child(#{$i}) {
+              animation-delay: #{$i/4}s;
+            }
+          }
+
+        }
+
+        @keyframes wavy {
+          0% {
+            transform: scaleY(1);
+          }
+          50% {
+            transform: scaleY(.6);
+          }
+          100% {
+            transform: scaleY(1);
+          }
+        }
+      }
+
       .svg {
         &.only {
           height: 100%;
@@ -155,7 +193,7 @@
       color: $grey;
     }
 
-    .shipping  {
+    .shipping {
       font-size: .3em;
       margin-top: .5em;
       display: block;
@@ -232,7 +270,7 @@
       border-radius: $radius;
 
       @media (max-width: $reflex-sm) {
-        display:none;
+        display: none;
       }
     }
   }
